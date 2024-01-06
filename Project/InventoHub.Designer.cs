@@ -84,7 +84,7 @@
             panelSideNav.Dock = DockStyle.Left;
             panelSideNav.Location = new Point(0, 0);
             panelSideNav.Name = "panelSideNav";
-            panelSideNav.Size = new Size(200, 791);
+            panelSideNav.Size = new Size(200, 800);
             panelSideNav.TabIndex = 0;
             // 
             // pnlSubReports
@@ -513,11 +513,13 @@
             // 
             // pnlChildPage
             // 
-            pnlChildPage.BackColor = Color.GhostWhite;
-            pnlChildPage.Dock = DockStyle.Top;
+            pnlChildPage.AutoScroll = true;
+            pnlChildPage.AutoSize = true;
+            pnlChildPage.BackColor = Color.Lavender;
+            pnlChildPage.Dock = DockStyle.Fill;
             pnlChildPage.Location = new Point(200, 0);
             pnlChildPage.Name = "pnlChildPage";
-            pnlChildPage.Size = new Size(783, 791);
+            pnlChildPage.Size = new Size(800, 800);
             pnlChildPage.TabIndex = 1;
             // 
             // InventoHub
@@ -525,10 +527,10 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(241, 234, 255);
-            ClientSize = new Size(983, 791);
+            ClientSize = new Size(1000, 800);
             Controls.Add(pnlChildPage);
             Controls.Add(panelSideNav);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
             Name = "InventoHub";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
@@ -540,6 +542,7 @@
             panel1.ResumeLayout(false);
             contextMenuStrip1.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

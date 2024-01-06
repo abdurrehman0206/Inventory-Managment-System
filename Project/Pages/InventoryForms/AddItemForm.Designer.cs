@@ -88,7 +88,7 @@
             // 
             // itemNamePanel
             // 
-            itemNamePanel.BackColor = SystemColors.ButtonFace;
+            itemNamePanel.BackColor = Color.FromArgb(225, 217, 242);
             itemNamePanel.Controls.Add(itemNameTextField);
             itemNamePanel.Location = new Point(66, 155);
             itemNamePanel.Name = "itemNamePanel";
@@ -97,12 +97,12 @@
             // 
             // itemNameTextField
             // 
-            itemNameTextField.BackColor = SystemColors.ButtonFace;
+            itemNameTextField.BackColor = Color.FromArgb(225, 217, 242);
             itemNameTextField.BorderStyle = BorderStyle.None;
             itemNameTextField.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            itemNameTextField.Location = new Point(14, 10);
+            itemNameTextField.Location = new Point(10, 12);
             itemNameTextField.Name = "itemNameTextField";
-            itemNameTextField.PlaceholderText = "name";
+            itemNameTextField.PlaceholderText = "Name";
             itemNameTextField.Size = new Size(210, 16);
             itemNameTextField.TabIndex = 5;
             itemNameTextField.MouseClick += itemNameTextField_MouseClick;
@@ -110,7 +110,7 @@
             // 
             // itemCategoryPanel
             // 
-            itemCategoryPanel.BackColor = SystemColors.ButtonFace;
+            itemCategoryPanel.BackColor = Color.FromArgb(225, 217, 242);
             itemCategoryPanel.Controls.Add(itemCategoryTextField);
             itemCategoryPanel.Location = new Point(505, 155);
             itemCategoryPanel.Name = "itemCategoryPanel";
@@ -119,12 +119,12 @@
             // 
             // itemCategoryTextField
             // 
-            itemCategoryTextField.BackColor = SystemColors.ButtonFace;
+            itemCategoryTextField.BackColor = Color.FromArgb(225, 217, 242);
             itemCategoryTextField.BorderStyle = BorderStyle.None;
             itemCategoryTextField.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            itemCategoryTextField.Location = new Point(14, 10);
+            itemCategoryTextField.Location = new Point(10, 12);
             itemCategoryTextField.Name = "itemCategoryTextField";
-            itemCategoryTextField.PlaceholderText = "category";
+            itemCategoryTextField.PlaceholderText = "Category";
             itemCategoryTextField.Size = new Size(210, 16);
             itemCategoryTextField.TabIndex = 5;
             itemCategoryTextField.MouseClick += itemCategoryTextField_MouseClick;
@@ -144,7 +144,7 @@
             // 
             // itemPricePanel
             // 
-            itemPricePanel.BackColor = SystemColors.ButtonFace;
+            itemPricePanel.BackColor = Color.FromArgb(225, 217, 242);
             itemPricePanel.Controls.Add(itemPriceTextField);
             itemPricePanel.Cursor = Cursors.Hand;
             itemPricePanel.Location = new Point(66, 297);
@@ -154,12 +154,12 @@
             // 
             // itemPriceTextField
             // 
-            itemPriceTextField.BackColor = SystemColors.ButtonFace;
+            itemPriceTextField.BackColor = Color.FromArgb(225, 217, 242);
             itemPriceTextField.BorderStyle = BorderStyle.None;
             itemPriceTextField.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            itemPriceTextField.Location = new Point(14, 10);
+            itemPriceTextField.Location = new Point(10, 12);
             itemPriceTextField.Name = "itemPriceTextField";
-            itemPriceTextField.PlaceholderText = "price";
+            itemPriceTextField.PlaceholderText = "Price";
             itemPriceTextField.Size = new Size(210, 16);
             itemPriceTextField.TabIndex = 5;
             itemPriceTextField.MouseClick += itemPriceTextField_MouseClick;
@@ -180,7 +180,7 @@
             // 
             // itemQuantityPanel
             // 
-            itemQuantityPanel.BackColor = SystemColors.ButtonFace;
+            itemQuantityPanel.BackColor = Color.FromArgb(225, 217, 242);
             itemQuantityPanel.Controls.Add(itemQuantityTextField);
             itemQuantityPanel.Cursor = Cursors.Hand;
             itemQuantityPanel.Location = new Point(505, 297);
@@ -190,10 +190,10 @@
             // 
             // itemQuantityTextField
             // 
-            itemQuantityTextField.BackColor = SystemColors.ButtonFace;
+            itemQuantityTextField.BackColor = Color.FromArgb(225, 217, 242);
             itemQuantityTextField.BorderStyle = BorderStyle.None;
             itemQuantityTextField.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            itemQuantityTextField.Location = new Point(14, 10);
+            itemQuantityTextField.Location = new Point(10, 12);
             itemQuantityTextField.Name = "itemQuantityTextField";
             itemQuantityTextField.PlaceholderText = "Item Name";
             itemQuantityTextField.Size = new Size(210, 16);
@@ -211,7 +211,7 @@
             itemAddBtn.FlatStyle = FlatStyle.Flat;
             itemAddBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             itemAddBtn.ForeColor = SystemColors.Control;
-            itemAddBtn.Location = new Point(281, 642);
+            itemAddBtn.Location = new Point(331, 642);
             itemAddBtn.Name = "itemAddBtn";
             itemAddBtn.Size = new Size(149, 45);
             itemAddBtn.TabIndex = 13;
@@ -233,7 +233,7 @@
             // 
             // itemDescRichTextBox
             // 
-            itemDescRichTextBox.BackColor = SystemColors.ButtonFace;
+            itemDescRichTextBox.BackColor = Color.FromArgb(225, 217, 242);
             itemDescRichTextBox.BorderStyle = BorderStyle.None;
             itemDescRichTextBox.Location = new Point(66, 446);
             itemDescRichTextBox.Name = "itemDescRichTextBox";
@@ -243,11 +243,12 @@
             itemDescRichTextBox.MouseClick += itemDescRichTextBox_MouseClick;
             itemDescRichTextBox.Leave += itemDescRichTextBox_Leave;
             // 
-            // InventoryAddItemForm
+            // AddItemForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 699);
+            BackColor = Color.Lavender;
+            ClientSize = new Size(800, 800);
             Controls.Add(itemDescRichTextBox);
             Controls.Add(itemDescLabel);
             Controls.Add(itemAddBtn);
@@ -261,7 +262,8 @@
             Controls.Add(itemNameLabel);
             Controls.Add(addItemHeader);
             Cursor = Cursors.Hand;
-            Name = "InventoryAddItemForm";
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "AddItemForm";
             Text = "InventoryAddItemForm";
             itemNamePanel.ResumeLayout(false);
             itemNamePanel.PerformLayout();
