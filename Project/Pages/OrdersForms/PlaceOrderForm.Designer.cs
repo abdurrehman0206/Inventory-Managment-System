@@ -33,6 +33,7 @@
             // 
             // lblPlaceOrder
             // 
+            lblPlaceOrder.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblPlaceOrder.BackColor = Color.FromArgb(57, 36, 103);
             lblPlaceOrder.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblPlaceOrder.ForeColor = SystemColors.Control;

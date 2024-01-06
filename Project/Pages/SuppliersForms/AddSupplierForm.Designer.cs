@@ -33,6 +33,7 @@
             // 
             // lblAddSup
             // 
+            lblAddSup.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblAddSup.BackColor = Color.FromArgb(57, 36, 103);
             lblAddSup.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblAddSup.ForeColor = SystemColors.Control;

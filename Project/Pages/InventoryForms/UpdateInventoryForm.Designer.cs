@@ -33,6 +33,7 @@
             // 
             // lblUpdateItem
             // 
+            lblUpdateItem.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblUpdateItem.BackColor = Color.FromArgb(57, 36, 103);
             lblUpdateItem.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblUpdateItem.ForeColor = SystemColors.Control;

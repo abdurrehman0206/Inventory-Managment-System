@@ -52,6 +52,7 @@
             // 
             // lblAddItem
             // 
+            lblAddItem.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblAddItem.BackColor = Color.FromArgb(57, 36, 103);
             lblAddItem.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblAddItem.ForeColor = SystemColors.Control;
@@ -64,6 +65,7 @@
             // 
             // lblItemName
             // 
+            lblItemName.Anchor = AnchorStyles.None;
             lblItemName.AutoSize = true;
             lblItemName.BackColor = Color.Transparent;
             lblItemName.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
@@ -76,6 +78,7 @@
             // 
             // lblItemCat
             // 
+            lblItemCat.Anchor = AnchorStyles.None;
             lblItemCat.AutoSize = true;
             lblItemCat.BackColor = Color.Transparent;
             lblItemCat.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
@@ -88,6 +91,7 @@
             // 
             // itemNamePanel
             // 
+            itemNamePanel.Anchor = AnchorStyles.None;
             itemNamePanel.BackColor = Color.FromArgb(225, 217, 242);
             itemNamePanel.Controls.Add(tfItemName);
             itemNamePanel.Location = new Point(66, 155);
@@ -110,6 +114,7 @@
             // 
             // pnlItemCategory
             // 
+            pnlItemCategory.Anchor = AnchorStyles.None;
             pnlItemCategory.BackColor = Color.FromArgb(225, 217, 242);
             pnlItemCategory.Controls.Add(tfItemCat);
             pnlItemCategory.Location = new Point(505, 155);
@@ -132,6 +137,7 @@
             // 
             // lblItemPrice
             // 
+            lblItemPrice.Anchor = AnchorStyles.None;
             lblItemPrice.AutoSize = true;
             lblItemPrice.BackColor = Color.Transparent;
             lblItemPrice.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
@@ -144,6 +150,7 @@
             // 
             // itemPricePanel
             // 
+            itemPricePanel.Anchor = AnchorStyles.None;
             itemPricePanel.BackColor = Color.FromArgb(225, 217, 242);
             itemPricePanel.Controls.Add(tfItemPrice);
             itemPricePanel.Cursor = Cursors.Hand;
@@ -168,6 +175,7 @@
             // 
             // lblItemQuan
             // 
+            lblItemQuan.Anchor = AnchorStyles.None;
             lblItemQuan.AutoSize = true;
             lblItemQuan.BackColor = Color.Transparent;
             lblItemQuan.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
@@ -180,6 +188,7 @@
             // 
             // pnlItemQuantity
             // 
+            pnlItemQuantity.Anchor = AnchorStyles.None;
             pnlItemQuantity.BackColor = Color.FromArgb(225, 217, 242);
             pnlItemQuantity.Controls.Add(tfItemQuan);
             pnlItemQuantity.Cursor = Cursors.Hand;
@@ -204,6 +213,7 @@
             // 
             // btnAddItem
             // 
+            btnAddItem.Anchor = AnchorStyles.None;
             btnAddItem.BackColor = Color.FromArgb(57, 36, 103);
             btnAddItem.FlatAppearance.BorderColor = Color.FromArgb(57, 36, 135);
             btnAddItem.FlatAppearance.BorderSize = 2;
@@ -221,6 +231,7 @@
             // 
             // lblItemDesc
             // 
+            lblItemDesc.Anchor = AnchorStyles.None;
             lblItemDesc.AutoSize = true;
             lblItemDesc.BackColor = Color.Transparent;
             lblItemDesc.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
@@ -233,6 +244,7 @@
             // 
             // rtbItemDesc
             // 
+            rtbItemDesc.Anchor = AnchorStyles.None;
             rtbItemDesc.BackColor = Color.FromArgb(225, 217, 242);
             rtbItemDesc.BorderStyle = BorderStyle.None;
             rtbItemDesc.Location = new Point(66, 446);
@@ -247,6 +259,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             BackColor = Color.Lavender;
             ClientSize = new Size(800, 800);
             Controls.Add(rtbItemDesc);

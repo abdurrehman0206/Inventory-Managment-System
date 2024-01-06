@@ -33,6 +33,7 @@
             // 
             // lblDelItem
             // 
+            lblDelItem.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblDelItem.BackColor = Color.FromArgb(57, 36, 103);
             lblDelItem.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblDelItem.ForeColor = SystemColors.Control;

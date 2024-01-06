@@ -33,6 +33,7 @@
             // 
             // lblViewInv
             // 
+            lblViewInv.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblViewInv.BackColor = Color.FromArgb(57, 36, 103);
             lblViewInv.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblViewInv.ForeColor = SystemColors.Control;
@@ -47,9 +48,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(816, 839);
+            ClientSize = new Size(800, 800);
             Controls.Add(lblViewInv);
-            FormBorderStyle = FormBorderStyle.None;
             Name = "ViewInventoryForm";
             Text = "ViewInventory";
             ResumeLayout(false);

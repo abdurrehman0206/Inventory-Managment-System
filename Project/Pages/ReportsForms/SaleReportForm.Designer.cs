@@ -33,6 +33,7 @@
             // 
             // lblSalesRepo
             // 
+            lblSalesRepo.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblSalesRepo.BackColor = Color.FromArgb(57, 36, 103);
             lblSalesRepo.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblSalesRepo.ForeColor = SystemColors.Control;

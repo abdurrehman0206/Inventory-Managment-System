@@ -33,6 +33,7 @@
             // 
             // lblInvRepo
             // 
+            lblInvRepo.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblInvRepo.BackColor = Color.FromArgb(57, 36, 103);
             lblInvRepo.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblInvRepo.ForeColor = SystemColors.Control;

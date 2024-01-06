@@ -33,6 +33,7 @@
             // 
             // viewOrderFormHeader
             // 
+            viewOrderFormHeader.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             viewOrderFormHeader.BackColor = Color.FromArgb(57, 36, 103);
             viewOrderFormHeader.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             viewOrderFormHeader.ForeColor = SystemColors.Control;

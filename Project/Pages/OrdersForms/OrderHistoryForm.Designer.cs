@@ -33,6 +33,7 @@
             // 
             // lblOrderHistory
             // 
+            lblOrderHistory.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblOrderHistory.BackColor = Color.FromArgb(57, 36, 103);
             lblOrderHistory.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblOrderHistory.ForeColor = SystemColors.Control;
