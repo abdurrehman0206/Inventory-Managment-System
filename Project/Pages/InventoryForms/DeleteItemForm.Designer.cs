@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "DeleteItemForm";
+            lblDelItem = new Label();
+            SuspendLayout();
+            // 
+            // lblDelItem
+            // 
+            lblDelItem.BackColor = Color.FromArgb(57, 36, 103);
+            lblDelItem.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblDelItem.ForeColor = SystemColors.Control;
+            lblDelItem.Location = new Point(0, 0);
+            lblDelItem.Name = "lblDelItem";
+            lblDelItem.Size = new Size(800, 50);
+            lblDelItem.TabIndex = 0;
+            lblDelItem.Text = "Delete Item";
+            lblDelItem.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // DeleteItemForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(784, 761);
+            Controls.Add(lblDelItem);
+            Name = "DeleteItemForm";
+            Text = "DeleteItemForm";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Label lblDelItem;
     }
 }

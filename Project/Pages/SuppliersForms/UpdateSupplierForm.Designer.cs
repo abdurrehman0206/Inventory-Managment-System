@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "UpdateSupplierForm";
+            lblUpdateSup = new Label();
+            SuspendLayout();
+            // 
+            // lblUpdateSup
+            // 
+            lblUpdateSup.BackColor = Color.FromArgb(57, 36, 103);
+            lblUpdateSup.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblUpdateSup.ForeColor = SystemColors.Control;
+            lblUpdateSup.Location = new Point(0, 0);
+            lblUpdateSup.Margin = new Padding(0);
+            lblUpdateSup.Name = "lblUpdateSup";
+            lblUpdateSup.Size = new Size(800, 50);
+            lblUpdateSup.TabIndex = 0;
+            lblUpdateSup.Text = "Update Supplier";
+            lblUpdateSup.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // UpdateSupplierForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(784, 761);
+            Controls.Add(lblUpdateSup);
+            Name = "UpdateSupplierForm";
+            Text = "UpdateSupplierForm";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Label lblUpdateSup;
     }
 }

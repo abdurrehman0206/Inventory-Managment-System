@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "UpdateInventory";
+            lblUpdateItem = new Label();
+            SuspendLayout();
+            // 
+            // lblUpdateItem
+            // 
+            lblUpdateItem.BackColor = Color.FromArgb(57, 36, 103);
+            lblUpdateItem.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblUpdateItem.ForeColor = SystemColors.Control;
+            lblUpdateItem.Location = new Point(0, 0);
+            lblUpdateItem.Name = "lblUpdateItem";
+            lblUpdateItem.Size = new Size(800, 50);
+            lblUpdateItem.TabIndex = 0;
+            lblUpdateItem.Text = "Update Item";
+            lblUpdateItem.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // UpdateInventoryForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(784, 761);
+            Controls.Add(lblUpdateItem);
+            Name = "UpdateInventoryForm";
+            Text = "UpdateInventory";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Label lblUpdateItem;
     }
 }

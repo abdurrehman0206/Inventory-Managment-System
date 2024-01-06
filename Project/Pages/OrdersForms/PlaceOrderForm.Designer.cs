@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "PlaceOrderForm";
+            lblPlaceOrder = new Label();
+            SuspendLayout();
+            // 
+            // lblPlaceOrder
+            // 
+            lblPlaceOrder.BackColor = Color.FromArgb(57, 36, 103);
+            lblPlaceOrder.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblPlaceOrder.ForeColor = SystemColors.Control;
+            lblPlaceOrder.Location = new Point(0, 0);
+            lblPlaceOrder.Name = "lblPlaceOrder";
+            lblPlaceOrder.Size = new Size(800, 50);
+            lblPlaceOrder.TabIndex = 0;
+            lblPlaceOrder.Text = "Place Order";
+            lblPlaceOrder.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // PlaceOrderForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(784, 761);
+            Controls.Add(lblPlaceOrder);
+            Name = "PlaceOrderForm";
+            Text = "PlaceOrderForm";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Label lblPlaceOrder;
     }
 }

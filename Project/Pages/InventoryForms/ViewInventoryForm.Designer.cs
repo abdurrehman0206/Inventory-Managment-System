@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "ViewInventory";
+            lblViewInv = new Label();
+            SuspendLayout();
+            // 
+            // lblViewInv
+            // 
+            lblViewInv.BackColor = Color.FromArgb(57, 36, 103);
+            lblViewInv.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblViewInv.ForeColor = SystemColors.Control;
+            lblViewInv.Location = new Point(0, 0);
+            lblViewInv.Name = "lblViewInv";
+            lblViewInv.Size = new Size(800, 50);
+            lblViewInv.TabIndex = 0;
+            lblViewInv.Text = "Inventory Info";
+            lblViewInv.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // ViewInventoryForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(784, 761);
+            Controls.Add(lblViewInv);
+            Name = "ViewInventoryForm";
+            Text = "ViewInventory";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Label lblViewInv;
     }
 }

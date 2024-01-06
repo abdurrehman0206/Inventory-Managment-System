@@ -28,220 +28,220 @@
         /// </summary>
         private void InitializeComponent()
         {
-            addItemHeader = new Label();
-            itemNameLabel = new Label();
-            itemCategoryLabel = new Label();
+            lblAddItem = new Label();
+            lblItemName = new Label();
+            lblItemCat = new Label();
             itemNamePanel = new Panel();
-            itemNameTextField = new TextBox();
-            itemCategoryPanel = new Panel();
-            itemCategoryTextField = new TextBox();
-            itemPriceLabel = new Label();
+            tfItemName = new TextBox();
+            pnlItemCategory = new Panel();
+            tfItemCat = new TextBox();
+            lblItemPrice = new Label();
             itemPricePanel = new Panel();
-            itemPriceTextField = new TextBox();
-            itemQuantityLabel = new Label();
-            itemQuantityPanel = new Panel();
-            itemQuantityTextField = new TextBox();
-            itemAddBtn = new Button();
-            itemDescLabel = new Label();
-            itemDescRichTextBox = new RichTextBox();
+            tfItemPrice = new TextBox();
+            lblItemQuan = new Label();
+            pnlItemQuantity = new Panel();
+            tfItemQuan = new TextBox();
+            btnAddItem = new Button();
+            lblItemDesc = new Label();
+            rtbItemDesc = new RichTextBox();
             itemNamePanel.SuspendLayout();
-            itemCategoryPanel.SuspendLayout();
+            pnlItemCategory.SuspendLayout();
             itemPricePanel.SuspendLayout();
-            itemQuantityPanel.SuspendLayout();
+            pnlItemQuantity.SuspendLayout();
             SuspendLayout();
             // 
-            // addItemHeader
+            // lblAddItem
             // 
-            addItemHeader.BackColor = Color.FromArgb(57, 36, 103);
-            addItemHeader.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            addItemHeader.ForeColor = SystemColors.Control;
-            addItemHeader.Location = new Point(-2, -1);
-            addItemHeader.Name = "addItemHeader";
-            addItemHeader.Size = new Size(803, 50);
-            addItemHeader.TabIndex = 0;
-            addItemHeader.Text = "Add New Item";
-            addItemHeader.TextAlign = ContentAlignment.MiddleCenter;
+            lblAddItem.BackColor = Color.FromArgb(57, 36, 103);
+            lblAddItem.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblAddItem.ForeColor = SystemColors.Control;
+            lblAddItem.Location = new Point(0, 0);
+            lblAddItem.Name = "lblAddItem";
+            lblAddItem.Size = new Size(800, 50);
+            lblAddItem.TabIndex = 0;
+            lblAddItem.Text = "Add New Item";
+            lblAddItem.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // itemNameLabel
+            // lblItemName
             // 
-            itemNameLabel.AutoSize = true;
-            itemNameLabel.BackColor = Color.Transparent;
-            itemNameLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            itemNameLabel.ForeColor = Color.Black;
-            itemNameLabel.Location = new Point(66, 121);
-            itemNameLabel.Name = "itemNameLabel";
-            itemNameLabel.Size = new Size(99, 21);
-            itemNameLabel.TabIndex = 2;
-            itemNameLabel.Text = "Item Name ";
+            lblItemName.AutoSize = true;
+            lblItemName.BackColor = Color.Transparent;
+            lblItemName.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblItemName.ForeColor = Color.Black;
+            lblItemName.Location = new Point(66, 121);
+            lblItemName.Name = "lblItemName";
+            lblItemName.Size = new Size(99, 21);
+            lblItemName.TabIndex = 2;
+            lblItemName.Text = "Item Name ";
             // 
-            // itemCategoryLabel
+            // lblItemCat
             // 
-            itemCategoryLabel.AutoSize = true;
-            itemCategoryLabel.BackColor = Color.Transparent;
-            itemCategoryLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            itemCategoryLabel.ForeColor = Color.Black;
-            itemCategoryLabel.Location = new Point(505, 121);
-            itemCategoryLabel.Name = "itemCategoryLabel";
-            itemCategoryLabel.Size = new Size(80, 21);
-            itemCategoryLabel.TabIndex = 4;
-            itemCategoryLabel.Text = "Category";
+            lblItemCat.AutoSize = true;
+            lblItemCat.BackColor = Color.Transparent;
+            lblItemCat.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblItemCat.ForeColor = Color.Black;
+            lblItemCat.Location = new Point(505, 121);
+            lblItemCat.Name = "lblItemCat";
+            lblItemCat.Size = new Size(80, 21);
+            lblItemCat.TabIndex = 4;
+            lblItemCat.Text = "Category";
             // 
             // itemNamePanel
             // 
             itemNamePanel.BackColor = Color.FromArgb(225, 217, 242);
-            itemNamePanel.Controls.Add(itemNameTextField);
+            itemNamePanel.Controls.Add(tfItemName);
             itemNamePanel.Location = new Point(66, 155);
             itemNamePanel.Name = "itemNamePanel";
             itemNamePanel.Size = new Size(227, 40);
             itemNamePanel.TabIndex = 7;
             // 
-            // itemNameTextField
+            // tfItemName
             // 
-            itemNameTextField.BackColor = Color.FromArgb(225, 217, 242);
-            itemNameTextField.BorderStyle = BorderStyle.None;
-            itemNameTextField.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            itemNameTextField.Location = new Point(10, 12);
-            itemNameTextField.Name = "itemNameTextField";
-            itemNameTextField.PlaceholderText = "Name";
-            itemNameTextField.Size = new Size(210, 16);
-            itemNameTextField.TabIndex = 5;
-            itemNameTextField.MouseClick += itemNameTextField_MouseClick;
-            itemNameTextField.Leave += itemNameTextField_Leave;
+            tfItemName.BackColor = Color.FromArgb(225, 217, 242);
+            tfItemName.BorderStyle = BorderStyle.None;
+            tfItemName.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            tfItemName.Location = new Point(10, 12);
+            tfItemName.Name = "tfItemName";
+            tfItemName.PlaceholderText = "Name";
+            tfItemName.Size = new Size(210, 16);
+            tfItemName.TabIndex = 5;
+            tfItemName.MouseClick += tfItemName_MouseClick;
+            tfItemName.Leave += tfItemName_Leave;
             // 
-            // itemCategoryPanel
+            // pnlItemCategory
             // 
-            itemCategoryPanel.BackColor = Color.FromArgb(225, 217, 242);
-            itemCategoryPanel.Controls.Add(itemCategoryTextField);
-            itemCategoryPanel.Location = new Point(505, 155);
-            itemCategoryPanel.Name = "itemCategoryPanel";
-            itemCategoryPanel.Size = new Size(227, 40);
-            itemCategoryPanel.TabIndex = 8;
+            pnlItemCategory.BackColor = Color.FromArgb(225, 217, 242);
+            pnlItemCategory.Controls.Add(tfItemCat);
+            pnlItemCategory.Location = new Point(505, 155);
+            pnlItemCategory.Name = "pnlItemCategory";
+            pnlItemCategory.Size = new Size(227, 40);
+            pnlItemCategory.TabIndex = 8;
             // 
-            // itemCategoryTextField
+            // tfItemCat
             // 
-            itemCategoryTextField.BackColor = Color.FromArgb(225, 217, 242);
-            itemCategoryTextField.BorderStyle = BorderStyle.None;
-            itemCategoryTextField.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            itemCategoryTextField.Location = new Point(10, 12);
-            itemCategoryTextField.Name = "itemCategoryTextField";
-            itemCategoryTextField.PlaceholderText = "Category";
-            itemCategoryTextField.Size = new Size(210, 16);
-            itemCategoryTextField.TabIndex = 5;
-            itemCategoryTextField.MouseClick += itemCategoryTextField_MouseClick;
-            itemCategoryTextField.Leave += itemCategoryTextField_Leave;
+            tfItemCat.BackColor = Color.FromArgb(225, 217, 242);
+            tfItemCat.BorderStyle = BorderStyle.None;
+            tfItemCat.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            tfItemCat.Location = new Point(10, 12);
+            tfItemCat.Name = "tfItemCat";
+            tfItemCat.PlaceholderText = "Category";
+            tfItemCat.Size = new Size(210, 16);
+            tfItemCat.TabIndex = 5;
+            tfItemCat.MouseClick += tfItemCat_MouseClick;
+            tfItemCat.Leave += tfItemCat_Leave;
             // 
-            // itemPriceLabel
+            // lblItemPrice
             // 
-            itemPriceLabel.AutoSize = true;
-            itemPriceLabel.BackColor = Color.Transparent;
-            itemPriceLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            itemPriceLabel.ForeColor = Color.Black;
-            itemPriceLabel.Location = new Point(66, 261);
-            itemPriceLabel.Name = "itemPriceLabel";
-            itemPriceLabel.Size = new Size(87, 21);
-            itemPriceLabel.TabIndex = 9;
-            itemPriceLabel.Text = "Item Price";
+            lblItemPrice.AutoSize = true;
+            lblItemPrice.BackColor = Color.Transparent;
+            lblItemPrice.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblItemPrice.ForeColor = Color.Black;
+            lblItemPrice.Location = new Point(66, 261);
+            lblItemPrice.Name = "lblItemPrice";
+            lblItemPrice.Size = new Size(87, 21);
+            lblItemPrice.TabIndex = 9;
+            lblItemPrice.Text = "Item Price";
             // 
             // itemPricePanel
             // 
             itemPricePanel.BackColor = Color.FromArgb(225, 217, 242);
-            itemPricePanel.Controls.Add(itemPriceTextField);
+            itemPricePanel.Controls.Add(tfItemPrice);
             itemPricePanel.Cursor = Cursors.Hand;
             itemPricePanel.Location = new Point(66, 297);
             itemPricePanel.Name = "itemPricePanel";
             itemPricePanel.Size = new Size(227, 40);
             itemPricePanel.TabIndex = 10;
             // 
-            // itemPriceTextField
+            // tfItemPrice
             // 
-            itemPriceTextField.BackColor = Color.FromArgb(225, 217, 242);
-            itemPriceTextField.BorderStyle = BorderStyle.None;
-            itemPriceTextField.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            itemPriceTextField.Location = new Point(10, 12);
-            itemPriceTextField.Name = "itemPriceTextField";
-            itemPriceTextField.PlaceholderText = "Price";
-            itemPriceTextField.Size = new Size(210, 16);
-            itemPriceTextField.TabIndex = 5;
-            itemPriceTextField.MouseClick += itemPriceTextField_MouseClick;
-            itemPriceTextField.TextChanged += itemPriceTextField_TextChanged;
-            itemPriceTextField.Leave += itemPriceTextField_Leave;
+            tfItemPrice.BackColor = Color.FromArgb(225, 217, 242);
+            tfItemPrice.BorderStyle = BorderStyle.None;
+            tfItemPrice.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            tfItemPrice.Location = new Point(10, 12);
+            tfItemPrice.Name = "tfItemPrice";
+            tfItemPrice.PlaceholderText = "Price";
+            tfItemPrice.Size = new Size(210, 16);
+            tfItemPrice.TabIndex = 5;
+            tfItemPrice.MouseClick += tfItemPrice_MouseClick;
+            tfItemPrice.TextChanged += tfItemPrice_TextChanged;
+            tfItemPrice.Leave += tfItemPrice_Leave;
             // 
-            // itemQuantityLabel
+            // lblItemQuan
             // 
-            itemQuantityLabel.AutoSize = true;
-            itemQuantityLabel.BackColor = Color.Transparent;
-            itemQuantityLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            itemQuantityLabel.ForeColor = Color.Black;
-            itemQuantityLabel.Location = new Point(505, 261);
-            itemQuantityLabel.Name = "itemQuantityLabel";
-            itemQuantityLabel.Size = new Size(116, 21);
-            itemQuantityLabel.TabIndex = 11;
-            itemQuantityLabel.Text = "Item Quantity";
+            lblItemQuan.AutoSize = true;
+            lblItemQuan.BackColor = Color.Transparent;
+            lblItemQuan.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblItemQuan.ForeColor = Color.Black;
+            lblItemQuan.Location = new Point(505, 261);
+            lblItemQuan.Name = "lblItemQuan";
+            lblItemQuan.Size = new Size(116, 21);
+            lblItemQuan.TabIndex = 11;
+            lblItemQuan.Text = "Item Quantity";
             // 
-            // itemQuantityPanel
+            // pnlItemQuantity
             // 
-            itemQuantityPanel.BackColor = Color.FromArgb(225, 217, 242);
-            itemQuantityPanel.Controls.Add(itemQuantityTextField);
-            itemQuantityPanel.Cursor = Cursors.Hand;
-            itemQuantityPanel.Location = new Point(505, 297);
-            itemQuantityPanel.Name = "itemQuantityPanel";
-            itemQuantityPanel.Size = new Size(227, 40);
-            itemQuantityPanel.TabIndex = 12;
+            pnlItemQuantity.BackColor = Color.FromArgb(225, 217, 242);
+            pnlItemQuantity.Controls.Add(tfItemQuan);
+            pnlItemQuantity.Cursor = Cursors.Hand;
+            pnlItemQuantity.Location = new Point(505, 297);
+            pnlItemQuantity.Name = "pnlItemQuantity";
+            pnlItemQuantity.Size = new Size(227, 40);
+            pnlItemQuantity.TabIndex = 12;
             // 
-            // itemQuantityTextField
+            // tfItemQuan
             // 
-            itemQuantityTextField.BackColor = Color.FromArgb(225, 217, 242);
-            itemQuantityTextField.BorderStyle = BorderStyle.None;
-            itemQuantityTextField.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            itemQuantityTextField.Location = new Point(10, 12);
-            itemQuantityTextField.Name = "itemQuantityTextField";
-            itemQuantityTextField.PlaceholderText = "Item Name";
-            itemQuantityTextField.Size = new Size(210, 16);
-            itemQuantityTextField.TabIndex = 5;
-            itemQuantityTextField.MouseClick += itemQuantityTextField_MouseClick;
-            itemQuantityTextField.TextChanged += itemQuantityTextField_TextChanged;
-            itemQuantityTextField.Leave += itemQuantityTextField_Leave;
+            tfItemQuan.BackColor = Color.FromArgb(225, 217, 242);
+            tfItemQuan.BorderStyle = BorderStyle.None;
+            tfItemQuan.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            tfItemQuan.Location = new Point(10, 12);
+            tfItemQuan.Name = "tfItemQuan";
+            tfItemQuan.PlaceholderText = "Item Name";
+            tfItemQuan.Size = new Size(210, 16);
+            tfItemQuan.TabIndex = 5;
+            tfItemQuan.MouseClick += tfItemQuan_MouseClick;
+            tfItemQuan.TextChanged += tfItemQuan_TextChanged;
+            tfItemQuan.Leave += tfItemQuan_Leave;
             // 
-            // itemAddBtn
+            // btnAddItem
             // 
-            itemAddBtn.BackColor = Color.FromArgb(57, 36, 103);
-            itemAddBtn.FlatAppearance.BorderColor = Color.FromArgb(57, 36, 135);
-            itemAddBtn.FlatAppearance.BorderSize = 2;
-            itemAddBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(163, 103, 177);
-            itemAddBtn.FlatStyle = FlatStyle.Flat;
-            itemAddBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            itemAddBtn.ForeColor = SystemColors.Control;
-            itemAddBtn.Location = new Point(331, 642);
-            itemAddBtn.Name = "itemAddBtn";
-            itemAddBtn.Size = new Size(149, 45);
-            itemAddBtn.TabIndex = 13;
-            itemAddBtn.Tag = "";
-            itemAddBtn.Text = "Add Item";
-            itemAddBtn.UseVisualStyleBackColor = false;
+            btnAddItem.BackColor = Color.FromArgb(57, 36, 103);
+            btnAddItem.FlatAppearance.BorderColor = Color.FromArgb(57, 36, 135);
+            btnAddItem.FlatAppearance.BorderSize = 2;
+            btnAddItem.FlatAppearance.MouseOverBackColor = Color.FromArgb(163, 103, 177);
+            btnAddItem.FlatStyle = FlatStyle.Flat;
+            btnAddItem.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnAddItem.ForeColor = SystemColors.Control;
+            btnAddItem.Location = new Point(331, 642);
+            btnAddItem.Name = "btnAddItem";
+            btnAddItem.Size = new Size(149, 45);
+            btnAddItem.TabIndex = 13;
+            btnAddItem.Tag = "";
+            btnAddItem.Text = "Add Item";
+            btnAddItem.UseVisualStyleBackColor = false;
             // 
-            // itemDescLabel
+            // lblItemDesc
             // 
-            itemDescLabel.AutoSize = true;
-            itemDescLabel.BackColor = Color.Transparent;
-            itemDescLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            itemDescLabel.ForeColor = Color.Black;
-            itemDescLabel.Location = new Point(66, 395);
-            itemDescLabel.Name = "itemDescLabel";
-            itemDescLabel.Size = new Size(137, 21);
-            itemDescLabel.TabIndex = 14;
-            itemDescLabel.Text = "Item Description";
+            lblItemDesc.AutoSize = true;
+            lblItemDesc.BackColor = Color.Transparent;
+            lblItemDesc.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblItemDesc.ForeColor = Color.Black;
+            lblItemDesc.Location = new Point(66, 395);
+            lblItemDesc.Name = "lblItemDesc";
+            lblItemDesc.Size = new Size(137, 21);
+            lblItemDesc.TabIndex = 14;
+            lblItemDesc.Text = "Item Description";
             // 
-            // itemDescRichTextBox
+            // rtbItemDesc
             // 
-            itemDescRichTextBox.BackColor = Color.FromArgb(225, 217, 242);
-            itemDescRichTextBox.BorderStyle = BorderStyle.None;
-            itemDescRichTextBox.Location = new Point(66, 446);
-            itemDescRichTextBox.Name = "itemDescRichTextBox";
-            itemDescRichTextBox.Size = new Size(666, 158);
-            itemDescRichTextBox.TabIndex = 15;
-            itemDescRichTextBox.Text = "";
-            itemDescRichTextBox.MouseClick += itemDescRichTextBox_MouseClick;
-            itemDescRichTextBox.Leave += itemDescRichTextBox_Leave;
+            rtbItemDesc.BackColor = Color.FromArgb(225, 217, 242);
+            rtbItemDesc.BorderStyle = BorderStyle.None;
+            rtbItemDesc.Location = new Point(66, 446);
+            rtbItemDesc.Name = "rtbItemDesc";
+            rtbItemDesc.Size = new Size(666, 158);
+            rtbItemDesc.TabIndex = 15;
+            rtbItemDesc.Text = "";
+            rtbItemDesc.MouseClick += rtbItemDesc_MouseClick;
+            rtbItemDesc.Leave += rtbItemDesc_Leave;
             // 
             // AddItemForm
             // 
@@ -249,51 +249,51 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Lavender;
             ClientSize = new Size(800, 800);
-            Controls.Add(itemDescRichTextBox);
-            Controls.Add(itemDescLabel);
-            Controls.Add(itemAddBtn);
-            Controls.Add(itemQuantityPanel);
-            Controls.Add(itemQuantityLabel);
+            Controls.Add(rtbItemDesc);
+            Controls.Add(lblItemDesc);
+            Controls.Add(btnAddItem);
+            Controls.Add(pnlItemQuantity);
+            Controls.Add(lblItemQuan);
             Controls.Add(itemPricePanel);
-            Controls.Add(itemPriceLabel);
-            Controls.Add(itemCategoryPanel);
+            Controls.Add(lblItemPrice);
+            Controls.Add(pnlItemCategory);
             Controls.Add(itemNamePanel);
-            Controls.Add(itemCategoryLabel);
-            Controls.Add(itemNameLabel);
-            Controls.Add(addItemHeader);
+            Controls.Add(lblItemCat);
+            Controls.Add(lblItemName);
+            Controls.Add(lblAddItem);
             Cursor = Cursors.Hand;
             FormBorderStyle = FormBorderStyle.None;
             Name = "AddItemForm";
             Text = "InventoryAddItemForm";
             itemNamePanel.ResumeLayout(false);
             itemNamePanel.PerformLayout();
-            itemCategoryPanel.ResumeLayout(false);
-            itemCategoryPanel.PerformLayout();
+            pnlItemCategory.ResumeLayout(false);
+            pnlItemCategory.PerformLayout();
             itemPricePanel.ResumeLayout(false);
             itemPricePanel.PerformLayout();
-            itemQuantityPanel.ResumeLayout(false);
-            itemQuantityPanel.PerformLayout();
+            pnlItemQuantity.ResumeLayout(false);
+            pnlItemQuantity.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label addItemHeader;
-        private Label itemNameLabel;
-        private Label itemCategoryLabel;
+        private Label lblAddItem;
+        private Label lblItemName;
+        private Label lblItemCat;
         private Panel itemNamePanel;
-        private TextBox itemNameTextField;
-        private Panel itemCategoryPanel;
-        private TextBox itemCategoryTextField;
-        private Label itemPriceLabel;
+        private TextBox tfItemName;
+        private Panel pnlItemCategory;
+        private TextBox tfItemCat;
+        private Label lblItemPrice;
         private Panel itemPricePanel;
-        private TextBox itemPriceTextField;
-        private Label itemQuantityLabel;
-        private Panel itemQuantityPanel;
-        private TextBox itemQuantityTextField;
-        private Button itemAddBtn;
-        private Label itemDescLabel;
-        private RichTextBox itemDescRichTextBox;
+        private TextBox tfItemPrice;
+        private Label lblItemQuan;
+        private Panel pnlItemQuantity;
+        private TextBox tfItemQuan;
+        private Button btnAddItem;
+        private Label lblItemDesc;
+        private RichTextBox rtbItemDesc;
     }
 }

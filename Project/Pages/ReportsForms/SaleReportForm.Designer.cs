@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "SaleReportForm";
+            lblSalesRepo = new Label();
+            SuspendLayout();
+            // 
+            // lblSalesRepo
+            // 
+            lblSalesRepo.BackColor = Color.FromArgb(57, 36, 103);
+            lblSalesRepo.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSalesRepo.ForeColor = SystemColors.Control;
+            lblSalesRepo.Location = new Point(0, 0);
+            lblSalesRepo.Name = "lblSalesRepo";
+            lblSalesRepo.Size = new Size(800, 50);
+            lblSalesRepo.TabIndex = 0;
+            lblSalesRepo.Text = "Sales Report";
+            lblSalesRepo.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // SaleReportForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(784, 761);
+            Controls.Add(lblSalesRepo);
+            Name = "SaleReportForm";
+            Text = "SaleReportForm";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Label lblSalesRepo;
     }
 }

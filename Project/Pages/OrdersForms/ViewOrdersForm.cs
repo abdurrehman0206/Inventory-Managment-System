@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Project.Pages.OrdersForms
 {
-    public partial class ViewOrdersForm : Form
+    public partial class lblViewOrder : Form
     {
-        public ViewOrdersForm()
+        public lblViewOrder()
         {
             InitializeComponent();
         }

@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "OrderHistoryForm";
+            lblOrderHistory = new Label();
+            SuspendLayout();
+            // 
+            // lblOrderHistory
+            // 
+            lblOrderHistory.BackColor = Color.FromArgb(57, 36, 103);
+            lblOrderHistory.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblOrderHistory.ForeColor = SystemColors.Control;
+            lblOrderHistory.ImageAlign = ContentAlignment.MiddleRight;
+            lblOrderHistory.Location = new Point(0, 0);
+            lblOrderHistory.Name = "lblOrderHistory";
+            lblOrderHistory.Size = new Size(800, 50);
+            lblOrderHistory.TabIndex = 0;
+            lblOrderHistory.Text = "Order History";
+            lblOrderHistory.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // OrderHistoryForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(784, 761);
+            Controls.Add(lblOrderHistory);
+            Name = "OrderHistoryForm";
+            Text = "OrderHistoryForm";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Label lblOrderHistory;
     }
 }
