@@ -153,8 +153,17 @@ namespace Project
         {
             HideSubMenu();
         }
+        private void btnDeleteSup_Click(object sender, EventArgs e)
+        {
+            HideSubMenu();
+        }
 
-        private void btnManageSup_Click(object sender, EventArgs e)
+        private void btnUpdateSup_Click(object sender, EventArgs e)
+        {
+            HideSubMenu();
+        }
+
+        private void btnViewSup_Click(object sender, EventArgs e)
         {
             HideSubMenu();
         }
@@ -168,5 +177,7 @@ namespace Project
         {
             HideSubMenu();
         }
+
+
     }
 }

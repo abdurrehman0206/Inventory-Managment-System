@@ -36,7 +36,9 @@
             btnInvRep = new Button();
             btnReports = new Button();
             pnlSubSuppliers = new Panel();
-            btnManageSup = new Button();
+            btnViewSup = new Button();
+            btnUpdateSup = new Button();
+            btnDeleteSup = new Button();
             btnAddSup = new Button();
             btnSuppliers = new Button();
             pnlSubOrders = new Panel();
@@ -91,11 +93,11 @@
             pnlSubReports.Controls.Add(btnSalesRep);
             pnlSubReports.Controls.Add(btnInvRep);
             pnlSubReports.Dock = DockStyle.Top;
-            pnlSubReports.Location = new Point(0, 678);
+            pnlSubReports.Location = new Point(0, 755);
             pnlSubReports.Margin = new Padding(5);
             pnlSubReports.Name = "pnlSubReports";
             pnlSubReports.Padding = new Padding(5);
-            pnlSubReports.Size = new Size(200, 91);
+            pnlSubReports.Size = new Size(183, 91);
             pnlSubReports.TabIndex = 10;
             // 
             // btnSalesRep
@@ -107,7 +109,7 @@
             btnSalesRep.Location = new Point(5, 47);
             btnSalesRep.Name = "btnSalesRep";
             btnSalesRep.Padding = new Padding(25, 0, 0, 0);
-            btnSalesRep.Size = new Size(190, 40);
+            btnSalesRep.Size = new Size(170, 40);
             btnSalesRep.TabIndex = 1;
             btnSalesRep.Text = "Sales Report";
             btnSalesRep.TextAlign = ContentAlignment.MiddleLeft;
@@ -124,7 +126,7 @@
             btnInvRep.Location = new Point(5, 5);
             btnInvRep.Name = "btnInvRep";
             btnInvRep.Padding = new Padding(25, 0, 0, 0);
-            btnInvRep.Size = new Size(190, 40);
+            btnInvRep.Size = new Size(173, 40);
             btnInvRep.TabIndex = 0;
             btnInvRep.Text = "Inventory Reports";
             btnInvRep.TextAlign = ContentAlignment.MiddleLeft;
@@ -141,11 +143,11 @@
             btnReports.ForeColor = SystemColors.Control;
             btnReports.Image = (Image)resources.GetObject("btnReports.Image");
             btnReports.ImageAlign = ContentAlignment.MiddleLeft;
-            btnReports.Location = new Point(0, 633);
+            btnReports.Location = new Point(0, 710);
             btnReports.Margin = new Padding(5);
             btnReports.Name = "btnReports";
             btnReports.Padding = new Padding(5);
-            btnReports.Size = new Size(200, 45);
+            btnReports.Size = new Size(183, 45);
             btnReports.TabIndex = 9;
             btnReports.Text = " Reports";
             btnReports.TextAlign = ContentAlignment.MiddleLeft;
@@ -156,31 +158,68 @@
             // pnlSubSuppliers
             // 
             pnlSubSuppliers.BackColor = Color.FromArgb(163, 103, 177);
-            pnlSubSuppliers.Controls.Add(btnManageSup);
+            pnlSubSuppliers.Controls.Add(btnViewSup);
+            pnlSubSuppliers.Controls.Add(btnUpdateSup);
+            pnlSubSuppliers.Controls.Add(btnDeleteSup);
             pnlSubSuppliers.Controls.Add(btnAddSup);
             pnlSubSuppliers.Dock = DockStyle.Top;
             pnlSubSuppliers.Location = new Point(0, 539);
             pnlSubSuppliers.Margin = new Padding(5);
             pnlSubSuppliers.Name = "pnlSubSuppliers";
             pnlSubSuppliers.Padding = new Padding(5);
-            pnlSubSuppliers.Size = new Size(200, 94);
+            pnlSubSuppliers.Size = new Size(183, 171);
             pnlSubSuppliers.TabIndex = 8;
             // 
-            // btnManageSup
+            // btnViewSup
             // 
-            btnManageSup.BackColor = Color.FromArgb(163, 103, 177);
-            btnManageSup.FlatAppearance.BorderSize = 0;
-            btnManageSup.FlatStyle = FlatStyle.Flat;
-            btnManageSup.ForeColor = SystemColors.Control;
-            btnManageSup.Location = new Point(5, 47);
-            btnManageSup.Name = "btnManageSup";
-            btnManageSup.Padding = new Padding(25, 0, 0, 0);
-            btnManageSup.Size = new Size(190, 40);
-            btnManageSup.TabIndex = 1;
-            btnManageSup.Text = "Manage Suppliers";
-            btnManageSup.TextAlign = ContentAlignment.MiddleLeft;
-            btnManageSup.UseVisualStyleBackColor = false;
-            btnManageSup.Click += btnManageSup_Click;
+            btnViewSup.BackColor = Color.FromArgb(163, 103, 177);
+            btnViewSup.Dock = DockStyle.Top;
+            btnViewSup.FlatAppearance.BorderSize = 0;
+            btnViewSup.FlatStyle = FlatStyle.Flat;
+            btnViewSup.ForeColor = SystemColors.Control;
+            btnViewSup.Location = new Point(5, 125);
+            btnViewSup.Name = "btnViewSup";
+            btnViewSup.Padding = new Padding(25, 0, 0, 0);
+            btnViewSup.Size = new Size(173, 40);
+            btnViewSup.TabIndex = 4;
+            btnViewSup.Text = "View Suppliers";
+            btnViewSup.TextAlign = ContentAlignment.MiddleLeft;
+            btnViewSup.UseVisualStyleBackColor = false;
+            btnViewSup.Click += btnViewSup_Click;
+            // 
+            // btnUpdateSup
+            // 
+            btnUpdateSup.BackColor = Color.FromArgb(163, 103, 177);
+            btnUpdateSup.Dock = DockStyle.Top;
+            btnUpdateSup.FlatAppearance.BorderSize = 0;
+            btnUpdateSup.FlatStyle = FlatStyle.Flat;
+            btnUpdateSup.ForeColor = SystemColors.Control;
+            btnUpdateSup.Location = new Point(5, 85);
+            btnUpdateSup.Name = "btnUpdateSup";
+            btnUpdateSup.Padding = new Padding(25, 0, 0, 0);
+            btnUpdateSup.Size = new Size(173, 40);
+            btnUpdateSup.TabIndex = 3;
+            btnUpdateSup.Text = "Update Suppliers";
+            btnUpdateSup.TextAlign = ContentAlignment.MiddleLeft;
+            btnUpdateSup.UseVisualStyleBackColor = false;
+            btnUpdateSup.Click += btnUpdateSup_Click;
+            // 
+            // btnDeleteSup
+            // 
+            btnDeleteSup.BackColor = Color.FromArgb(163, 103, 177);
+            btnDeleteSup.Dock = DockStyle.Top;
+            btnDeleteSup.FlatAppearance.BorderSize = 0;
+            btnDeleteSup.FlatStyle = FlatStyle.Flat;
+            btnDeleteSup.ForeColor = SystemColors.Control;
+            btnDeleteSup.Location = new Point(5, 45);
+            btnDeleteSup.Name = "btnDeleteSup";
+            btnDeleteSup.Padding = new Padding(25, 0, 0, 0);
+            btnDeleteSup.Size = new Size(173, 40);
+            btnDeleteSup.TabIndex = 2;
+            btnDeleteSup.Text = "Delete Suppliers";
+            btnDeleteSup.TextAlign = ContentAlignment.MiddleLeft;
+            btnDeleteSup.UseVisualStyleBackColor = false;
+            btnDeleteSup.Click += btnDeleteSup_Click;
             // 
             // btnAddSup
             // 
@@ -192,7 +231,7 @@
             btnAddSup.Location = new Point(5, 5);
             btnAddSup.Name = "btnAddSup";
             btnAddSup.Padding = new Padding(25, 0, 0, 0);
-            btnAddSup.Size = new Size(190, 40);
+            btnAddSup.Size = new Size(173, 40);
             btnAddSup.TabIndex = 0;
             btnAddSup.Text = "Add Suppliers";
             btnAddSup.TextAlign = ContentAlignment.MiddleLeft;
@@ -213,7 +252,7 @@
             btnSuppliers.Margin = new Padding(5);
             btnSuppliers.Name = "btnSuppliers";
             btnSuppliers.Padding = new Padding(5);
-            btnSuppliers.Size = new Size(200, 45);
+            btnSuppliers.Size = new Size(183, 45);
             btnSuppliers.TabIndex = 7;
             btnSuppliers.Text = " Suppliers";
             btnSuppliers.TextAlign = ContentAlignment.MiddleLeft;
@@ -232,7 +271,7 @@
             pnlSubOrders.Margin = new Padding(5);
             pnlSubOrders.Name = "pnlSubOrders";
             pnlSubOrders.Padding = new Padding(5);
-            pnlSubOrders.Size = new Size(200, 133);
+            pnlSubOrders.Size = new Size(183, 133);
             pnlSubOrders.TabIndex = 6;
             // 
             // btnOrderHistory
@@ -244,7 +283,7 @@
             btnOrderHistory.Location = new Point(5, 89);
             btnOrderHistory.Name = "btnOrderHistory";
             btnOrderHistory.Padding = new Padding(25, 0, 0, 0);
-            btnOrderHistory.Size = new Size(190, 40);
+            btnOrderHistory.Size = new Size(173, 40);
             btnOrderHistory.TabIndex = 2;
             btnOrderHistory.Text = "Order History";
             btnOrderHistory.TextAlign = ContentAlignment.MiddleLeft;
@@ -260,7 +299,7 @@
             btnViewOrders.Location = new Point(5, 47);
             btnViewOrders.Name = "btnViewOrders";
             btnViewOrders.Padding = new Padding(25, 0, 0, 0);
-            btnViewOrders.Size = new Size(190, 40);
+            btnViewOrders.Size = new Size(173, 40);
             btnViewOrders.TabIndex = 1;
             btnViewOrders.Text = "View Orders";
             btnViewOrders.TextAlign = ContentAlignment.MiddleLeft;
@@ -277,7 +316,7 @@
             btnPlaceOrder.Location = new Point(5, 5);
             btnPlaceOrder.Name = "btnPlaceOrder";
             btnPlaceOrder.Padding = new Padding(25, 0, 0, 0);
-            btnPlaceOrder.Size = new Size(190, 40);
+            btnPlaceOrder.Size = new Size(173, 40);
             btnPlaceOrder.TabIndex = 0;
             btnPlaceOrder.Text = "Place Order";
             btnPlaceOrder.TextAlign = ContentAlignment.MiddleLeft;
@@ -298,7 +337,7 @@
             btnOrders.Margin = new Padding(5);
             btnOrders.Name = "btnOrders";
             btnOrders.Padding = new Padding(5);
-            btnOrders.Size = new Size(200, 45);
+            btnOrders.Size = new Size(183, 45);
             btnOrders.TabIndex = 5;
             btnOrders.Text = " Orders";
             btnOrders.TextAlign = ContentAlignment.MiddleLeft;
@@ -318,7 +357,7 @@
             pnlSubInventory.Margin = new Padding(5);
             pnlSubInventory.Name = "pnlSubInventory";
             pnlSubInventory.Padding = new Padding(5);
-            pnlSubInventory.Size = new Size(200, 176);
+            pnlSubInventory.Size = new Size(183, 176);
             pnlSubInventory.TabIndex = 4;
             // 
             // btnViewInv
@@ -330,7 +369,7 @@
             btnViewInv.Location = new Point(5, 131);
             btnViewInv.Name = "btnViewInv";
             btnViewInv.Padding = new Padding(25, 0, 0, 0);
-            btnViewInv.Size = new Size(190, 40);
+            btnViewInv.Size = new Size(173, 40);
             btnViewInv.TabIndex = 3;
             btnViewInv.Text = "View Inventory";
             btnViewInv.TextAlign = ContentAlignment.MiddleLeft;
@@ -346,7 +385,7 @@
             btnUpdateInv.Location = new Point(5, 89);
             btnUpdateInv.Name = "btnUpdateInv";
             btnUpdateInv.Padding = new Padding(25, 0, 0, 0);
-            btnUpdateInv.Size = new Size(190, 40);
+            btnUpdateInv.Size = new Size(173, 40);
             btnUpdateInv.TabIndex = 2;
             btnUpdateInv.Text = "Update Inventory";
             btnUpdateInv.TextAlign = ContentAlignment.MiddleLeft;
@@ -362,7 +401,7 @@
             btnDeleteItem.Location = new Point(5, 47);
             btnDeleteItem.Name = "btnDeleteItem";
             btnDeleteItem.Padding = new Padding(25, 0, 0, 0);
-            btnDeleteItem.Size = new Size(190, 40);
+            btnDeleteItem.Size = new Size(173, 40);
             btnDeleteItem.TabIndex = 1;
             btnDeleteItem.Text = "Delete Items";
             btnDeleteItem.TextAlign = ContentAlignment.MiddleLeft;
@@ -379,7 +418,7 @@
             btnAddItem.Location = new Point(5, 5);
             btnAddItem.Name = "btnAddItem";
             btnAddItem.Padding = new Padding(25, 0, 0, 0);
-            btnAddItem.Size = new Size(190, 40);
+            btnAddItem.Size = new Size(173, 40);
             btnAddItem.TabIndex = 0;
             btnAddItem.Text = "Add Items";
             btnAddItem.TextAlign = ContentAlignment.MiddleLeft;
@@ -400,7 +439,7 @@
             btnInventory.Margin = new Padding(5);
             btnInventory.Name = "btnInventory";
             btnInventory.Padding = new Padding(5);
-            btnInventory.Size = new Size(200, 45);
+            btnInventory.Size = new Size(183, 45);
             btnInventory.TabIndex = 3;
             btnInventory.Text = " Inventory";
             btnInventory.TextAlign = ContentAlignment.MiddleLeft;
@@ -423,7 +462,7 @@
             btnDashboard.Margin = new Padding(5);
             btnDashboard.Name = "btnDashboard";
             btnDashboard.Padding = new Padding(5);
-            btnDashboard.Size = new Size(200, 45);
+            btnDashboard.Size = new Size(183, 45);
             btnDashboard.TabIndex = 1;
             btnDashboard.Text = " Dashboard";
             btnDashboard.TextAlign = ContentAlignment.MiddleLeft;
@@ -438,7 +477,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(10);
             panel1.Name = "panel1";
-            panel1.Size = new Size(200, 50);
+            panel1.Size = new Size(183, 50);
             panel1.TabIndex = 0;
             // 
             // label1
@@ -449,7 +488,7 @@
             label1.ForeColor = Color.FromArgb(163, 103, 177);
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(200, 50);
+            label1.Size = new Size(183, 50);
             label1.TabIndex = 0;
             label1.Text = "InventoHub";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -520,10 +559,12 @@
         private Button btnInvRep;
         private Button btnReports;
         private Panel pnlSubSuppliers;
-        private Button btnManageSup;
         private Button btnAddSup;
         private Button btnSuppliers;
         private Label label1;
         private Panel pnlChildPage;
+        private Button btnDeleteSup;
+        private Button btnUpdateSup;
+        private Button btnViewSup;
     }
 }
