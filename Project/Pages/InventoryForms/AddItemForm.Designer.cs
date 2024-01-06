@@ -1,6 +1,6 @@
 ﻿namespace Project
 {
-    partial class InventoryAddItemForm
+    partial class AddItemForm
     {
         /// <summary>
         /// Required designer variable.

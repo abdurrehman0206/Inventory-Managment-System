@@ -10,9 +10,9 @@ using System.Windows.Forms;
 using System.Drawing;
 namespace Project
 {
-    public partial class InventoryAddItemForm : Form
+    public partial class AddItemForm : Form
     {
-        public InventoryAddItemForm()
+        public AddItemForm()
         {
             InitializeComponent();
 
