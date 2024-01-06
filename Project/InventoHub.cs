@@ -1,3 +1,5 @@
+using Project.InventoryForms;
+
 namespace Project
 {
     public partial class InventoHub : Form
@@ -123,16 +125,19 @@ namespace Project
         private void btnDeleteItem_Click(object sender, EventArgs e)
         {
             HideSubMenu();
+            OpenPage(new DeleteItemForm());
         }
 
         private void btnUpdateInv_Click(object sender, EventArgs e)
         {
             HideSubMenu();
+            OpenPage(new UpdateInventoryForm());
         }
 
         private void btnViewInv_Click(object sender, EventArgs e)
         {
             HideSubMenu();
+            OpenPage(new ViewInventoryForm());
         }
 
         private void btnPlaceOrder_Click(object sender, EventArgs e)

@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "UpdateInventory";
+            label1 = new Label();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.BackColor = Color.FromArgb(57, 36, 103);
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.Control;
+            label1.Location = new Point(0, -1);
+            label1.Name = "label1";
+            label1.Size = new Size(803, 50);
+            label1.TabIndex = 0;
+            label1.Text = "Update Item";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // UpdateInventoryForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(label1);
+            Name = "UpdateInventoryForm";
+            Text = "UpdateInventory";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Label label1;
     }
 }
