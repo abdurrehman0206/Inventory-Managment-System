@@ -116,6 +116,7 @@ namespace Project
         private void btnAddItem_Click(object sender, EventArgs e)
         {
             HideSubMenu();
+            OpenPage(new InventoryAddItemForm());
 
         }
 
