@@ -1,5 +1,7 @@
 using Project.InventoryForms;
-
+using Project.Pages.OrdersForms;
+using Project.Pages.SuppliersForms;
+using Project.Pages.ReportsForms;
 namespace Project
 {
     public partial class InventoHub : Form
@@ -151,45 +153,54 @@ namespace Project
         private void btnPlaceOrder_Click(object sender, EventArgs e)
         {
             HideSubMenu();
+            OpenPage(new PlaceOrderForm());
         }
 
         private void btnViewOrders_Click(object sender, EventArgs e)
         {
             HideSubMenu();
+            OpenPage(new ViewOrdersForm());
         }
 
         private void btnOrderHistory_Click(object sender, EventArgs e)
         {
             HideSubMenu();
+            OpenPage(new OrderHistoryForm());
         }
 
         private void btnAddSup_Click(object sender, EventArgs e)
         {
             HideSubMenu();
+            OpenPage(new AddSupplierForm());
         }
         private void btnDeleteSup_Click(object sender, EventArgs e)
         {
             HideSubMenu();
+            OpenPage(new DeleteSupplierForm());
         }
 
         private void btnUpdateSup_Click(object sender, EventArgs e)
         {
             HideSubMenu();
+            OpenPage(new UpdateSupplierForm());
         }
 
         private void btnViewSup_Click(object sender, EventArgs e)
         {
             HideSubMenu();
+            OpenPage(new ViewSupplierForm());
         }
 
         private void btnInvRep_Click(object sender, EventArgs e)
         {
             HideSubMenu();
+            OpenPage(new InventoryReportForm());
         }
 
         private void btnSalesRep_Click(object sender, EventArgs e)
         {
             HideSubMenu();
+            OpenPage(new SaleReportForm());
         }
 
 

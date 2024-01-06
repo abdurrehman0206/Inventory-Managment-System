@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "AddSupplierForm";
+            addSupplierFormHeader = new Label();
+            SuspendLayout();
+            // 
+            // addSupplierFormHeader
+            // 
+            addSupplierFormHeader.BackColor = Color.FromArgb(57, 36, 103);
+            addSupplierFormHeader.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            addSupplierFormHeader.ForeColor = SystemColors.Control;
+            addSupplierFormHeader.Location = new Point(-2, -1);
+            addSupplierFormHeader.Name = "addSupplierFormHeader";
+            addSupplierFormHeader.Size = new Size(801, 50);
+            addSupplierFormHeader.TabIndex = 0;
+            addSupplierFormHeader.Text = "Add Supplier";
+            addSupplierFormHeader.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // AddSupplierForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(addSupplierFormHeader);
+            Name = "AddSupplierForm";
+            Text = "AddSupplierForm";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Label addSupplierFormHeader;
     }
 }

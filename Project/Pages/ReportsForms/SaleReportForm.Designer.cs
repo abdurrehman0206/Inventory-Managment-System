@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "SaleReportForm";
+            saleReportFormHeader = new Label();
+            SuspendLayout();
+            // 
+            // saleReportFormHeader
+            // 
+            saleReportFormHeader.BackColor = Color.FromArgb(57, 36, 103);
+            saleReportFormHeader.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            saleReportFormHeader.ForeColor = SystemColors.Control;
+            saleReportFormHeader.Location = new Point(-2, -1);
+            saleReportFormHeader.Name = "saleReportFormHeader";
+            saleReportFormHeader.Size = new Size(805, 50);
+            saleReportFormHeader.TabIndex = 0;
+            saleReportFormHeader.Text = "Sales Report";
+            saleReportFormHeader.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // SaleReportForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(saleReportFormHeader);
+            Name = "SaleReportForm";
+            Text = "SaleReportForm";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Label saleReportFormHeader;
     }
 }

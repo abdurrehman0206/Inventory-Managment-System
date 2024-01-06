@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "OrderHistoryForm";
+            orderHistoryFormHeader = new Label();
+            SuspendLayout();
+            // 
+            // orderHistoryFormHeader
+            // 
+            orderHistoryFormHeader.BackColor = Color.FromArgb(57, 36, 103);
+            orderHistoryFormHeader.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            orderHistoryFormHeader.ForeColor = SystemColors.Control;
+            orderHistoryFormHeader.ImageAlign = ContentAlignment.MiddleRight;
+            orderHistoryFormHeader.Location = new Point(-2, -1);
+            orderHistoryFormHeader.Name = "orderHistoryFormHeader";
+            orderHistoryFormHeader.Size = new Size(807, 50);
+            orderHistoryFormHeader.TabIndex = 0;
+            orderHistoryFormHeader.Text = "Order History";
+            orderHistoryFormHeader.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // OrderHistoryForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(orderHistoryFormHeader);
+            Name = "OrderHistoryForm";
+            Text = "OrderHistoryForm";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Label orderHistoryFormHeader;
     }
 }

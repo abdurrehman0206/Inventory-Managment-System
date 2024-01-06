@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "DeleteSupplierForm";
+            deleteSupplierFormHeader = new Label();
+            SuspendLayout();
+            // 
+            // deleteSupplierFormHeader
+            // 
+            deleteSupplierFormHeader.BackColor = Color.FromArgb(57, 36, 103);
+            deleteSupplierFormHeader.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            deleteSupplierFormHeader.ForeColor = SystemColors.Control;
+            deleteSupplierFormHeader.Location = new Point(-2, -1);
+            deleteSupplierFormHeader.Name = "deleteSupplierFormHeader";
+            deleteSupplierFormHeader.Size = new Size(803, 50);
+            deleteSupplierFormHeader.TabIndex = 0;
+            deleteSupplierFormHeader.Text = "Delete Supplier";
+            deleteSupplierFormHeader.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // DeleteSupplierForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(deleteSupplierFormHeader);
+            Name = "DeleteSupplierForm";
+            Text = "DeleteSupplierForm";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Label deleteSupplierFormHeader;
     }
 }

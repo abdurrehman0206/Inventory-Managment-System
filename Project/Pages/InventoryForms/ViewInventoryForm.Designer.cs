@@ -36,7 +36,7 @@
             viewInventoryHeader.BackColor = Color.FromArgb(57, 36, 103);
             viewInventoryHeader.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             viewInventoryHeader.ForeColor = SystemColors.Control;
-            viewInventoryHeader.Location = new Point(-4, -2);
+            viewInventoryHeader.Location = new Point(-2, -1);
             viewInventoryHeader.Name = "viewInventoryHeader";
             viewInventoryHeader.Size = new Size(807, 50);
             viewInventoryHeader.TabIndex = 0;

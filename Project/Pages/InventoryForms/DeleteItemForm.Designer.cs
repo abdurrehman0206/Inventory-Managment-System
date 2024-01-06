@@ -36,7 +36,7 @@
             label1.BackColor = Color.FromArgb(57, 36, 103);
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(0, 1);
+            label1.Location = new Point(-2, -1);
             label1.Name = "label1";
             label1.Size = new Size(800, 50);
             label1.TabIndex = 0;

@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "InventoryReportForm";
+            inventoryReportHeader = new Label();
+            SuspendLayout();
+            // 
+            // inventoryReportHeader
+            // 
+            inventoryReportHeader.BackColor = Color.FromArgb(57, 36, 103);
+            inventoryReportHeader.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            inventoryReportHeader.ForeColor = SystemColors.Control;
+            inventoryReportHeader.Location = new Point(-2, -1);
+            inventoryReportHeader.Name = "inventoryReportHeader";
+            inventoryReportHeader.Size = new Size(804, 50);
+            inventoryReportHeader.TabIndex = 0;
+            inventoryReportHeader.Text = "Inventory Report";
+            inventoryReportHeader.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // InventoryReportForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(inventoryReportHeader);
+            Name = "InventoryReportForm";
+            Text = "InventoryReportForm";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Label inventoryReportHeader;
     }
 }
