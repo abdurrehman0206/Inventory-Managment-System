@@ -74,6 +74,7 @@ namespace Project
         private void itemDescRichTextBox_MouseClick(object sender, MouseEventArgs e)
         {
             itemDescRichTextBox.BorderStyle = BorderStyle.FixedSingle;
+            
         }
 
         private void itemDescRichTextBox_Leave(object sender, EventArgs e)
@@ -81,6 +82,6 @@ namespace Project
             itemDescRichTextBox.BorderStyle = BorderStyle.None;
         }
 
-      
+
     }
 }
