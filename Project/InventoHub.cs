@@ -71,6 +71,7 @@ namespace Project
             */
             activePage = childPage;
             DesignPage(childPage);
+         
         }
         private void SetActiveButton(Button btn)
         {
@@ -92,8 +93,8 @@ namespace Project
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             HideSubMenu();
-            OpenPage(new DashboardForm());
             SetActiveButton(btnDashboard);
+            OpenPage(new DashboardForm() );
         }
 
         private void btnInventory_Click(object sender, EventArgs e)
@@ -122,8 +123,8 @@ namespace Project
 
         private void btnAddItem_Click(object sender, EventArgs e)
         {
-            HideSubMenu();
             OpenPage(new AddItemForm());
+            HideSubMenu();
 
         }
 
