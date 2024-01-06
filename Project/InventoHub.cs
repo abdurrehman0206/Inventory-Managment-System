@@ -50,8 +50,6 @@ namespace Project
             childPage.FormBorderStyle = FormBorderStyle.None;
             childPage.Dock = DockStyle.Fill;
             childPage.BackColor = Color.GhostWhite;
-            childPage.BackColor = Color.FromArgb(195, 180, 228);
-            childPage.BackColor = Color.Lavender;
             pnlChildPage.Controls.Add(childPage);
             pnlChildPage.Tag = childPage;
             childPage.BringToFront();
@@ -77,7 +75,7 @@ namespace Project
             */
             activePage = childPage;
             DesignPage(childPage);
-
+         
         }
         private void SetActiveButton(Button btn)
         {
@@ -86,7 +84,7 @@ namespace Project
                 activeButton.BackColor = Color.FromArgb(57, 36, 103);
                 activeButton = btn;
                 btn.BackColor = Color.FromArgb(93, 53, 135);
-
+               
             }
             else
             {
@@ -100,7 +98,7 @@ namespace Project
         {
             HideSubMenu();
             SetActiveButton(btnDashboard);
-            OpenPage(new DashboardForm());
+            OpenPage(new DashboardForm() );
         }
 
         private void btnInventory_Click(object sender, EventArgs e)
@@ -161,7 +159,7 @@ namespace Project
         private void btnViewOrders_Click(object sender, EventArgs e)
         {
             HideSubMenu();
-            OpenPage(new ViewOrdersForm());
+            OpenPage(new lblViewOrder());
         }
 
         private void btnOrderHistory_Click(object sender, EventArgs e)

@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            placeOrderFormHeader = new Label();
+            lblPlaceOrder = new Label();
             SuspendLayout();
             // 
-            // placeOrderFormHeader
+            // lblPlaceOrder
             // 
-            placeOrderFormHeader.BackColor = Color.FromArgb(57, 36, 103);
-            placeOrderFormHeader.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            placeOrderFormHeader.ForeColor = SystemColors.Control;
-            placeOrderFormHeader.Location = new Point(-2, -1);
-            placeOrderFormHeader.Name = "placeOrderFormHeader";
-            placeOrderFormHeader.Size = new Size(800, 50);
-            placeOrderFormHeader.TabIndex = 0;
-            placeOrderFormHeader.Text = "Place Order";
-            placeOrderFormHeader.TextAlign = ContentAlignment.MiddleCenter;
+            lblPlaceOrder.BackColor = Color.FromArgb(57, 36, 103);
+            lblPlaceOrder.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblPlaceOrder.ForeColor = SystemColors.Control;
+            lblPlaceOrder.Location = new Point(0, 0);
+            lblPlaceOrder.Name = "lblPlaceOrder";
+            lblPlaceOrder.Size = new Size(800, 50);
+            lblPlaceOrder.TabIndex = 0;
+            lblPlaceOrder.Text = "Place Order";
+            lblPlaceOrder.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // PlaceOrderForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(placeOrderFormHeader);
+            ClientSize = new Size(784, 761);
+            Controls.Add(lblPlaceOrder);
             Name = "PlaceOrderForm";
             Text = "PlaceOrderForm";
             ResumeLayout(false);
@@ -56,6 +56,6 @@
 
         #endregion
 
-        private Label placeOrderFormHeader;
+        private Label lblPlaceOrder;
     }
 }

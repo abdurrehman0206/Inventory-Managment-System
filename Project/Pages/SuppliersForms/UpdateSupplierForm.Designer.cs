@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            updateSupplierFormHeader = new Label();
+            lblUpdateSup = new Label();
             SuspendLayout();
             // 
-            // updateSupplierFormHeader
+            // lblUpdateSup
             // 
-            updateSupplierFormHeader.BackColor = Color.FromArgb(57, 36, 103);
-            updateSupplierFormHeader.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            updateSupplierFormHeader.ForeColor = SystemColors.Control;
-            updateSupplierFormHeader.Location = new Point(-2, -1);
-            updateSupplierFormHeader.Margin = new Padding(0);
-            updateSupplierFormHeader.Name = "updateSupplierFormHeader";
-            updateSupplierFormHeader.Size = new Size(804, 50);
-            updateSupplierFormHeader.TabIndex = 0;
-            updateSupplierFormHeader.Text = "Update Supplier";
-            updateSupplierFormHeader.TextAlign = ContentAlignment.MiddleCenter;
+            lblUpdateSup.BackColor = Color.FromArgb(57, 36, 103);
+            lblUpdateSup.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblUpdateSup.ForeColor = SystemColors.Control;
+            lblUpdateSup.Location = new Point(0, 0);
+            lblUpdateSup.Margin = new Padding(0);
+            lblUpdateSup.Name = "lblUpdateSup";
+            lblUpdateSup.Size = new Size(800, 50);
+            lblUpdateSup.TabIndex = 0;
+            lblUpdateSup.Text = "Update Supplier";
+            lblUpdateSup.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // UpdateSupplierForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(updateSupplierFormHeader);
+            ClientSize = new Size(784, 761);
+            Controls.Add(lblUpdateSup);
             Name = "UpdateSupplierForm";
             Text = "UpdateSupplierForm";
             ResumeLayout(false);
@@ -57,6 +57,6 @@
 
         #endregion
 
-        private Label updateSupplierFormHeader;
+        private Label lblUpdateSup;
     }
 }

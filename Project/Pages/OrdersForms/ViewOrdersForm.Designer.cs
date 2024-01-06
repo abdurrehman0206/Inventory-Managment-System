@@ -1,6 +1,6 @@
 ﻿namespace Project.Pages.OrdersForms
 {
-    partial class ViewOrdersForm
+    partial class lblViewOrder
     {
         /// <summary>
         /// Required designer variable.
@@ -36,20 +36,20 @@
             viewOrderFormHeader.BackColor = Color.FromArgb(57, 36, 103);
             viewOrderFormHeader.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             viewOrderFormHeader.ForeColor = SystemColors.Control;
-            viewOrderFormHeader.Location = new Point(-2, -1);
+            viewOrderFormHeader.Location = new Point(0, 0);
             viewOrderFormHeader.Name = "viewOrderFormHeader";
-            viewOrderFormHeader.Size = new Size(803, 50);
+            viewOrderFormHeader.Size = new Size(800, 50);
             viewOrderFormHeader.TabIndex = 0;
             viewOrderFormHeader.Text = "Order Info";
             viewOrderFormHeader.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // ViewOrdersForm
+            // lblViewOrder
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(784, 761);
             Controls.Add(viewOrderFormHeader);
-            Name = "ViewOrdersForm";
+            Name = "lblViewOrder";
             Text = "ViewOrdersForm";
             ResumeLayout(false);
         }

@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            viewSupplierFormHeader = new Label();
+            lblSupInfo = new Label();
             SuspendLayout();
             // 
-            // viewSupplierFormHeader
+            // lblSupInfo
             // 
-            viewSupplierFormHeader.BackColor = Color.FromArgb(57, 36, 103);
-            viewSupplierFormHeader.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            viewSupplierFormHeader.ForeColor = SystemColors.Control;
-            viewSupplierFormHeader.Location = new Point(-2, -1);
-            viewSupplierFormHeader.Name = "viewSupplierFormHeader";
-            viewSupplierFormHeader.Size = new Size(801, 50);
-            viewSupplierFormHeader.TabIndex = 0;
-            viewSupplierFormHeader.Text = "Supplier Info";
-            viewSupplierFormHeader.TextAlign = ContentAlignment.MiddleCenter;
+            lblSupInfo.BackColor = Color.FromArgb(57, 36, 103);
+            lblSupInfo.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSupInfo.ForeColor = SystemColors.Control;
+            lblSupInfo.Location = new Point(0, 0);
+            lblSupInfo.Name = "lblSupInfo";
+            lblSupInfo.Size = new Size(800, 50);
+            lblSupInfo.TabIndex = 0;
+            lblSupInfo.Text = "Supplier Info";
+            lblSupInfo.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // ViewSupplierForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(viewSupplierFormHeader);
+            ClientSize = new Size(784, 761);
+            Controls.Add(lblSupInfo);
             Name = "ViewSupplierForm";
             Text = "ViewSupplierForm";
             ResumeLayout(false);
@@ -56,6 +56,6 @@
 
         #endregion
 
-        private Label viewSupplierFormHeader;
+        private Label lblSupInfo;
     }
 }

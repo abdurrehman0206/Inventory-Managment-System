@@ -19,69 +19,69 @@ namespace Project
         }
 
         //itemName Events
-        private void itemNameTextField_MouseClick(object sender, MouseEventArgs e)
+        private void tfItemName_MouseClick(object sender, MouseEventArgs e)
         {
             itemNamePanel.BorderStyle = BorderStyle.FixedSingle;
         }
 
-        private void itemNameTextField_Leave(object sender, EventArgs e)
+        private void tfItemName_Leave(object sender, EventArgs e)
         {
             itemNamePanel.BorderStyle = BorderStyle.None;
         }
 
         //itemCategory Events
-        private void itemCategoryTextField_MouseClick(object sender, MouseEventArgs e)
+        private void tfItemCat_MouseClick(object sender, MouseEventArgs e)
         {
-            itemCategoryPanel.BorderStyle = BorderStyle.FixedSingle;
+            pnlItemCategory.BorderStyle = BorderStyle.FixedSingle;
         }
 
-        private void itemCategoryTextField_Leave(object sender, EventArgs e)
+        private void tfItemCat_Leave(object sender, EventArgs e)
         {
-            itemCategoryPanel.BorderStyle = BorderStyle.None;
+            pnlItemCategory.BorderStyle = BorderStyle.None;
         }
 
         //itemPrice Events
 
-        private void itemPriceTextField_MouseClick(object sender, MouseEventArgs e)
+        private void tfItemPrice_MouseClick(object sender, MouseEventArgs e)
         {
             itemPricePanel.BorderStyle = BorderStyle.FixedSingle;
         }
 
-        private void itemPriceTextField_Leave(object sender, EventArgs e)
+        private void tfItemPrice_Leave(object sender, EventArgs e)
         {
             itemPricePanel.BorderStyle = BorderStyle.None;
         }
-        private void itemPriceTextField_TextChanged(object sender, EventArgs e)
+        private void tfItemPrice_TextChanged(object sender, EventArgs e)
         {
-            itemPriceTextField.Text = new string(itemPriceTextField.Text.Where(char.IsDigit).ToArray());
+            tfItemPrice.Text = new string(tfItemPrice.Text.Where(char.IsDigit).ToArray());
         }
         //itemQuantity Events
-        private void itemQuantityTextField_MouseClick(object sender, MouseEventArgs e)
+        private void tfItemQuan_MouseClick(object sender, MouseEventArgs e)
         {
-            itemQuantityPanel.BorderStyle = BorderStyle.FixedSingle;
+            pnlItemQuantity.BorderStyle = BorderStyle.FixedSingle;
         }
 
-        private void itemQuantityTextField_Leave(object sender, EventArgs e)
+        private void tfItemQuan_Leave(object sender, EventArgs e)
         {
-            itemQuantityPanel.BorderStyle = BorderStyle.None;
+            pnlItemQuantity.BorderStyle = BorderStyle.None;
         }
-        private void itemQuantityTextField_TextChanged(object sender, EventArgs e)
+        private void tfItemQuan_TextChanged(object sender, EventArgs e)
         {
-            itemQuantityTextField.Text = new string(itemQuantityTextField.Text.Where(char.IsDigit).ToArray());
+            tfItemQuan.Text = new string(tfItemQuan.Text.Where(char.IsDigit).ToArray());
         }
 
         //itemDescription Events
-        private void itemDescRichTextBox_MouseClick(object sender, MouseEventArgs e)
+        private void rtbItemDesc_MouseClick(object sender, MouseEventArgs e)
         {
-            itemDescRichTextBox.BorderStyle = BorderStyle.FixedSingle;
-            
+            rtbItemDesc.BorderStyle = BorderStyle.FixedSingle;
+
         }
 
-        private void itemDescRichTextBox_Leave(object sender, EventArgs e)
+        private void rtbItemDesc_Leave(object sender, EventArgs e)
         {
-            itemDescRichTextBox.BorderStyle = BorderStyle.None;
+            rtbItemDesc.BorderStyle = BorderStyle.None;
         }
 
-
+        
     }
 }

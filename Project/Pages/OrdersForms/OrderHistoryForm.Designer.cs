@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            orderHistoryFormHeader = new Label();
+            lblOrderHistory = new Label();
             SuspendLayout();
             // 
-            // orderHistoryFormHeader
+            // lblOrderHistory
             // 
-            orderHistoryFormHeader.BackColor = Color.FromArgb(57, 36, 103);
-            orderHistoryFormHeader.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            orderHistoryFormHeader.ForeColor = SystemColors.Control;
-            orderHistoryFormHeader.ImageAlign = ContentAlignment.MiddleRight;
-            orderHistoryFormHeader.Location = new Point(-2, -1);
-            orderHistoryFormHeader.Name = "orderHistoryFormHeader";
-            orderHistoryFormHeader.Size = new Size(807, 50);
-            orderHistoryFormHeader.TabIndex = 0;
-            orderHistoryFormHeader.Text = "Order History";
-            orderHistoryFormHeader.TextAlign = ContentAlignment.MiddleCenter;
+            lblOrderHistory.BackColor = Color.FromArgb(57, 36, 103);
+            lblOrderHistory.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblOrderHistory.ForeColor = SystemColors.Control;
+            lblOrderHistory.ImageAlign = ContentAlignment.MiddleRight;
+            lblOrderHistory.Location = new Point(0, 0);
+            lblOrderHistory.Name = "lblOrderHistory";
+            lblOrderHistory.Size = new Size(800, 50);
+            lblOrderHistory.TabIndex = 0;
+            lblOrderHistory.Text = "Order History";
+            lblOrderHistory.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // OrderHistoryForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(orderHistoryFormHeader);
+            ClientSize = new Size(784, 761);
+            Controls.Add(lblOrderHistory);
             Name = "OrderHistoryForm";
             Text = "OrderHistoryForm";
             ResumeLayout(false);
@@ -57,6 +57,6 @@
 
         #endregion
 
-        private Label orderHistoryFormHeader;
+        private Label lblOrderHistory;
     }
 }

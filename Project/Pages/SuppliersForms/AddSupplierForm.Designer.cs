@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            addSupplierFormHeader = new Label();
+            lblAddSup = new Label();
             SuspendLayout();
             // 
-            // addSupplierFormHeader
+            // lblAddSup
             // 
-            addSupplierFormHeader.BackColor = Color.FromArgb(57, 36, 103);
-            addSupplierFormHeader.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            addSupplierFormHeader.ForeColor = SystemColors.Control;
-            addSupplierFormHeader.Location = new Point(-2, -1);
-            addSupplierFormHeader.Name = "addSupplierFormHeader";
-            addSupplierFormHeader.Size = new Size(801, 50);
-            addSupplierFormHeader.TabIndex = 0;
-            addSupplierFormHeader.Text = "Add Supplier";
-            addSupplierFormHeader.TextAlign = ContentAlignment.MiddleCenter;
+            lblAddSup.BackColor = Color.FromArgb(57, 36, 103);
+            lblAddSup.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblAddSup.ForeColor = SystemColors.Control;
+            lblAddSup.Location = new Point(0, 0);
+            lblAddSup.Name = "lblAddSup";
+            lblAddSup.Size = new Size(800, 50);
+            lblAddSup.TabIndex = 0;
+            lblAddSup.Text = "Add Supplier";
+            lblAddSup.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // AddSupplierForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(addSupplierFormHeader);
+            ClientSize = new Size(784, 761);
+            Controls.Add(lblAddSup);
             Name = "AddSupplierForm";
             Text = "AddSupplierForm";
             ResumeLayout(false);
@@ -56,6 +56,6 @@
 
         #endregion
 
-        private Label addSupplierFormHeader;
+        private Label lblAddSup;
     }
 }

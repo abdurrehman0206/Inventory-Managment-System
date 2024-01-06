@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            inventoryReportHeader = new Label();
+            lblInvRepo = new Label();
             SuspendLayout();
             // 
-            // inventoryReportHeader
+            // lblInvRepo
             // 
-            inventoryReportHeader.BackColor = Color.FromArgb(57, 36, 103);
-            inventoryReportHeader.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            inventoryReportHeader.ForeColor = SystemColors.Control;
-            inventoryReportHeader.Location = new Point(-2, -1);
-            inventoryReportHeader.Name = "inventoryReportHeader";
-            inventoryReportHeader.Size = new Size(804, 50);
-            inventoryReportHeader.TabIndex = 0;
-            inventoryReportHeader.Text = "Inventory Report";
-            inventoryReportHeader.TextAlign = ContentAlignment.MiddleCenter;
+            lblInvRepo.BackColor = Color.FromArgb(57, 36, 103);
+            lblInvRepo.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblInvRepo.ForeColor = SystemColors.Control;
+            lblInvRepo.Location = new Point(0, 0);
+            lblInvRepo.Name = "lblInvRepo";
+            lblInvRepo.Size = new Size(800, 50);
+            lblInvRepo.TabIndex = 0;
+            lblInvRepo.Text = "Inventory Report";
+            lblInvRepo.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // InventoryReportForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(inventoryReportHeader);
+            ClientSize = new Size(784, 761);
+            Controls.Add(lblInvRepo);
             Name = "InventoryReportForm";
             Text = "InventoryReportForm";
             ResumeLayout(false);
@@ -56,6 +56,6 @@
 
         #endregion
 
-        private Label inventoryReportHeader;
+        private Label lblInvRepo;
     }
 }

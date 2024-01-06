@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            deleteSupplierFormHeader = new Label();
+            lblDelSup = new Label();
             SuspendLayout();
             // 
-            // deleteSupplierFormHeader
+            // lblDelSup
             // 
-            deleteSupplierFormHeader.BackColor = Color.FromArgb(57, 36, 103);
-            deleteSupplierFormHeader.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            deleteSupplierFormHeader.ForeColor = SystemColors.Control;
-            deleteSupplierFormHeader.Location = new Point(-2, -1);
-            deleteSupplierFormHeader.Name = "deleteSupplierFormHeader";
-            deleteSupplierFormHeader.Size = new Size(803, 50);
-            deleteSupplierFormHeader.TabIndex = 0;
-            deleteSupplierFormHeader.Text = "Delete Supplier";
-            deleteSupplierFormHeader.TextAlign = ContentAlignment.MiddleCenter;
+            lblDelSup.BackColor = Color.FromArgb(57, 36, 103);
+            lblDelSup.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblDelSup.ForeColor = SystemColors.Control;
+            lblDelSup.Location = new Point(0, 0);
+            lblDelSup.Name = "lblDelSup";
+            lblDelSup.Size = new Size(800, 50);
+            lblDelSup.TabIndex = 0;
+            lblDelSup.Text = "Delete Supplier";
+            lblDelSup.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // DeleteSupplierForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(deleteSupplierFormHeader);
+            ClientSize = new Size(784, 761);
+            Controls.Add(lblDelSup);
             Name = "DeleteSupplierForm";
             Text = "DeleteSupplierForm";
             ResumeLayout(false);
@@ -56,6 +56,6 @@
 
         #endregion
 
-        private Label deleteSupplierFormHeader;
+        private Label lblDelSup;
     }
 }

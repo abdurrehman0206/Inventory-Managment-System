@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            lblDelItem = new Label();
             SuspendLayout();
             // 
-            // label1
+            // lblDelItem
             // 
-            label1.BackColor = Color.FromArgb(57, 36, 103);
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(-2, -1);
-            label1.Name = "label1";
-            label1.Size = new Size(800, 50);
-            label1.TabIndex = 0;
-            label1.Text = "Delete Item";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
+            lblDelItem.BackColor = Color.FromArgb(57, 36, 103);
+            lblDelItem.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblDelItem.ForeColor = SystemColors.Control;
+            lblDelItem.Location = new Point(0, 0);
+            lblDelItem.Name = "lblDelItem";
+            lblDelItem.Size = new Size(800, 50);
+            lblDelItem.TabIndex = 0;
+            lblDelItem.Text = "Delete Item";
+            lblDelItem.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // DeleteItemForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label1);
+            ClientSize = new Size(784, 761);
+            Controls.Add(lblDelItem);
             Name = "DeleteItemForm";
             Text = "DeleteItemForm";
             ResumeLayout(false);
@@ -56,6 +56,6 @@
 
         #endregion
 
-        private Label label1;
+        private Label lblDelItem;
     }
 }
