@@ -51,7 +51,10 @@ namespace Project
         {
             itemPricePanel.BorderStyle = BorderStyle.None;
         }
-
+        private void itemPriceTextField_TextChanged(object sender, EventArgs e)
+        {
+            itemPriceTextField.Text = new string(itemPriceTextField.Text.Where(char.IsDigit).ToArray());
+        }
         //itemQuantity Events
         private void itemQuantityTextField_MouseClick(object sender, MouseEventArgs e)
         {
@@ -78,6 +81,6 @@ namespace Project
             itemDescRichTextBox.BorderStyle = BorderStyle.None;
         }
 
-        
+      
     }
 }

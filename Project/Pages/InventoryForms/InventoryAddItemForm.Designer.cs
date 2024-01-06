@@ -53,7 +53,7 @@
             // addItemHeader
             // 
             addItemHeader.BackColor = Color.FromArgb(57, 36, 103);
-            addItemHeader.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            addItemHeader.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             addItemHeader.ForeColor = SystemColors.Control;
             addItemHeader.Location = new Point(-2, -1);
             addItemHeader.Name = "addItemHeader";
@@ -163,6 +163,7 @@
             itemPriceTextField.Size = new Size(210, 16);
             itemPriceTextField.TabIndex = 5;
             itemPriceTextField.MouseClick += itemPriceTextField_MouseClick;
+            itemPriceTextField.TextChanged += itemPriceTextField_TextChanged;
             itemPriceTextField.Leave += itemPriceTextField_Leave;
             // 
             // itemQuantityLabel
