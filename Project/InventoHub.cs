@@ -1,4 +1,4 @@
-using Project.InventoryForms;
+using Project.Pages.InventoryForms;
 using Project.Pages.OrdersForms;
 using Project.Pages.SuppliersForms;
 using Project.Pages.ReportsForms;

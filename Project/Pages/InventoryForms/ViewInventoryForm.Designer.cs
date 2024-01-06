@@ -1,4 +1,4 @@
-﻿namespace Project.InventoryForms
+﻿namespace Project.Pages.InventoryForms
 {
     partial class ViewInventoryForm
     {
