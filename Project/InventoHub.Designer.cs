@@ -533,7 +533,7 @@
             MaximizeBox = false;
             Name = "InventoHub";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "InventoHub";
             panelSideNav.ResumeLayout(false);
             pnlSubReports.ResumeLayout(false);
             pnlSubSuppliers.ResumeLayout(false);

@@ -75,7 +75,7 @@ namespace Project
             */
             activePage = childPage;
             DesignPage(childPage);
-         
+
         }
         private void SetActiveButton(Button btn)
         {
@@ -84,7 +84,7 @@ namespace Project
                 activeButton.BackColor = Color.FromArgb(57, 36, 103);
                 activeButton = btn;
                 btn.BackColor = Color.FromArgb(93, 53, 135);
-               
+
             }
             else
             {
@@ -98,7 +98,7 @@ namespace Project
         {
             HideSubMenu();
             SetActiveButton(btnDashboard);
-            OpenPage(new DashboardForm() );
+            OpenPage(new DashboardForm());
         }
 
         private void btnInventory_Click(object sender, EventArgs e)

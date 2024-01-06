@@ -35,7 +35,6 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 800);
-            FormBorderStyle = FormBorderStyle.None;
             Name = "DashboardForm";
             Text = "DashboardForm";
             ResumeLayout(false);

@@ -47,8 +47,9 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(784, 761);
+            ClientSize = new Size(816, 839);
             Controls.Add(lblViewInv);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "ViewInventoryForm";
             Text = "ViewInventory";
             ResumeLayout(false);

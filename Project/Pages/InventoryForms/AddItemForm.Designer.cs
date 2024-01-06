@@ -262,7 +262,6 @@
             Controls.Add(lblItemName);
             Controls.Add(lblAddItem);
             Cursor = Cursors.Hand;
-            FormBorderStyle = FormBorderStyle.None;
             Name = "AddItemForm";
             Text = "InventoryAddItemForm";
             itemNamePanel.ResumeLayout(false);
