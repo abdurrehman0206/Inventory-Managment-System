@@ -93,7 +93,7 @@
             pnlSubReports.Controls.Add(btnSalesRep);
             pnlSubReports.Controls.Add(btnInvRep);
             pnlSubReports.Dock = DockStyle.Top;
-            pnlSubReports.Location = new Point(0, 755);
+            pnlSubReports.Location = new Point(0, 748);
             pnlSubReports.Margin = new Padding(5);
             pnlSubReports.Name = "pnlSubReports";
             pnlSubReports.Padding = new Padding(5);
@@ -103,13 +103,14 @@
             // btnSalesRep
             // 
             btnSalesRep.BackColor = Color.FromArgb(163, 103, 177);
+            btnSalesRep.Dock = DockStyle.Top;
             btnSalesRep.FlatAppearance.BorderSize = 0;
             btnSalesRep.FlatStyle = FlatStyle.Flat;
             btnSalesRep.ForeColor = SystemColors.Control;
-            btnSalesRep.Location = new Point(5, 47);
+            btnSalesRep.Location = new Point(5, 45);
             btnSalesRep.Name = "btnSalesRep";
             btnSalesRep.Padding = new Padding(25, 0, 0, 0);
-            btnSalesRep.Size = new Size(170, 40);
+            btnSalesRep.Size = new Size(173, 40);
             btnSalesRep.TabIndex = 1;
             btnSalesRep.Text = "Sales Report";
             btnSalesRep.TextAlign = ContentAlignment.MiddleLeft;
@@ -143,7 +144,7 @@
             btnReports.ForeColor = SystemColors.Control;
             btnReports.Image = (Image)resources.GetObject("btnReports.Image");
             btnReports.ImageAlign = ContentAlignment.MiddleLeft;
-            btnReports.Location = new Point(0, 710);
+            btnReports.Location = new Point(0, 703);
             btnReports.Margin = new Padding(5);
             btnReports.Name = "btnReports";
             btnReports.Padding = new Padding(5);
@@ -163,7 +164,7 @@
             pnlSubSuppliers.Controls.Add(btnDeleteSup);
             pnlSubSuppliers.Controls.Add(btnAddSup);
             pnlSubSuppliers.Dock = DockStyle.Top;
-            pnlSubSuppliers.Location = new Point(0, 539);
+            pnlSubSuppliers.Location = new Point(0, 532);
             pnlSubSuppliers.Margin = new Padding(5);
             pnlSubSuppliers.Name = "pnlSubSuppliers";
             pnlSubSuppliers.Padding = new Padding(5);
@@ -248,7 +249,7 @@
             btnSuppliers.ForeColor = SystemColors.Control;
             btnSuppliers.Image = (Image)resources.GetObject("btnSuppliers.Image");
             btnSuppliers.ImageAlign = ContentAlignment.MiddleLeft;
-            btnSuppliers.Location = new Point(0, 494);
+            btnSuppliers.Location = new Point(0, 487);
             btnSuppliers.Margin = new Padding(5);
             btnSuppliers.Name = "btnSuppliers";
             btnSuppliers.Padding = new Padding(5);
@@ -267,7 +268,7 @@
             pnlSubOrders.Controls.Add(btnViewOrders);
             pnlSubOrders.Controls.Add(btnPlaceOrder);
             pnlSubOrders.Dock = DockStyle.Top;
-            pnlSubOrders.Location = new Point(0, 361);
+            pnlSubOrders.Location = new Point(0, 354);
             pnlSubOrders.Margin = new Padding(5);
             pnlSubOrders.Name = "pnlSubOrders";
             pnlSubOrders.Padding = new Padding(5);
@@ -277,10 +278,11 @@
             // btnOrderHistory
             // 
             btnOrderHistory.BackColor = Color.FromArgb(163, 103, 177);
+            btnOrderHistory.Dock = DockStyle.Top;
             btnOrderHistory.FlatAppearance.BorderSize = 0;
             btnOrderHistory.FlatStyle = FlatStyle.Flat;
             btnOrderHistory.ForeColor = SystemColors.Control;
-            btnOrderHistory.Location = new Point(5, 89);
+            btnOrderHistory.Location = new Point(5, 85);
             btnOrderHistory.Name = "btnOrderHistory";
             btnOrderHistory.Padding = new Padding(25, 0, 0, 0);
             btnOrderHistory.Size = new Size(173, 40);
@@ -293,10 +295,11 @@
             // btnViewOrders
             // 
             btnViewOrders.BackColor = Color.FromArgb(163, 103, 177);
+            btnViewOrders.Dock = DockStyle.Top;
             btnViewOrders.FlatAppearance.BorderSize = 0;
             btnViewOrders.FlatStyle = FlatStyle.Flat;
             btnViewOrders.ForeColor = SystemColors.Control;
-            btnViewOrders.Location = new Point(5, 47);
+            btnViewOrders.Location = new Point(5, 45);
             btnViewOrders.Name = "btnViewOrders";
             btnViewOrders.Padding = new Padding(25, 0, 0, 0);
             btnViewOrders.Size = new Size(173, 40);
@@ -333,7 +336,7 @@
             btnOrders.ForeColor = SystemColors.Control;
             btnOrders.Image = (Image)resources.GetObject("btnOrders.Image");
             btnOrders.ImageAlign = ContentAlignment.MiddleLeft;
-            btnOrders.Location = new Point(0, 316);
+            btnOrders.Location = new Point(0, 309);
             btnOrders.Margin = new Padding(5);
             btnOrders.Name = "btnOrders";
             btnOrders.Padding = new Padding(5);
@@ -357,16 +360,17 @@
             pnlSubInventory.Margin = new Padding(5);
             pnlSubInventory.Name = "pnlSubInventory";
             pnlSubInventory.Padding = new Padding(5);
-            pnlSubInventory.Size = new Size(183, 176);
+            pnlSubInventory.Size = new Size(183, 169);
             pnlSubInventory.TabIndex = 4;
             // 
             // btnViewInv
             // 
             btnViewInv.BackColor = Color.FromArgb(163, 103, 177);
+            btnViewInv.Dock = DockStyle.Top;
             btnViewInv.FlatAppearance.BorderSize = 0;
             btnViewInv.FlatStyle = FlatStyle.Flat;
             btnViewInv.ForeColor = SystemColors.Control;
-            btnViewInv.Location = new Point(5, 131);
+            btnViewInv.Location = new Point(5, 125);
             btnViewInv.Name = "btnViewInv";
             btnViewInv.Padding = new Padding(25, 0, 0, 0);
             btnViewInv.Size = new Size(173, 40);
@@ -379,10 +383,11 @@
             // btnUpdateInv
             // 
             btnUpdateInv.BackColor = Color.FromArgb(163, 103, 177);
+            btnUpdateInv.Dock = DockStyle.Top;
             btnUpdateInv.FlatAppearance.BorderSize = 0;
             btnUpdateInv.FlatStyle = FlatStyle.Flat;
             btnUpdateInv.ForeColor = SystemColors.Control;
-            btnUpdateInv.Location = new Point(5, 89);
+            btnUpdateInv.Location = new Point(5, 85);
             btnUpdateInv.Name = "btnUpdateInv";
             btnUpdateInv.Padding = new Padding(25, 0, 0, 0);
             btnUpdateInv.Size = new Size(173, 40);
@@ -395,10 +400,11 @@
             // btnDeleteItem
             // 
             btnDeleteItem.BackColor = Color.FromArgb(163, 103, 177);
+            btnDeleteItem.Dock = DockStyle.Top;
             btnDeleteItem.FlatAppearance.BorderSize = 0;
             btnDeleteItem.FlatStyle = FlatStyle.Flat;
             btnDeleteItem.ForeColor = SystemColors.Control;
-            btnDeleteItem.Location = new Point(5, 47);
+            btnDeleteItem.Location = new Point(5, 45);
             btnDeleteItem.Name = "btnDeleteItem";
             btnDeleteItem.Padding = new Padding(25, 0, 0, 0);
             btnDeleteItem.Size = new Size(173, 40);
