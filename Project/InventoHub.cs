@@ -53,18 +53,24 @@ namespace Project
         }
         private void OpenPage(Form childPage)
         {
-            if (activePage != null)
-            {
-                activePage.Close();
-                activePage = null;
-            }
-            else
-            {
-                activePage = childPage;
-                DesignPage(childPage);
+            /* if(activePage == childPage)
+             {
 
+             }
+             else if (activePage != null)
+             {
+                 activePage.Close();
+                 activePage = null;
+             }
+             else
+             {
+                 activePage = childPage;
+                 DesignPage(childPage);
 
-            }
+             }
+            */
+            activePage = childPage;
+            DesignPage(childPage);
         }
         private void SetActiveButton(Button btn)
         {
@@ -73,6 +79,7 @@ namespace Project
                 activeButton.BackColor = Color.FromArgb(57, 36, 103);
                 activeButton = btn;
                 btn.BackColor = Color.FromArgb(93, 53, 135);
+               
             }
             else
             {
@@ -116,7 +123,7 @@ namespace Project
         private void btnAddItem_Click(object sender, EventArgs e)
         {
             HideSubMenu();
-            OpenPage(new InventoryAddItemForm());
+            OpenPage(new AddItemForm());
 
         }
 
