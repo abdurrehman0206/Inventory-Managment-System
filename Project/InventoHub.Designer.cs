@@ -531,6 +531,7 @@
             Controls.Add(pnlChildPage);
             Controls.Add(panelSideNav);
             MaximizeBox = false;
+            MinimumSize = new Size(1016, 839);
             Name = "InventoHub";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "InventoHub";
