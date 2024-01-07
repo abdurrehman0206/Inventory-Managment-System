@@ -39,7 +39,7 @@
             pnlEmail = new Panel();
             txtEmail = new TextBox();
             pnlAddress = new Panel();
-            txtAdress = new TextBox();
+            txtAddress = new TextBox();
             lblAddress = new Label();
             btnAdd = new Button();
             pnlName.SuspendLayout();
@@ -94,6 +94,8 @@
             txtName.PlaceholderText = "Name";
             txtName.Size = new Size(210, 16);
             txtName.TabIndex = 5;
+            txtName.MouseClick += txtName_MouseClick;
+            txtName.Leave += txtName_Leave;
             // 
             // lblNum
             // 
@@ -128,6 +130,8 @@
             txtNum.PlaceholderText = "Number";
             txtNum.Size = new Size(210, 16);
             txtNum.TabIndex = 5;
+            txtNum.MouseClick += txtNum_MouseClick;
+            txtNum.Leave += txtNum_Leave;
             // 
             // lblEmail
             // 
@@ -162,27 +166,32 @@
             txtEmail.PlaceholderText = "Email";
             txtEmail.Size = new Size(210, 16);
             txtEmail.TabIndex = 5;
+            txtEmail.MouseClick += txtEmail_MouseClick;
+            txtEmail.Leave += txtEmail_Leave;
+            txtEmail.Validating += txtEmail_Validating;
             // 
             // pnlAddress
             // 
             pnlAddress.Anchor = AnchorStyles.None;
             pnlAddress.BackColor = Color.FromArgb(225, 217, 242);
-            pnlAddress.Controls.Add(txtAdress);
+            pnlAddress.Controls.Add(txtAddress);
             pnlAddress.Location = new Point(497, 277);
             pnlAddress.Name = "pnlAddress";
             pnlAddress.Size = new Size(227, 40);
             pnlAddress.TabIndex = 13;
             // 
-            // txtAdress
+            // txtAddress
             // 
-            txtAdress.BackColor = Color.FromArgb(225, 217, 242);
-            txtAdress.BorderStyle = BorderStyle.None;
-            txtAdress.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txtAdress.Location = new Point(10, 12);
-            txtAdress.Name = "txtAdress";
-            txtAdress.PlaceholderText = "Address";
-            txtAdress.Size = new Size(210, 16);
-            txtAdress.TabIndex = 5;
+            txtAddress.BackColor = Color.FromArgb(225, 217, 242);
+            txtAddress.BorderStyle = BorderStyle.None;
+            txtAddress.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtAddress.Location = new Point(10, 12);
+            txtAddress.Name = "txtAddress";
+            txtAddress.PlaceholderText = "Address";
+            txtAddress.Size = new Size(210, 16);
+            txtAddress.TabIndex = 5;
+            txtAddress.MouseClick += txtAddress_MouseClick;
+            txtAddress.Leave += txtAddress_Leave;
             // 
             // lblAddress
             // 
@@ -214,6 +223,7 @@
             btnAdd.Tag = "";
             btnAdd.Text = "Add Supplier";
             btnAdd.UseVisualStyleBackColor = false;
+            btnAdd.Click += btnAdd_Click;
             // 
             // AddSupplierForm
             // 
@@ -257,7 +267,7 @@
         private Panel pnlEmail;
         private TextBox txtEmail;
         private Panel pnlAddress;
-        private TextBox txtAdress;
+        private TextBox txtAddress;
         private Label lblAddress;
         private Button btnAdd;
     }
