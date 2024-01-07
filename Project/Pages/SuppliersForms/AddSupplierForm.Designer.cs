@@ -131,6 +131,7 @@
             txtNum.Size = new Size(210, 16);
             txtNum.TabIndex = 5;
             txtNum.MouseClick += txtNum_MouseClick;
+            txtNum.TextChanged += txtNum_TextChanged;
             txtNum.Leave += txtNum_Leave;
             // 
             // lblEmail

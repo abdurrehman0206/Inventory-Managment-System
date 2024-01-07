@@ -104,6 +104,8 @@
             rtbItemDesc.Size = new Size(227, 184);
             rtbItemDesc.TabIndex = 40;
             rtbItemDesc.Text = "";
+            rtbItemDesc.MouseClick += rtbItemDesc_MouseClick;
+            rtbItemDesc.Leave += rtbItemDesc_Leave;
             // 
             // lblItemDesc
             // 
@@ -156,9 +158,12 @@
             txtItemQuan.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtItemQuan.Location = new Point(10, 12);
             txtItemQuan.Name = "txtItemQuan";
-            txtItemQuan.PlaceholderText = "Item Name";
+            txtItemQuan.PlaceholderText = "Quantity";
             txtItemQuan.Size = new Size(210, 16);
             txtItemQuan.TabIndex = 5;
+            txtItemQuan.MouseClick += txtItemQuan_MouseClick;
+            txtItemQuan.TextChanged += txtItemQuan_TextChanged;
+            txtItemQuan.Leave += txtItemQuan_Leave;
             // 
             // lblItemQuan
             // 
@@ -195,6 +200,9 @@
             txtItemPrice.PlaceholderText = "Price";
             txtItemPrice.Size = new Size(210, 16);
             txtItemPrice.TabIndex = 5;
+            txtItemPrice.MouseClick += txtItemPrice_MouseClick;
+            txtItemPrice.TextChanged += txtItemPrice_TextChanged;
+            txtItemPrice.Leave += txtItemPrice_Leave;
             // 
             // lblItemPrice
             // 
@@ -219,6 +227,7 @@
             pnlItemCategory.Name = "pnlItemCategory";
             pnlItemCategory.Size = new Size(227, 40);
             pnlItemCategory.TabIndex = 33;
+            pnlItemCategory.Leave += pnlItemCategory_Leave;
             // 
             // txtItemCat
             // 
@@ -230,6 +239,7 @@
             txtItemCat.PlaceholderText = "Category";
             txtItemCat.Size = new Size(210, 16);
             txtItemCat.TabIndex = 5;
+            txtItemCat.MouseClick += txtItemCat_MouseClick;
             // 
             // itemNamePanel
             // 
@@ -251,6 +261,8 @@
             txtItemName.PlaceholderText = "Name";
             txtItemName.Size = new Size(210, 16);
             txtItemName.TabIndex = 5;
+            txtItemName.MouseClick += txtItemName_MouseClick;
+            txtItemName.Leave += txtItemName_Leave;
             // 
             // lblItemCat
             // 
@@ -298,7 +310,7 @@
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
             dataGridViewCellStyle1.Padding = new Padding(5);
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(135, 104, 202);
             dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgvProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
@@ -326,6 +338,7 @@
             dgvProduct.RowTemplate.DefaultCellStyle.Padding = new Padding(5);
             dgvProduct.RowTemplate.Height = 30;
             dgvProduct.RowTemplate.ReadOnly = true;
+            dgvProduct.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvProduct.ShowEditingIcon = false;
             dgvProduct.Size = new Size(547, 750);
             dgvProduct.TabIndex = 29;

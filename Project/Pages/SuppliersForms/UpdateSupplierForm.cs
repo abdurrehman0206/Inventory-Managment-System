@@ -30,7 +30,7 @@ namespace Project.Pages.SuppliersForms
 
         }
 
-       
+
 
         private void UpdateSupplierForm_Load(object sender, EventArgs e)
         {
@@ -82,6 +82,48 @@ namespace Project.Pages.SuppliersForms
             txtEmail.Text = string.Empty;
             txtAddress.Text = string.Empty;
 
+        }
+
+
+        //txtFields Events
+        private void txtName_MouseClick(object sender, MouseEventArgs e)
+        {
+            pnlName.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void txtName_Leave(object sender, EventArgs e)
+        {
+            pnlName.BorderStyle = BorderStyle.None;
+        }
+
+        private void txtNum_MouseClick(object sender, MouseEventArgs e)
+        {
+            pnlNum.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void txtNum_Leave(object sender, EventArgs e)
+        {
+            pnlNum.BorderStyle = BorderStyle.None;
+        }
+
+        private void txtEmail_MouseClick(object sender, MouseEventArgs e)
+        {
+            pnlEmail.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void txtEmail_Leave(object sender, EventArgs e)
+        {
+            pnlEmail.BorderStyle = BorderStyle.None;
+        }
+
+        private void txtAddress_MouseClick(object sender, MouseEventArgs e)
+        {
+            pnlAddress.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void txtAddress_Leave(object sender, EventArgs e)
+        {
+            pnlAddress.BorderStyle = BorderStyle.None;
         }
     }
 }
