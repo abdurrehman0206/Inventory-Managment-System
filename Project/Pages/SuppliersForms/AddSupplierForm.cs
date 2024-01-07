@@ -23,7 +23,7 @@ namespace Project.Pages.SuppliersForms
         {
             pnlName.BorderStyle = BorderStyle.None;
         }
-       
+
         //txtNum Events
         private void txtNum_MouseClick(object sender, MouseEventArgs e)
         {
@@ -34,7 +34,10 @@ namespace Project.Pages.SuppliersForms
         {
             pnlNum.BorderStyle = BorderStyle.None;
         }
-
+        private void txtNum_TextChanged(object sender, EventArgs e)
+        {
+            txtNum.Text = new string(txtNum.Text.Where(char.IsDigit).ToArray());
+        }
 
         //txtEmail Events
         private void txtEmail_MouseClick(object sender, MouseEventArgs e)
@@ -58,17 +61,18 @@ namespace Project.Pages.SuppliersForms
                 {
 
 
-                    //MessageBox.Show("Invalid email format. Please enter a valid email address.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    pnlEmail.BackColor = Color.FromArgb(255, 128, 128);
-                    txtEmail.BackColor = Color.FromArgb(255, 128, 128);
-                    //e.Cancel = true;
+
+                    pnlEmail.BackColor = Color.FromArgb(255, 190, 190);
+                    txtEmail.BackColor = Color.FromArgb(255, 190, 190);
+
                 }
-                
+
             }
             else
             {
                 pnlEmail.BackColor = Color.FromArgb(225, 217, 242);
                 txtEmail.BackColor = Color.FromArgb(225, 217, 242);
+
             }
         }
 
@@ -107,5 +111,6 @@ namespace Project.Pages.SuppliersForms
             MessageBox.Show("Supplier added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+       
     }
 }

@@ -44,7 +44,7 @@
             viewOrderFormHeader.ForeColor = SystemColors.Control;
             viewOrderFormHeader.Location = new Point(0, 0);
             viewOrderFormHeader.Name = "viewOrderFormHeader";
-            viewOrderFormHeader.Size = new Size(800, 50);
+            viewOrderFormHeader.Size = new Size(784, 50);
             viewOrderFormHeader.TabIndex = 0;
             viewOrderFormHeader.Text = "Order Info";
             viewOrderFormHeader.TextAlign = ContentAlignment.MiddleCenter;
@@ -96,14 +96,14 @@
             dgvOrder.RowTemplate.Height = 30;
             dgvOrder.RowTemplate.ReadOnly = true;
             dgvOrder.ShowEditingIcon = false;
-            dgvOrder.Size = new Size(800, 750);
+            dgvOrder.Size = new Size(784, 711);
             dgvOrder.TabIndex = 13;
             // 
             // lblViewOrder
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 800);
+            ClientSize = new Size(784, 761);
             Controls.Add(dgvOrder);
             Controls.Add(viewOrderFormHeader);
             Name = "lblViewOrder";

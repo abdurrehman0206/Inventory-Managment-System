@@ -73,5 +73,67 @@ namespace Project.Pages.InventoryForms
         {
             LoadProducts();
         }
+
+
+        //txtFields Events
+        private void txtItemName_MouseClick(object sender, MouseEventArgs e)
+        {
+            itemNamePanel.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void txtItemName_Leave(object sender, EventArgs e)
+        {
+            itemNamePanel.BorderStyle = BorderStyle.None;
+        }
+
+        private void txtItemPrice_MouseClick(object sender, MouseEventArgs e)
+        {
+            itemPricePanel.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void txtItemPrice_Leave(object sender, EventArgs e)
+        {
+            itemPricePanel.BorderStyle = BorderStyle.None;
+        }
+        private void txtItemPrice_TextChanged(object sender, EventArgs e)
+        {
+            txtItemPrice.Text = new string(txtItemPrice.Text.Where(char.IsDigit).ToArray());
+        }
+        private void txtItemCat_MouseClick(object sender, MouseEventArgs e)
+        {
+            pnlItemCategory.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void pnlItemCategory_Leave(object sender, EventArgs e)
+        {
+            pnlItemCategory.BorderStyle = BorderStyle.None;
+        }
+
+        private void txtItemQuan_MouseClick(object sender, MouseEventArgs e)
+        {
+            pnlItemQuantity.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void txtItemQuan_Leave(object sender, EventArgs e)
+        {
+            pnlItemQuantity.BorderStyle = BorderStyle.None;
+        }
+        private void txtItemQuan_TextChanged(object sender, EventArgs e)
+        {
+
+            txtItemQuan.Text = new string(txtItemQuan.Text.Where(char.IsDigit).ToArray());
+
+        }
+        private void rtbItemDesc_MouseClick(object sender, MouseEventArgs e)
+        {
+            rtbItemDesc.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void rtbItemDesc_Leave(object sender, EventArgs e)
+        {
+            rtbItemDesc.BorderStyle = BorderStyle.None;
+        }
+
+     
     }
 }

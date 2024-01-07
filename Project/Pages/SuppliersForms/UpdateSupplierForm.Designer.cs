@@ -193,6 +193,8 @@
             txtName.PlaceholderText = "Name";
             txtName.Size = new Size(210, 16);
             txtName.TabIndex = 5;
+            txtName.MouseClick += txtName_MouseClick;
+            txtName.Leave += txtName_Leave;
             // 
             // lblNum
             // 
@@ -229,6 +231,8 @@
             txtNum.PlaceholderText = "Number";
             txtNum.Size = new Size(210, 16);
             txtNum.TabIndex = 5;
+            txtNum.MouseClick += txtNum_MouseClick;
+            txtNum.Leave += txtNum_Leave;
             // 
             // lblEmail
             // 
@@ -264,6 +268,8 @@
             txtEmail.PlaceholderText = "Email";
             txtEmail.Size = new Size(210, 16);
             txtEmail.TabIndex = 5;
+            txtEmail.MouseClick += txtEmail_MouseClick;
+            txtEmail.Leave += txtEmail_Leave;
             // 
             // lblAddress
             // 
@@ -300,6 +306,8 @@
             txtAddress.PlaceholderText = "Address";
             txtAddress.Size = new Size(210, 16);
             txtAddress.TabIndex = 5;
+            txtAddress.MouseClick += txtAddress_MouseClick;
+            txtAddress.Leave += txtAddress_Leave;
             // 
             // btnUpdate
             // 
