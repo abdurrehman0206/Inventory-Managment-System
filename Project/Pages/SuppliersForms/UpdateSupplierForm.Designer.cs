@@ -270,6 +270,7 @@
             txtEmail.TabIndex = 5;
             txtEmail.MouseClick += txtEmail_MouseClick;
             txtEmail.Leave += txtEmail_Leave;
+            txtEmail.Validating += txtEmail_Validating;
             // 
             // lblAddress
             // 
@@ -313,6 +314,7 @@
             // 
             btnUpdate.Anchor = AnchorStyles.None;
             btnUpdate.BackColor = Color.FromArgb(57, 36, 103);
+            btnUpdate.Cursor = Cursors.Hand;
             btnUpdate.FlatAppearance.BorderColor = Color.FromArgb(57, 36, 135);
             btnUpdate.FlatAppearance.BorderSize = 2;
             btnUpdate.FlatAppearance.MouseOverBackColor = Color.FromArgb(163, 103, 177);
@@ -332,6 +334,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(800, 800);
             Controls.Add(btnUpdate);
             Controls.Add(pnlAddress);

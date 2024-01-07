@@ -49,8 +49,8 @@
             txtItemName = new TextBox();
             lblItemCat = new Label();
             lblItemName = new Label();
-            dgvProduct = new DataGridView();
             lblItemId = new Label();
+            dgvProduct = new DataGridView();
             panel1.SuspendLayout();
             pnlItemQuantity.SuspendLayout();
             itemPricePanel.SuspendLayout();
@@ -61,8 +61,8 @@
             // 
             // lblUpdateItem
             // 
-            lblUpdateItem.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblUpdateItem.BackColor = Color.FromArgb(57, 36, 103);
+            lblUpdateItem.Dock = DockStyle.Top;
             lblUpdateItem.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblUpdateItem.ForeColor = SystemColors.Control;
             lblUpdateItem.Location = new Point(0, 0);
@@ -99,7 +99,7 @@
             rtbItemDesc.Anchor = AnchorStyles.None;
             rtbItemDesc.BackColor = Color.FromArgb(225, 217, 242);
             rtbItemDesc.BorderStyle = BorderStyle.None;
-            rtbItemDesc.Location = new Point(561, 472);
+            rtbItemDesc.Location = new Point(561, 481);
             rtbItemDesc.Name = "rtbItemDesc";
             rtbItemDesc.Size = new Size(227, 184);
             rtbItemDesc.TabIndex = 40;
@@ -114,7 +114,7 @@
             lblItemDesc.BackColor = Color.Transparent;
             lblItemDesc.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblItemDesc.ForeColor = Color.Black;
-            lblItemDesc.Location = new Point(561, 443);
+            lblItemDesc.Location = new Point(561, 452);
             lblItemDesc.Margin = new Padding(5);
             lblItemDesc.Name = "lblItemDesc";
             lblItemDesc.Size = new Size(137, 21);
@@ -125,13 +125,14 @@
             // 
             btnUpdateItem.Anchor = AnchorStyles.None;
             btnUpdateItem.BackColor = Color.FromArgb(57, 36, 103);
+            btnUpdateItem.Cursor = Cursors.Hand;
             btnUpdateItem.FlatAppearance.BorderColor = Color.FromArgb(57, 36, 135);
             btnUpdateItem.FlatAppearance.BorderSize = 2;
             btnUpdateItem.FlatAppearance.MouseOverBackColor = Color.FromArgb(163, 103, 177);
             btnUpdateItem.FlatStyle = FlatStyle.Flat;
             btnUpdateItem.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnUpdateItem.ForeColor = SystemColors.Control;
-            btnUpdateItem.Location = new Point(561, 675);
+            btnUpdateItem.Location = new Point(561, 695);
             btnUpdateItem.Name = "btnUpdateItem";
             btnUpdateItem.Size = new Size(227, 45);
             btnUpdateItem.TabIndex = 38;
@@ -292,6 +293,20 @@
             lblItemName.TabIndex = 30;
             lblItemName.Text = "Item Name ";
             // 
+            // lblItemId
+            // 
+            lblItemId.Anchor = AnchorStyles.None;
+            lblItemId.AutoSize = true;
+            lblItemId.BackColor = Color.Transparent;
+            lblItemId.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblItemId.ForeColor = Color.Black;
+            lblItemId.Location = new Point(561, 58);
+            lblItemId.Margin = new Padding(5);
+            lblItemId.Name = "lblItemId";
+            lblItemId.Size = new Size(64, 21);
+            lblItemId.TabIndex = 42;
+            lblItemId.Text = "Item Id";
+            // 
             // dgvProduct
             // 
             dgvProduct.AllowUserToAddRows = false;
@@ -341,43 +356,29 @@
             dgvProduct.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvProduct.ShowEditingIcon = false;
             dgvProduct.Size = new Size(547, 750);
-            dgvProduct.TabIndex = 29;
-            dgvProduct.CellClick += dgvProduct_CellClick;
-            // 
-            // lblItemId
-            // 
-            lblItemId.Anchor = AnchorStyles.None;
-            lblItemId.AutoSize = true;
-            lblItemId.BackColor = Color.Transparent;
-            lblItemId.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblItemId.ForeColor = Color.Black;
-            lblItemId.Location = new Point(561, 58);
-            lblItemId.Margin = new Padding(5);
-            lblItemId.Name = "lblItemId";
-            lblItemId.Size = new Size(64, 21);
-            lblItemId.TabIndex = 42;
-            lblItemId.Text = "Item Id";
+            dgvProduct.TabIndex = 43;
             // 
             // UpdateInventoryForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.Lavender;
             ClientSize = new Size(800, 800);
+            Controls.Add(dgvProduct);
+            Controls.Add(btnUpdateItem);
             Controls.Add(lblItemId);
-            Controls.Add(panel1);
             Controls.Add(rtbItemDesc);
             Controls.Add(lblItemDesc);
-            Controls.Add(btnUpdateItem);
+            Controls.Add(panel1);
             Controls.Add(pnlItemQuantity);
+            Controls.Add(itemNamePanel);
             Controls.Add(lblItemQuan);
-            Controls.Add(itemPricePanel);
             Controls.Add(lblItemPrice);
             Controls.Add(pnlItemCategory);
-            Controls.Add(itemNamePanel);
+            Controls.Add(itemPricePanel);
             Controls.Add(lblItemCat);
             Controls.Add(lblItemName);
-            Controls.Add(dgvProduct);
             Controls.Add(lblUpdateItem);
             Name = "UpdateInventoryForm";
             Text = "UpdateInventory";
@@ -417,7 +418,7 @@
         private TextBox txtItemName;
         private Label lblItemCat;
         private Label lblItemName;
-        private DataGridView dgvProduct;
         private Label lblItemId;
+        private DataGridView dgvProduct;
     }
 }

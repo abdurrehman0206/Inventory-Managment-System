@@ -59,8 +59,8 @@
             // 
             // lblDelSup
             // 
-            lblDelSup.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblDelSup.BackColor = Color.FromArgb(57, 36, 103);
+            lblDelSup.Dock = DockStyle.Top;
             lblDelSup.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblDelSup.ForeColor = SystemColors.Control;
             lblDelSup.Location = new Point(0, 0);
@@ -327,6 +327,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(800, 800);
             Controls.Add(btnDelete);
             Controls.Add(pnlAddress);
@@ -341,6 +342,7 @@
             Controls.Add(lblId);
             Controls.Add(dgvSupplier);
             Controls.Add(lblDelSup);
+            Cursor = Cursors.Hand;
             Name = "DeleteSupplierForm";
             Text = "DeleteSupplierForm";
             Load += DeleteSupplierForm_Load;

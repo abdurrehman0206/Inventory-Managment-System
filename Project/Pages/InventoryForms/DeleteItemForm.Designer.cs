@@ -154,6 +154,7 @@
             // 
             btnDeleteItem.Anchor = AnchorStyles.None;
             btnDeleteItem.BackColor = Color.FromArgb(57, 36, 103);
+            btnDeleteItem.Cursor = Cursors.Hand;
             btnDeleteItem.FlatAppearance.BorderColor = Color.FromArgb(57, 36, 135);
             btnDeleteItem.FlatAppearance.BorderSize = 2;
             btnDeleteItem.FlatAppearance.MouseOverBackColor = Color.FromArgb(163, 103, 177);
@@ -355,6 +356,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.Lavender;
             ClientSize = new Size(800, 800);
             Controls.Add(panel1);

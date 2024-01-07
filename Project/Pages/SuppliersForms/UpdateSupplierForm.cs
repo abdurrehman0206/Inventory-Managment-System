@@ -1,6 +1,7 @@
 ﻿using MongoDB.Bson;
 using Project.Controllers;
 using Project.Models;
+using System.Text.RegularExpressions;
 
 namespace Project.Pages.SuppliersForms
 {
@@ -115,7 +116,32 @@ namespace Project.Pages.SuppliersForms
         {
             pnlEmail.BorderStyle = BorderStyle.None;
         }
+        private void txtEmail_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (txtEmail.Text.Length > 0)
+            {
+                string emailPattern = @"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$";
+                Regex regex = new Regex(emailPattern);
+                pnlEmail.BackColor = Color.FromArgb(225, 217, 242);
+                txtEmail.BackColor = Color.FromArgb(225, 217, 242);
+                if (!regex.IsMatch(txtEmail.Text))
+                {
 
+
+
+                    pnlEmail.BackColor = Color.FromArgb(255, 190, 190);
+                    txtEmail.BackColor = Color.FromArgb(255, 190, 190);
+
+                }
+
+            }
+            else
+            {
+                pnlEmail.BackColor = Color.FromArgb(225, 217, 242);
+                txtEmail.BackColor = Color.FromArgb(225, 217, 242);
+
+            }
+        }
         private void txtAddress_MouseClick(object sender, MouseEventArgs e)
         {
             pnlAddress.BorderStyle = BorderStyle.FixedSingle;
@@ -125,5 +151,7 @@ namespace Project.Pages.SuppliersForms
         {
             pnlAddress.BorderStyle = BorderStyle.None;
         }
+
+     
     }
 }

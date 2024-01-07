@@ -52,8 +52,8 @@
             // 
             // lblAddItem
             // 
-            lblAddItem.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblAddItem.BackColor = Color.FromArgb(57, 36, 103);
+            lblAddItem.Dock = DockStyle.Top;
             lblAddItem.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblAddItem.ForeColor = SystemColors.Control;
             lblAddItem.Location = new Point(0, 0);
@@ -260,7 +260,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            AutoSize = true;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.Lavender;
             ClientSize = new Size(800, 800);
             Controls.Add(rtbItemDesc);

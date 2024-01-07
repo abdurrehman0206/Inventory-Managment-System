@@ -50,8 +50,8 @@
             // 
             // lblAddSup
             // 
-            lblAddSup.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblAddSup.BackColor = Color.FromArgb(57, 36, 103);
+            lblAddSup.Dock = DockStyle.Top;
             lblAddSup.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblAddSup.ForeColor = SystemColors.Control;
             lblAddSup.Location = new Point(0, 0);
@@ -211,6 +211,7 @@
             // 
             btnAdd.Anchor = AnchorStyles.None;
             btnAdd.BackColor = Color.FromArgb(57, 36, 103);
+            btnAdd.Cursor = Cursors.Hand;
             btnAdd.FlatAppearance.BorderColor = Color.FromArgb(57, 36, 135);
             btnAdd.FlatAppearance.BorderSize = 2;
             btnAdd.FlatAppearance.MouseOverBackColor = Color.FromArgb(163, 103, 177);
@@ -230,6 +231,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(800, 800);
             Controls.Add(btnAdd);
             Controls.Add(lblAddress);

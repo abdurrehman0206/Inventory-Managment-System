@@ -33,8 +33,8 @@
             // 
             // lblOrderHistory
             // 
-            lblOrderHistory.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblOrderHistory.BackColor = Color.FromArgb(57, 36, 103);
+            lblOrderHistory.Dock = DockStyle.Top;
             lblOrderHistory.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblOrderHistory.ForeColor = SystemColors.Control;
             lblOrderHistory.ImageAlign = ContentAlignment.MiddleRight;
@@ -49,6 +49,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(800, 800);
             Controls.Add(lblOrderHistory);
             Name = "OrderHistoryForm";

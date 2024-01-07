@@ -56,13 +56,13 @@
             // 
             // lblPlaceOrder
             // 
-            lblPlaceOrder.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblPlaceOrder.BackColor = Color.FromArgb(57, 36, 103);
+            lblPlaceOrder.Dock = DockStyle.Top;
             lblPlaceOrder.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblPlaceOrder.ForeColor = SystemColors.Control;
             lblPlaceOrder.Location = new Point(0, 0);
             lblPlaceOrder.Name = "lblPlaceOrder";
-            lblPlaceOrder.Size = new Size(784, 50);
+            lblPlaceOrder.Size = new Size(800, 50);
             lblPlaceOrder.TabIndex = 0;
             lblPlaceOrder.Text = "Place Order";
             lblPlaceOrder.TextAlign = ContentAlignment.MiddleCenter;
@@ -74,7 +74,7 @@
             lblName.BackColor = Color.Transparent;
             lblName.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblName.ForeColor = Color.Black;
-            lblName.Location = new Point(46, 90);
+            lblName.Location = new Point(54, 110);
             lblName.Margin = new Padding(5);
             lblName.Name = "lblName";
             lblName.Size = new Size(133, 21);
@@ -86,7 +86,7 @@
             pnlName.Anchor = AnchorStyles.None;
             pnlName.BackColor = Color.FromArgb(225, 217, 242);
             pnlName.Controls.Add(txtName);
-            pnlName.Location = new Point(46, 119);
+            pnlName.Location = new Point(54, 139);
             pnlName.Name = "pnlName";
             pnlName.Size = new Size(227, 40);
             pnlName.TabIndex = 8;
@@ -111,7 +111,7 @@
             lblAddress.BackColor = Color.Transparent;
             lblAddress.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblAddress.ForeColor = Color.Black;
-            lblAddress.Location = new Point(279, 90);
+            lblAddress.Location = new Point(287, 110);
             lblAddress.Margin = new Padding(5);
             lblAddress.Name = "lblAddress";
             lblAddress.Size = new Size(143, 21);
@@ -123,7 +123,7 @@
             pnlAddress.Anchor = AnchorStyles.None;
             pnlAddress.BackColor = Color.FromArgb(225, 217, 242);
             pnlAddress.Controls.Add(txtAddress);
-            pnlAddress.Location = new Point(279, 119);
+            pnlAddress.Location = new Point(287, 139);
             pnlAddress.Name = "pnlAddress";
             pnlAddress.Size = new Size(227, 40);
             pnlAddress.TabIndex = 10;
@@ -148,7 +148,7 @@
             lblSelect.BackColor = Color.Transparent;
             lblSelect.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblSelect.ForeColor = Color.Black;
-            lblSelect.Location = new Point(46, 275);
+            lblSelect.Location = new Point(54, 295);
             lblSelect.Margin = new Padding(5);
             lblSelect.Name = "lblSelect";
             lblSelect.Size = new Size(146, 21);
@@ -162,7 +162,7 @@
             lblAmount.BackColor = Color.Transparent;
             lblAmount.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblAmount.ForeColor = Color.Black;
-            lblAmount.Location = new Point(46, 589);
+            lblAmount.Location = new Point(287, 610);
             lblAmount.Margin = new Padding(0);
             lblAmount.Name = "lblAmount";
             lblAmount.Size = new Size(196, 25);
@@ -173,13 +173,14 @@
             // 
             btnPlaceOrder.Anchor = AnchorStyles.None;
             btnPlaceOrder.BackColor = Color.FromArgb(57, 36, 103);
+            btnPlaceOrder.Cursor = Cursors.Hand;
             btnPlaceOrder.FlatAppearance.BorderColor = Color.FromArgb(57, 36, 135);
             btnPlaceOrder.FlatAppearance.BorderSize = 2;
             btnPlaceOrder.FlatAppearance.MouseOverBackColor = Color.FromArgb(163, 103, 177);
             btnPlaceOrder.FlatStyle = FlatStyle.Flat;
             btnPlaceOrder.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnPlaceOrder.ForeColor = SystemColors.Control;
-            btnPlaceOrder.Location = new Point(323, 704);
+            btnPlaceOrder.Location = new Point(310, 656);
             btnPlaceOrder.Name = "btnPlaceOrder";
             btnPlaceOrder.Size = new Size(149, 45);
             btnPlaceOrder.TabIndex = 14;
@@ -196,7 +197,7 @@
             cmbProducts.FlatStyle = FlatStyle.Flat;
             cmbProducts.FormattingEnabled = true;
             cmbProducts.ItemHeight = 15;
-            cmbProducts.Location = new Point(46, 217);
+            cmbProducts.Location = new Point(54, 237);
             cmbProducts.Name = "cmbProducts";
             cmbProducts.Size = new Size(693, 23);
             cmbProducts.Sorted = true;
@@ -205,19 +206,22 @@
             // btnAddProduct
             // 
             btnAddProduct.Anchor = AnchorStyles.None;
-            btnAddProduct.BackColor = Color.FromArgb(57, 36, 103);
-            btnAddProduct.FlatAppearance.BorderColor = Color.FromArgb(57, 36, 135);
+            btnAddProduct.BackColor = Color.Lavender;
+            btnAddProduct.Cursor = Cursors.Hand;
+            btnAddProduct.FlatAppearance.BorderColor = Color.Lavender;
             btnAddProduct.FlatAppearance.BorderSize = 2;
-            btnAddProduct.FlatAppearance.MouseOverBackColor = Color.FromArgb(163, 103, 177);
+            btnAddProduct.FlatAppearance.MouseDownBackColor = Color.FromArgb(57, 36, 103);
+            btnAddProduct.FlatAppearance.MouseOverBackColor = Color.FromArgb(135, 104, 202);
             btnAddProduct.FlatStyle = FlatStyle.Flat;
-            btnAddProduct.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnAddProduct.ForeColor = SystemColors.Control;
-            btnAddProduct.Location = new Point(323, 540);
+            btnAddProduct.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnAddProduct.ForeColor = Color.Black;
+            btnAddProduct.Location = new Point(625, 204);
             btnAddProduct.Name = "btnAddProduct";
-            btnAddProduct.Size = new Size(149, 45);
+            btnAddProduct.Size = new Size(122, 30);
             btnAddProduct.TabIndex = 16;
             btnAddProduct.Tag = "";
-            btnAddProduct.Text = "Add Product";
+            btnAddProduct.Text = "Add Product +";
+            btnAddProduct.TextAlign = ContentAlignment.MiddleRight;
             btnAddProduct.UseVisualStyleBackColor = false;
             btnAddProduct.Click += btnAddProduct_Click;
             // 
@@ -228,7 +232,7 @@
             lblQuantity.BackColor = Color.Transparent;
             lblQuantity.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblQuantity.ForeColor = Color.Black;
-            lblQuantity.Location = new Point(512, 90);
+            lblQuantity.Location = new Point(520, 110);
             lblQuantity.Margin = new Padding(5);
             lblQuantity.Name = "lblQuantity";
             lblQuantity.Size = new Size(77, 21);
@@ -240,7 +244,7 @@
             pnlQuantity.Anchor = AnchorStyles.None;
             pnlQuantity.BackColor = Color.FromArgb(225, 217, 242);
             pnlQuantity.Controls.Add(txtQuantity);
-            pnlQuantity.Location = new Point(512, 119);
+            pnlQuantity.Location = new Point(520, 139);
             pnlQuantity.Name = "pnlQuantity";
             pnlQuantity.Size = new Size(227, 40);
             pnlQuantity.TabIndex = 12;
@@ -255,6 +259,9 @@
             txtQuantity.PlaceholderText = "Quantity";
             txtQuantity.Size = new Size(210, 16);
             txtQuantity.TabIndex = 5;
+            txtQuantity.MouseClick += txtQuantity_MouseClick;
+            txtQuantity.TextChanged += txtQuantity_TextChanged;
+            txtQuantity.Leave += txtQuantity_Leave;
             // 
             // dgvOrderDetails
             // 
@@ -289,7 +296,7 @@
             dgvOrderDetails.DefaultCellStyle = dataGridViewCellStyle2;
             dgvOrderDetails.EnableHeadersVisualStyles = false;
             dgvOrderDetails.GridColor = Color.FromArgb(225, 217, 242);
-            dgvOrderDetails.Location = new Point(46, 301);
+            dgvOrderDetails.Location = new Point(54, 321);
             dgvOrderDetails.Margin = new Padding(0);
             dgvOrderDetails.Name = "dgvOrderDetails";
             dgvOrderDetails.RowHeadersVisible = false;
@@ -313,7 +320,7 @@
             lblSelectProd.BackColor = Color.Transparent;
             lblSelectProd.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblSelectProd.ForeColor = Color.Black;
-            lblSelectProd.Location = new Point(46, 193);
+            lblSelectProd.Location = new Point(54, 213);
             lblSelectProd.Name = "lblSelectProd";
             lblSelectProd.Size = new Size(120, 21);
             lblSelectProd.TabIndex = 18;
@@ -325,7 +332,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.Lavender;
-            ClientSize = new Size(784, 761);
+            ClientSize = new Size(800, 800);
             Controls.Add(lblSelectProd);
             Controls.Add(dgvOrderDetails);
             Controls.Add(pnlQuantity);
