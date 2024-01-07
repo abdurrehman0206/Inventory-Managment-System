@@ -90,7 +90,6 @@ namespace Project.Pages.InventoryForms
                 Description = description
                 
             };
-
             ProductController productController = new ProductController();
             productController.AddProduct(newProduct);
             MessageBox.Show("Product added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
