@@ -57,13 +57,13 @@ namespace Project.Pages.SuppliersForms
             {
 
                 _supplierController.DeleteSupplier(ObjectId.Parse(txtId.Text));
-                MessageBox.Show("Product deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("supplier deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadSuppliers();
                 ClearTextFields();
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error deleting product: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error deleting supplier: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void ClearTextFields()

@@ -66,6 +66,23 @@ namespace Project.Controllers
                 MessageBox.Show($"Error deleting supolier: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        public void UpdateSupplier(ObjectId supplierId, Supplier updatedSupplier)
+        {
+            try
+            {
+                var filter = Builders<Supplier>.Filter.Eq(s => s._id, supplierId);
+                var update = Builders<Supplier>.Update
+                    .Set(s => s.Name, updatedSupplier.Name)
+                    .Set(s=>s.Address, updatedSupplier.Address)
+                    .Set(s => s.ContactNumber, updatedSupplier.ContactNumber)
+                    .Set(s => s.Email, updatedSupplier.Email);
+                _supplierCollection.UpdateOne(filter, update);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error updating product: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
     }
 
