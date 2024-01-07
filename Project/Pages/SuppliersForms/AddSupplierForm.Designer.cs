@@ -207,7 +207,7 @@
             btnAdd.FlatStyle = FlatStyle.Flat;
             btnAdd.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnAdd.ForeColor = SystemColors.Control;
-            btnAdd.Location = new Point(327, 413);
+            btnAdd.Location = new Point(323, 422);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(149, 45);
             btnAdd.TabIndex = 15;
