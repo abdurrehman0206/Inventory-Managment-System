@@ -17,6 +17,7 @@ namespace Project.Pages.InventoryForms
             {
                 List<Product> products = _productController.GetAllProducts();
                 dgvProduct.DataSource = products;
+                dgvProduct.Columns[1].Visible = false; // Hiding Mongo Id
             }
             catch (Exception ex)
             {
