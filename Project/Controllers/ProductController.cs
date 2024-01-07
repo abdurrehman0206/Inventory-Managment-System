@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver;
+﻿using MongoDB.Bson;
+using MongoDB.Driver;
 using Project.Models;
 
 namespace Project.Controllers
@@ -30,15 +31,16 @@ namespace Project.Controllers
             }
         }
 
-        public Product? GetProduct(int productId)
+        public Product GetProduct(ObjectId productId)
         {
             try
             {
-                return _productCollection.Find(p => p._id == productId).FirstOrDefault();
-
+                var filter = Builders<Product>.Filter.Eq(p => p._id, productId);
+                return _productCollection.Find(filter).FirstOrDefault();
             }
             catch (Exception ex)
             {
+                // Handle the exception by showing an error message
                 MessageBox.Show($"Error getting product: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
@@ -54,6 +56,18 @@ namespace Project.Controllers
             {
                 MessageBox.Show($"Error getting all products: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return new List<Product>();
+            }
+        }
+        public void DeleteProduct(ObjectId productId)
+        {
+            try
+            {
+                var filter = Builders<Product>.Filter.Eq(p => p._id, productId);
+                _productCollection.DeleteOne(filter);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error deleting product: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
