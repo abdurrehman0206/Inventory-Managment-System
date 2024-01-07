@@ -33,8 +33,8 @@
             // 
             // lblSalesRepo
             // 
-            lblSalesRepo.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblSalesRepo.BackColor = Color.FromArgb(57, 36, 103);
+            lblSalesRepo.Dock = DockStyle.Top;
             lblSalesRepo.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblSalesRepo.ForeColor = SystemColors.Control;
             lblSalesRepo.Location = new Point(0, 0);
@@ -48,6 +48,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(800, 800);
             Controls.Add(lblSalesRepo);
             Name = "SaleReportForm";

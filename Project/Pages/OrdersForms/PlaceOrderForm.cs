@@ -67,7 +67,20 @@ namespace Project.Pages.OrdersForms
                 dgvOrderDetails.ClearSelection();
             }
         }
+        //txtQuantity Events 
+        private void txtQuantity_MouseClick(object sender, MouseEventArgs e)
+        {
+            pnlQuantity.BorderStyle = BorderStyle.FixedSingle;
+        }
 
+        private void txtQuantity_Leave(object sender, EventArgs e)
+        {
+            pnlQuantity.BorderStyle = BorderStyle.None;
+        }
+        private void txtQuantity_TextChanged(object sender, EventArgs e)
+        {
+            txtQuantity.Text = new string(txtQuantity.Text.Where(char.IsDigit).ToArray());
+        }
         private void btnPlaceOrder_Click(object sender, EventArgs e)
         {
             if (dgvOrderDetails.Rows.Count == 1)
@@ -163,5 +176,7 @@ namespace Project.Pages.OrdersForms
             cmbProducts.SelectedIndex = -1;
             txtQuantity.Clear();
         }
+
+       
     }
 }

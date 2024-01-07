@@ -62,6 +62,7 @@ namespace Project.Pages.InventoryForms
             try
             {
                 dgvProduct.DataSource = _productController.GetAllProducts();
+                dgvProduct.Columns[0].HeaderText="ProductID";
             }
             catch (Exception ex)
             {

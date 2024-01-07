@@ -71,6 +71,7 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgvProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgvProduct.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvProduct.Cursor = Cursors.Default;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = SystemColors.Window;
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -103,9 +104,11 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(800, 800);
             Controls.Add(dgvProduct);
             Controls.Add(lblViewInv);
+            Cursor = Cursors.Hand;
             Name = "ViewInventoryForm";
             Text = "ViewInventory";
             Load += ViewInventoryForm_Load;
