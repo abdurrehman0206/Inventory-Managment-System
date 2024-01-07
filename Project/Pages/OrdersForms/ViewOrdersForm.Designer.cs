@@ -29,19 +29,10 @@
         private void InitializeComponent()
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             viewOrderFormHeader = new Label();
             dgvOrder = new DataGridView();
-            CustomerName = new DataGridViewTextBoxColumn();
-            Address = new DataGridViewTextBoxColumn();
-            Products = new DataGridViewTextBoxColumn();
-            TotalAmount = new DataGridViewTextBoxColumn();
-            OrderStatus = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgvOrder).BeginInit();
             SuspendLayout();
             // 
@@ -61,8 +52,10 @@
             // dgvOrder
             // 
             dgvOrder.AllowUserToDeleteRows = false;
+            dgvOrder.AllowUserToOrderColumns = true;
             dgvOrder.AllowUserToResizeColumns = false;
             dgvOrder.AllowUserToResizeRows = false;
+            dgvOrder.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvOrder.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dgvOrder.BackgroundColor = Color.Lavender;
             dgvOrder.BorderStyle = BorderStyle.None;
@@ -73,105 +66,38 @@
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
             dataGridViewCellStyle1.Padding = new Padding(5);
-            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(135, 104, 202);
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgvOrder.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgvOrder.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvOrder.Columns.AddRange(new DataGridViewColumn[] { CustomerName, Address, Products, TotalAmount, OrderStatus });
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgvOrder.DefaultCellStyle = dataGridViewCellStyle2;
             dgvOrder.Dock = DockStyle.Fill;
             dgvOrder.EnableHeadersVisualStyles = false;
-            dgvOrder.GridColor = Color.Lavender;
+            dgvOrder.GridColor = Color.FromArgb(225, 217, 242);
             dgvOrder.Location = new Point(0, 50);
             dgvOrder.Margin = new Padding(0);
             dgvOrder.Name = "dgvOrder";
-            dgvOrder.ReadOnly = true;
             dgvOrder.RowHeadersVisible = false;
-            dataGridViewCellStyle7.BackColor = Color.FromArgb(225, 217, 242);
-            dataGridViewCellStyle7.Padding = new Padding(5);
-            dgvOrder.RowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.BackColor = Color.Lavender;
+            dataGridViewCellStyle3.ForeColor = Color.Black;
+            dataGridViewCellStyle3.Padding = new Padding(5);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(225, 217, 242);
+            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
+            dgvOrder.RowsDefaultCellStyle = dataGridViewCellStyle3;
             dgvOrder.RowTemplate.DefaultCellStyle.Padding = new Padding(5);
             dgvOrder.RowTemplate.Height = 30;
-            dgvOrder.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvOrder.RowTemplate.ReadOnly = true;
             dgvOrder.ShowEditingIcon = false;
             dgvOrder.Size = new Size(800, 750);
-            dgvOrder.TabIndex = 12;
-            // 
-            // CustomerName
-            // 
-            CustomerName.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.Lavender;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = Color.Black;
-            dataGridViewCellStyle2.Padding = new Padding(5);
-            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(163, 103, 177);
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.Control;
-            CustomerName.DefaultCellStyle = dataGridViewCellStyle2;
-            CustomerName.HeaderText = "Customer Name";
-            CustomerName.Name = "CustomerName";
-            CustomerName.ReadOnly = true;
-            CustomerName.Resizable = DataGridViewTriState.False;
-            // 
-            // Address
-            // 
-            Address.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.Lavender;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = Color.Black;
-            dataGridViewCellStyle3.Format = "N3";
-            dataGridViewCellStyle3.NullValue = null;
-            dataGridViewCellStyle3.Padding = new Padding(5);
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(163, 103, 177);
-            dataGridViewCellStyle3.SelectionForeColor = SystemColors.Control;
-            Address.DefaultCellStyle = dataGridViewCellStyle3;
-            Address.HeaderText = "Address";
-            Address.Name = "Address";
-            Address.ReadOnly = true;
-            Address.Resizable = DataGridViewTriState.False;
-            Address.ToolTipText = "Enter Product Quantity";
-            // 
-            // Products
-            // 
-            Products.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle4.BackColor = Color.Lavender;
-            dataGridViewCellStyle4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = Color.Black;
-            dataGridViewCellStyle4.Padding = new Padding(5);
-            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(163, 103, 177);
-            dataGridViewCellStyle4.SelectionForeColor = SystemColors.Control;
-            Products.DefaultCellStyle = dataGridViewCellStyle4;
-            Products.HeaderText = "Products";
-            Products.Name = "Products";
-            Products.ReadOnly = true;
-            // 
-            // TotalAmount
-            // 
-            TotalAmount.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle5.BackColor = Color.Lavender;
-            dataGridViewCellStyle5.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(163, 103, 177);
-            dataGridViewCellStyle5.SelectionForeColor = SystemColors.Control;
-            TotalAmount.DefaultCellStyle = dataGridViewCellStyle5;
-            TotalAmount.HeaderText = "Total Amount";
-            TotalAmount.Name = "TotalAmount";
-            TotalAmount.ReadOnly = true;
-            // 
-            // OrderStatus
-            // 
-            OrderStatus.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle6.BackColor = Color.Lavender;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = Color.Black;
-            dataGridViewCellStyle6.Padding = new Padding(5);
-            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(163, 103, 177);
-            dataGridViewCellStyle6.SelectionForeColor = SystemColors.Control;
-            OrderStatus.DefaultCellStyle = dataGridViewCellStyle6;
-            OrderStatus.HeaderText = "Order Status";
-            OrderStatus.Name = "OrderStatus";
-            OrderStatus.ReadOnly = true;
+            dgvOrder.TabIndex = 13;
             // 
             // lblViewOrder
             // 
@@ -182,6 +108,7 @@
             Controls.Add(viewOrderFormHeader);
             Name = "lblViewOrder";
             Text = "ViewOrdersForm";
+            Load += lblViewOrder_Load;
             ((System.ComponentModel.ISupportInitialize)dgvOrder).EndInit();
             ResumeLayout(false);
         }
@@ -190,10 +117,5 @@
 
         private Label viewOrderFormHeader;
         private DataGridView dgvOrder;
-        private DataGridViewTextBoxColumn CustomerName;
-        private DataGridViewTextBoxColumn Address;
-        private DataGridViewTextBoxColumn Products;
-        private DataGridViewTextBoxColumn TotalAmount;
-        private DataGridViewTextBoxColumn OrderStatus;
     }
 }

@@ -8,7 +8,7 @@ namespace Project.Controllers
     {
         private readonly IMongoCollection<Order> _orderCollection;
 
-        public OrderController(string connectionString, string databaseName, string collectionName)
+        public OrderController(string connectionString="mongodb://localhost:27017", string databaseName= "IMSDB", string collectionName= "Products")
         {
             var client = new MongoClient(connectionString);
             var database = client.GetDatabase(databaseName);

@@ -51,7 +51,6 @@
             // 
             // dgvProduct
             // 
-            dgvProduct.AllowUserToAddRows = false;
             dgvProduct.AllowUserToDeleteRows = false;
             dgvProduct.AllowUserToOrderColumns = true;
             dgvProduct.AllowUserToResizeColumns = false;
