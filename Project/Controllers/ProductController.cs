@@ -40,7 +40,6 @@ namespace Project.Controllers
             }
             catch (Exception ex)
             {
-                // Handle the exception by showing an error message
                 MessageBox.Show($"Error getting product: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
@@ -68,6 +67,24 @@ namespace Project.Controllers
             catch (Exception ex)
             {
                 MessageBox.Show($"Error deleting product: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public void UpdateProduct(ObjectId productId, Product updatedProduct)
+        {
+            try
+            {
+                var filter = Builders<Product>.Filter.Eq(p => p._id, productId);
+                var update = Builders<Product>.Update
+                    .Set(p => p.Name, updatedProduct.Name)
+                    .Set(p => p.Price, updatedProduct.Price)
+                    .Set(p => p.Quantity, updatedProduct.Quantity)
+                    .Set(p => p.Category, updatedProduct.Category)
+                    .Set(p => p.Description, updatedProduct.Description);
+                _productCollection.UpdateOne(filter, update);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error updating product: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
