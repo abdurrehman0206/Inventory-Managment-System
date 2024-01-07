@@ -34,7 +34,7 @@ namespace Project.Controllers
         {
             try
             {
-                return _productCollection.Find(p => p.ProductId == productId).FirstOrDefault();
+                return _productCollection.Find(p => p._id == productId).FirstOrDefault();
 
             }
             catch (Exception ex)
