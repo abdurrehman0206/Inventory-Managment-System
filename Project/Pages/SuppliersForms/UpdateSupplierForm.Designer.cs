@@ -33,6 +33,7 @@
             // 
             // lblUpdateSup
             // 
+            lblUpdateSup.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblUpdateSup.BackColor = Color.FromArgb(57, 36, 103);
             lblUpdateSup.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblUpdateSup.ForeColor = SystemColors.Control;
@@ -48,7 +49,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(784, 761);
+            ClientSize = new Size(800, 800);
             Controls.Add(lblUpdateSup);
             Name = "UpdateSupplierForm";
             Text = "UpdateSupplierForm";

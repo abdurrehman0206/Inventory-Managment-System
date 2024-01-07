@@ -33,6 +33,7 @@
             // 
             // lblSupInfo
             // 
+            lblSupInfo.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblSupInfo.BackColor = Color.FromArgb(57, 36, 103);
             lblSupInfo.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblSupInfo.ForeColor = SystemColors.Control;
@@ -47,7 +48,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(784, 761);
+            ClientSize = new Size(800, 800);
             Controls.Add(lblSupInfo);
             Name = "ViewSupplierForm";
             Text = "ViewSupplierForm";

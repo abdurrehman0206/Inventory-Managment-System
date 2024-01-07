@@ -1,4 +1,4 @@
-﻿namespace Project.InventoryForms
+﻿namespace Project.Pages.InventoryForms
 {
     partial class UpdateInventoryForm
     {
@@ -33,6 +33,7 @@
             // 
             // lblUpdateItem
             // 
+            lblUpdateItem.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblUpdateItem.BackColor = Color.FromArgb(57, 36, 103);
             lblUpdateItem.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblUpdateItem.ForeColor = SystemColors.Control;
@@ -47,7 +48,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(784, 761);
+            ClientSize = new Size(800, 800);
             Controls.Add(lblUpdateItem);
             Name = "UpdateInventoryForm";
             Text = "UpdateInventory";

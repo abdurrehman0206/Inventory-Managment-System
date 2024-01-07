@@ -33,6 +33,7 @@
             // 
             // lblDelSup
             // 
+            lblDelSup.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblDelSup.BackColor = Color.FromArgb(57, 36, 103);
             lblDelSup.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblDelSup.ForeColor = SystemColors.Control;
@@ -47,7 +48,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(784, 761);
+            ClientSize = new Size(800, 800);
             Controls.Add(lblDelSup);
             Name = "DeleteSupplierForm";
             Text = "DeleteSupplierForm";

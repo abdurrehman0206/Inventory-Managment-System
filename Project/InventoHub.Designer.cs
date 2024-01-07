@@ -513,10 +513,10 @@
             // 
             // pnlChildPage
             // 
+            pnlChildPage.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pnlChildPage.AutoScroll = true;
             pnlChildPage.AutoSize = true;
             pnlChildPage.BackColor = Color.Lavender;
-            pnlChildPage.Dock = DockStyle.Fill;
             pnlChildPage.Location = new Point(200, 0);
             pnlChildPage.Name = "pnlChildPage";
             pnlChildPage.Size = new Size(800, 800);
@@ -533,7 +533,7 @@
             MaximizeBox = false;
             Name = "InventoHub";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "InventoHub";
             panelSideNav.ResumeLayout(false);
             pnlSubReports.ResumeLayout(false);
             pnlSubSuppliers.ResumeLayout(false);

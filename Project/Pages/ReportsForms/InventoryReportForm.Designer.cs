@@ -33,6 +33,7 @@
             // 
             // lblInvRepo
             // 
+            lblInvRepo.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblInvRepo.BackColor = Color.FromArgb(57, 36, 103);
             lblInvRepo.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblInvRepo.ForeColor = SystemColors.Control;
@@ -47,7 +48,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(784, 761);
+            ClientSize = new Size(800, 800);
             Controls.Add(lblInvRepo);
             Name = "InventoryReportForm";
             Text = "InventoryReportForm";
