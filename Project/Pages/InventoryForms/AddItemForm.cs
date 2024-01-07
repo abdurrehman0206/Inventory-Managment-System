@@ -80,14 +80,16 @@ namespace Project.Pages.InventoryForms
             string productName = txtItemName.Text;
             double price = Convert.ToDouble(txtItemPrice.Text);
             int quantity = Convert.ToInt32(txtItemQuan.Text);
-            string description = rtbItemDesc.Text.ToString();
-       
+            string description = rtbItemDesc.Text;
+            string category = txtItemCat.Text;
             Product newProduct = new Product
             {
                 Name = productName,
                 Price = price,
+                Category = category,
                 Quantity = quantity,
                 Description = description
+                
                 
             };
             ProductController productController = new ProductController();
