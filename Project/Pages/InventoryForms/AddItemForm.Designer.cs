@@ -32,15 +32,15 @@
             lblItemName = new Label();
             lblItemCat = new Label();
             itemNamePanel = new Panel();
-            tfItemName = new TextBox();
+            txtItemName = new TextBox();
             pnlItemCategory = new Panel();
-            tfItemCat = new TextBox();
+            txtItemCat = new TextBox();
             lblItemPrice = new Label();
             itemPricePanel = new Panel();
-            tfItemPrice = new TextBox();
+            txtItemPrice = new TextBox();
             lblItemQuan = new Label();
             pnlItemQuantity = new Panel();
-            tfItemQuan = new TextBox();
+            txtItemQuan = new TextBox();
             btnAddItem = new Button();
             lblItemDesc = new Label();
             rtbItemDesc = new RichTextBox();
@@ -93,47 +93,47 @@
             // 
             itemNamePanel.Anchor = AnchorStyles.None;
             itemNamePanel.BackColor = Color.FromArgb(225, 217, 242);
-            itemNamePanel.Controls.Add(tfItemName);
+            itemNamePanel.Controls.Add(txtItemName);
             itemNamePanel.Location = new Point(66, 155);
             itemNamePanel.Name = "itemNamePanel";
             itemNamePanel.Size = new Size(227, 40);
             itemNamePanel.TabIndex = 7;
             // 
-            // tfItemName
+            // txtItemName
             // 
-            tfItemName.BackColor = Color.FromArgb(225, 217, 242);
-            tfItemName.BorderStyle = BorderStyle.None;
-            tfItemName.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            tfItemName.Location = new Point(10, 12);
-            tfItemName.Name = "tfItemName";
-            tfItemName.PlaceholderText = "Name";
-            tfItemName.Size = new Size(210, 16);
-            tfItemName.TabIndex = 5;
-            tfItemName.MouseClick += tfItemName_MouseClick;
-            tfItemName.Leave += tfItemName_Leave;
+            txtItemName.BackColor = Color.FromArgb(225, 217, 242);
+            txtItemName.BorderStyle = BorderStyle.None;
+            txtItemName.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtItemName.Location = new Point(10, 12);
+            txtItemName.Name = "txtItemName";
+            txtItemName.PlaceholderText = "Name";
+            txtItemName.Size = new Size(210, 16);
+            txtItemName.TabIndex = 5;
+            txtItemName.MouseClick += tfItemName_MouseClick;
+            txtItemName.Leave += tfItemName_Leave;
             // 
             // pnlItemCategory
             // 
             pnlItemCategory.Anchor = AnchorStyles.None;
             pnlItemCategory.BackColor = Color.FromArgb(225, 217, 242);
-            pnlItemCategory.Controls.Add(tfItemCat);
+            pnlItemCategory.Controls.Add(txtItemCat);
             pnlItemCategory.Location = new Point(505, 155);
             pnlItemCategory.Name = "pnlItemCategory";
             pnlItemCategory.Size = new Size(227, 40);
             pnlItemCategory.TabIndex = 8;
             // 
-            // tfItemCat
+            // txtItemCat
             // 
-            tfItemCat.BackColor = Color.FromArgb(225, 217, 242);
-            tfItemCat.BorderStyle = BorderStyle.None;
-            tfItemCat.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            tfItemCat.Location = new Point(10, 12);
-            tfItemCat.Name = "tfItemCat";
-            tfItemCat.PlaceholderText = "Category";
-            tfItemCat.Size = new Size(210, 16);
-            tfItemCat.TabIndex = 5;
-            tfItemCat.MouseClick += tfItemCat_MouseClick;
-            tfItemCat.Leave += tfItemCat_Leave;
+            txtItemCat.BackColor = Color.FromArgb(225, 217, 242);
+            txtItemCat.BorderStyle = BorderStyle.None;
+            txtItemCat.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtItemCat.Location = new Point(10, 12);
+            txtItemCat.Name = "txtItemCat";
+            txtItemCat.PlaceholderText = "Category";
+            txtItemCat.Size = new Size(210, 16);
+            txtItemCat.TabIndex = 5;
+            txtItemCat.MouseClick += tfItemCat_MouseClick;
+            txtItemCat.Leave += tfItemCat_Leave;
             // 
             // lblItemPrice
             // 
@@ -152,26 +152,26 @@
             // 
             itemPricePanel.Anchor = AnchorStyles.None;
             itemPricePanel.BackColor = Color.FromArgb(225, 217, 242);
-            itemPricePanel.Controls.Add(tfItemPrice);
+            itemPricePanel.Controls.Add(txtItemPrice);
             itemPricePanel.Cursor = Cursors.Hand;
             itemPricePanel.Location = new Point(66, 297);
             itemPricePanel.Name = "itemPricePanel";
             itemPricePanel.Size = new Size(227, 40);
             itemPricePanel.TabIndex = 10;
             // 
-            // tfItemPrice
+            // txtItemPrice
             // 
-            tfItemPrice.BackColor = Color.FromArgb(225, 217, 242);
-            tfItemPrice.BorderStyle = BorderStyle.None;
-            tfItemPrice.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            tfItemPrice.Location = new Point(10, 12);
-            tfItemPrice.Name = "tfItemPrice";
-            tfItemPrice.PlaceholderText = "Price";
-            tfItemPrice.Size = new Size(210, 16);
-            tfItemPrice.TabIndex = 5;
-            tfItemPrice.MouseClick += tfItemPrice_MouseClick;
-            tfItemPrice.TextChanged += tfItemPrice_TextChanged;
-            tfItemPrice.Leave += tfItemPrice_Leave;
+            txtItemPrice.BackColor = Color.FromArgb(225, 217, 242);
+            txtItemPrice.BorderStyle = BorderStyle.None;
+            txtItemPrice.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtItemPrice.Location = new Point(10, 12);
+            txtItemPrice.Name = "txtItemPrice";
+            txtItemPrice.PlaceholderText = "Price";
+            txtItemPrice.Size = new Size(210, 16);
+            txtItemPrice.TabIndex = 5;
+            txtItemPrice.MouseClick += tfItemPrice_MouseClick;
+            txtItemPrice.TextChanged += tfItemPrice_TextChanged;
+            txtItemPrice.Leave += tfItemPrice_Leave;
             // 
             // lblItemQuan
             // 
@@ -190,26 +190,26 @@
             // 
             pnlItemQuantity.Anchor = AnchorStyles.None;
             pnlItemQuantity.BackColor = Color.FromArgb(225, 217, 242);
-            pnlItemQuantity.Controls.Add(tfItemQuan);
+            pnlItemQuantity.Controls.Add(txtItemQuan);
             pnlItemQuantity.Cursor = Cursors.Hand;
             pnlItemQuantity.Location = new Point(505, 297);
             pnlItemQuantity.Name = "pnlItemQuantity";
             pnlItemQuantity.Size = new Size(227, 40);
             pnlItemQuantity.TabIndex = 12;
             // 
-            // tfItemQuan
+            // txtItemQuan
             // 
-            tfItemQuan.BackColor = Color.FromArgb(225, 217, 242);
-            tfItemQuan.BorderStyle = BorderStyle.None;
-            tfItemQuan.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            tfItemQuan.Location = new Point(10, 12);
-            tfItemQuan.Name = "tfItemQuan";
-            tfItemQuan.PlaceholderText = "Item Name";
-            tfItemQuan.Size = new Size(210, 16);
-            tfItemQuan.TabIndex = 5;
-            tfItemQuan.MouseClick += tfItemQuan_MouseClick;
-            tfItemQuan.TextChanged += tfItemQuan_TextChanged;
-            tfItemQuan.Leave += tfItemQuan_Leave;
+            txtItemQuan.BackColor = Color.FromArgb(225, 217, 242);
+            txtItemQuan.BorderStyle = BorderStyle.None;
+            txtItemQuan.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtItemQuan.Location = new Point(10, 12);
+            txtItemQuan.Name = "txtItemQuan";
+            txtItemQuan.PlaceholderText = "Item Name";
+            txtItemQuan.Size = new Size(210, 16);
+            txtItemQuan.TabIndex = 5;
+            txtItemQuan.MouseClick += tfItemQuan_MouseClick;
+            txtItemQuan.TextChanged += tfItemQuan_TextChanged;
+            txtItemQuan.Leave += tfItemQuan_Leave;
             // 
             // btnAddItem
             // 
@@ -228,6 +228,7 @@
             btnAddItem.Tag = "";
             btnAddItem.Text = "Add Item";
             btnAddItem.UseVisualStyleBackColor = false;
+            btnAddItem.Click += btnAddItem_Click;
             // 
             // lblItemDesc
             // 
@@ -295,15 +296,15 @@
         private Label lblItemName;
         private Label lblItemCat;
         private Panel itemNamePanel;
-        private TextBox tfItemName;
+        private TextBox txtItemName;
         private Panel pnlItemCategory;
-        private TextBox tfItemCat;
+        private TextBox txtItemCat;
         private Label lblItemPrice;
         private Panel itemPricePanel;
-        private TextBox tfItemPrice;
+        private TextBox txtItemPrice;
         private Label lblItemQuan;
         private Panel pnlItemQuantity;
-        private TextBox tfItemQuan;
+        private TextBox txtItemQuan;
         private Button btnAddItem;
         private Label lblItemDesc;
         private RichTextBox rtbItemDesc;

@@ -1,5 +1,6 @@
 ﻿using MongoDB.Driver;
 using Project.Models;
+
 namespace Project.Controllers
 {
 
@@ -7,8 +8,11 @@ namespace Project.Controllers
     {
         private readonly IMongoCollection<Product> _productCollection;
 
-        public ProductController(string connectionString, string databaseName, string collectionName)
+        public ProductController()
         {
+            string connectionString = "mongodb://localhost:27017";
+            string databaseName = "IMSDB";
+            string collectionName = "Products";
             var client = new MongoClient(connectionString);
             var database = client.GetDatabase(databaseName);
             _productCollection = database.GetCollection<Product>(collectionName);
@@ -31,6 +35,7 @@ namespace Project.Controllers
             try
             {
                 return _productCollection.Find(p => p.ProductId == productId).FirstOrDefault();
+
             }
             catch (Exception ex)
             {
