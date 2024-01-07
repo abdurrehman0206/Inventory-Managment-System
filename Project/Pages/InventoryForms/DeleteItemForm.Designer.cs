@@ -130,6 +130,7 @@
             rtbItemDesc.BorderStyle = BorderStyle.None;
             rtbItemDesc.Location = new Point(561, 472);
             rtbItemDesc.Name = "rtbItemDesc";
+            rtbItemDesc.ReadOnly = true;
             rtbItemDesc.Size = new Size(227, 184);
             rtbItemDesc.TabIndex = 26;
             rtbItemDesc.Text = "";
@@ -186,6 +187,7 @@
             txtItemQuan.Location = new Point(10, 12);
             txtItemQuan.Name = "txtItemQuan";
             txtItemQuan.PlaceholderText = "Item Name";
+            txtItemQuan.ReadOnly = true;
             txtItemQuan.Size = new Size(210, 16);
             txtItemQuan.TabIndex = 5;
             // 
@@ -222,6 +224,7 @@
             txtItemPrice.Location = new Point(10, 12);
             txtItemPrice.Name = "txtItemPrice";
             txtItemPrice.PlaceholderText = "Price";
+            txtItemPrice.ReadOnly = true;
             txtItemPrice.Size = new Size(210, 16);
             txtItemPrice.TabIndex = 5;
             // 
@@ -257,6 +260,7 @@
             txtItemCat.Location = new Point(10, 12);
             txtItemCat.Name = "txtItemCat";
             txtItemCat.PlaceholderText = "Category";
+            txtItemCat.ReadOnly = true;
             txtItemCat.Size = new Size(210, 16);
             txtItemCat.TabIndex = 5;
             // 
@@ -278,6 +282,7 @@
             txtItemName.Location = new Point(10, 12);
             txtItemName.Name = "txtItemName";
             txtItemName.PlaceholderText = "Name";
+            txtItemName.ReadOnly = true;
             txtItemName.Size = new Size(210, 16);
             txtItemName.TabIndex = 5;
             // 
@@ -327,6 +332,7 @@
             txtItemId.Location = new Point(10, 12);
             txtItemId.Name = "txtItemId";
             txtItemId.PlaceholderText = "Id";
+            txtItemId.ReadOnly = true;
             txtItemId.Size = new Size(210, 16);
             txtItemId.TabIndex = 5;
             // 

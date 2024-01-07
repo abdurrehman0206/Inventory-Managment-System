@@ -35,12 +35,12 @@ namespace Project.Pages.InventoryForms
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dgvProduct.Rows[e.RowIndex];
-                txtItemId.Text = row.Cells["_id"].Value.ToString();
-                txtItemName.Text = row.Cells["Name"].Value.ToString();
-                txtItemPrice.Text = row.Cells["Price"].Value.ToString();
-                txtItemQuan.Text = row.Cells["Quantity"].Value.ToString();
-                txtItemCat.Text = row.Cells["Category"].Value.ToString();
-                rtbItemDesc.Text = row.Cells["Description"].Value.ToString();
+                txtItemId.Text = row.Cells["_id"].Value.ToString() ?? string.Empty;
+                txtItemName.Text = row.Cells["Name"].Value.ToString() ?? string.Empty;
+                txtItemPrice.Text = row.Cells["Price"].Value.ToString() ?? string.Empty;
+                txtItemQuan.Text = row.Cells["Quantity"].Value.ToString() ?? string.Empty;
+                txtItemCat.Text = row.Cells["Category"].Value.ToString() ?? string.Empty;
+                rtbItemDesc.Text = row.Cells["Description"].Value.ToString() ?? string.Empty;
             }
         }
 
@@ -48,7 +48,7 @@ namespace Project.Pages.InventoryForms
         {
             try
             {
-                
+
                 _productController.DeleteProduct(ObjectId.Parse(txtItemId.Text));
                 MessageBox.Show("Product deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadProducts();
