@@ -86,7 +86,7 @@ namespace Project.Pages.InventoryForms
             {
                 Name = productName,
                 Price = price,
-                QuantityInStock = quantity,
+                Quantity = quantity,
                 Description = description
                 
             };
