@@ -18,6 +18,7 @@ namespace Project.Pages.OrdersForms
             {
                 List<Order> orders = _orderController.GetAllOrders();
                 dgvOrder.DataSource = orders;
+                dgvOrder.Columns[0].HeaderText = "OrderId";
 
             }
             catch (Exception ex)
