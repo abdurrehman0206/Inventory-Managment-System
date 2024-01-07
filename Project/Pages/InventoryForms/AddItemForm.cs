@@ -1,4 +1,6 @@
-﻿using System.Data;
+﻿using Project.Controllers;
+using Project.Models;
+using System.Data;
 namespace Project.Pages.InventoryForms
 {
     public partial class AddItemForm : Form
@@ -44,7 +46,7 @@ namespace Project.Pages.InventoryForms
         }
         private void tfItemPrice_TextChanged(object sender, EventArgs e)
         {
-            tfItemPrice.Text = new string(tfItemPrice.Text.Where(char.IsDigit).ToArray());
+            txtItemPrice.Text = new string(txtItemPrice.Text.Where(char.IsDigit).ToArray());
         }
         //itemQuantity Events
         private void tfItemQuan_MouseClick(object sender, MouseEventArgs e)
@@ -58,7 +60,7 @@ namespace Project.Pages.InventoryForms
         }
         private void tfItemQuan_TextChanged(object sender, EventArgs e)
         {
-            tfItemQuan.Text = new string(tfItemQuan.Text.Where(char.IsDigit).ToArray());
+            txtItemQuan.Text = new string(txtItemQuan.Text.Where(char.IsDigit).ToArray());
         }
 
         //itemDescription Events
@@ -72,7 +74,25 @@ namespace Project.Pages.InventoryForms
         {
             rtbItemDesc.BorderStyle = BorderStyle.None;
         }
-
-
+        // addButton events
+        private void btnAddItem_Click(object sender, EventArgs e)
+        {
+            string productName = txtItemName.Text;
+            double price = Convert.ToDouble(txtItemPrice.Text);
+            int quantity = Convert.ToInt32(txtItemQuan.Text);
+            string description = rtbItemDesc.Text.ToString();
+       
+            Product newProduct = new Product
+            {
+                Name = productName,
+                Price = price,
+                QuantityInStock = quantity,
+                Description = description
+                
+            };
+            ProductController productController = new ProductController();
+            productController.AddProduct(newProduct);
+            MessageBox.Show("Product added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
