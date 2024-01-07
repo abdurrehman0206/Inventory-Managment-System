@@ -58,7 +58,7 @@
             lblAddItem.ForeColor = SystemColors.Control;
             lblAddItem.Location = new Point(0, 0);
             lblAddItem.Name = "lblAddItem";
-            lblAddItem.Size = new Size(800, 50);
+            lblAddItem.Size = new Size(784, 50);
             lblAddItem.TabIndex = 0;
             lblAddItem.Text = "Add New Item";
             lblAddItem.TextAlign = ContentAlignment.MiddleCenter;
@@ -70,7 +70,7 @@
             lblItemName.BackColor = Color.Transparent;
             lblItemName.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblItemName.ForeColor = Color.Black;
-            lblItemName.Location = new Point(66, 121);
+            lblItemName.Location = new Point(58, 101);
             lblItemName.Name = "lblItemName";
             lblItemName.Size = new Size(99, 21);
             lblItemName.TabIndex = 2;
@@ -83,7 +83,7 @@
             lblItemCat.BackColor = Color.Transparent;
             lblItemCat.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblItemCat.ForeColor = Color.Black;
-            lblItemCat.Location = new Point(505, 121);
+            lblItemCat.Location = new Point(497, 101);
             lblItemCat.Name = "lblItemCat";
             lblItemCat.Size = new Size(80, 21);
             lblItemCat.TabIndex = 4;
@@ -94,7 +94,7 @@
             itemNamePanel.Anchor = AnchorStyles.None;
             itemNamePanel.BackColor = Color.FromArgb(225, 217, 242);
             itemNamePanel.Controls.Add(tfItemName);
-            itemNamePanel.Location = new Point(66, 155);
+            itemNamePanel.Location = new Point(58, 135);
             itemNamePanel.Name = "itemNamePanel";
             itemNamePanel.Size = new Size(227, 40);
             itemNamePanel.TabIndex = 7;
@@ -117,7 +117,7 @@
             pnlItemCategory.Anchor = AnchorStyles.None;
             pnlItemCategory.BackColor = Color.FromArgb(225, 217, 242);
             pnlItemCategory.Controls.Add(tfItemCat);
-            pnlItemCategory.Location = new Point(505, 155);
+            pnlItemCategory.Location = new Point(497, 135);
             pnlItemCategory.Name = "pnlItemCategory";
             pnlItemCategory.Size = new Size(227, 40);
             pnlItemCategory.TabIndex = 8;
@@ -142,7 +142,7 @@
             lblItemPrice.BackColor = Color.Transparent;
             lblItemPrice.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblItemPrice.ForeColor = Color.Black;
-            lblItemPrice.Location = new Point(66, 261);
+            lblItemPrice.Location = new Point(58, 241);
             lblItemPrice.Name = "lblItemPrice";
             lblItemPrice.Size = new Size(87, 21);
             lblItemPrice.TabIndex = 9;
@@ -154,7 +154,7 @@
             itemPricePanel.BackColor = Color.FromArgb(225, 217, 242);
             itemPricePanel.Controls.Add(tfItemPrice);
             itemPricePanel.Cursor = Cursors.Hand;
-            itemPricePanel.Location = new Point(66, 297);
+            itemPricePanel.Location = new Point(58, 277);
             itemPricePanel.Name = "itemPricePanel";
             itemPricePanel.Size = new Size(227, 40);
             itemPricePanel.TabIndex = 10;
@@ -180,7 +180,7 @@
             lblItemQuan.BackColor = Color.Transparent;
             lblItemQuan.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblItemQuan.ForeColor = Color.Black;
-            lblItemQuan.Location = new Point(505, 261);
+            lblItemQuan.Location = new Point(497, 241);
             lblItemQuan.Name = "lblItemQuan";
             lblItemQuan.Size = new Size(116, 21);
             lblItemQuan.TabIndex = 11;
@@ -192,7 +192,7 @@
             pnlItemQuantity.BackColor = Color.FromArgb(225, 217, 242);
             pnlItemQuantity.Controls.Add(tfItemQuan);
             pnlItemQuantity.Cursor = Cursors.Hand;
-            pnlItemQuantity.Location = new Point(505, 297);
+            pnlItemQuantity.Location = new Point(497, 277);
             pnlItemQuantity.Name = "pnlItemQuantity";
             pnlItemQuantity.Size = new Size(227, 40);
             pnlItemQuantity.TabIndex = 12;
@@ -221,7 +221,7 @@
             btnAddItem.FlatStyle = FlatStyle.Flat;
             btnAddItem.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnAddItem.ForeColor = SystemColors.Control;
-            btnAddItem.Location = new Point(331, 642);
+            btnAddItem.Location = new Point(323, 622);
             btnAddItem.Name = "btnAddItem";
             btnAddItem.Size = new Size(149, 45);
             btnAddItem.TabIndex = 13;
@@ -236,7 +236,7 @@
             lblItemDesc.BackColor = Color.Transparent;
             lblItemDesc.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblItemDesc.ForeColor = Color.Black;
-            lblItemDesc.Location = new Point(66, 395);
+            lblItemDesc.Location = new Point(58, 375);
             lblItemDesc.Name = "lblItemDesc";
             lblItemDesc.Size = new Size(137, 21);
             lblItemDesc.TabIndex = 14;
@@ -247,7 +247,7 @@
             rtbItemDesc.Anchor = AnchorStyles.None;
             rtbItemDesc.BackColor = Color.FromArgb(225, 217, 242);
             rtbItemDesc.BorderStyle = BorderStyle.None;
-            rtbItemDesc.Location = new Point(66, 446);
+            rtbItemDesc.Location = new Point(58, 426);
             rtbItemDesc.Name = "rtbItemDesc";
             rtbItemDesc.Size = new Size(666, 158);
             rtbItemDesc.TabIndex = 15;
@@ -261,7 +261,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = Color.Lavender;
-            ClientSize = new Size(800, 800);
+            ClientSize = new Size(784, 761);
             Controls.Add(rtbItemDesc);
             Controls.Add(lblItemDesc);
             Controls.Add(btnAddItem);
