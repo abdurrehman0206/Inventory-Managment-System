@@ -253,6 +253,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Lavender;
             ClientSize = new Size(784, 761);
             Controls.Add(btnPlaceOrder);
             Controls.Add(lblAmount);
