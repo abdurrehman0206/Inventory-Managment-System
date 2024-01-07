@@ -69,6 +69,7 @@ namespace Project.Pages.SuppliersForms
         private void ClearTextFields()
         {
             txtId.Text = string.Empty;
+            txtName.Text = string.Empty;
             txtNum.Text = string.Empty;
             txtEmail.Text = string.Empty;
             txtAddress.Text = string.Empty;
