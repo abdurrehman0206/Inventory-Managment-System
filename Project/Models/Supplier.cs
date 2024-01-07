@@ -1,10 +1,10 @@
 ﻿
-
+using MongoDB.Bson;
 namespace Project.Models
 {
     public class Supplier
     {
-        public int SupplierId { get; set; }
+        public BsonObjectId _id { get; set; }
         public string Name { get; set; }
         public string ContactNumber { get; set; }
         public string Email { get; set; }

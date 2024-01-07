@@ -204,7 +204,7 @@
             txtItemQuan.Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtItemQuan.Location = new Point(10, 12);
             txtItemQuan.Name = "txtItemQuan";
-            txtItemQuan.PlaceholderText = "Item Name";
+            txtItemQuan.PlaceholderText = "Quantity";
             txtItemQuan.Size = new Size(210, 16);
             txtItemQuan.TabIndex = 5;
             txtItemQuan.MouseClick += tfItemQuan_MouseClick;

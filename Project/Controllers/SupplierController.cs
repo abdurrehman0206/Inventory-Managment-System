@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver;
+﻿using MongoDB.Bson;
+using MongoDB.Driver;
 using Project.Models;
 
 namespace Project.Controllers
@@ -8,7 +9,7 @@ namespace Project.Controllers
     {
         private readonly IMongoCollection<Supplier> _supplierCollection;
 
-        public SupplierController(string connectionString, string databaseName, string collectionName)
+        public SupplierController(string connectionString = "mongodb://localhost:27017", string databaseName = "IMSDB", string collectionName = "Suppliers")
         {
             var client = new MongoClient(connectionString);
             var database = client.GetDatabase(databaseName);
@@ -31,7 +32,7 @@ namespace Project.Controllers
         {
             try
             {
-                return _supplierCollection.Find(s => s.SupplierId == supplierId).FirstOrDefault();
+                return _supplierCollection.Find(s => s._id == supplierId).FirstOrDefault();
             }
             catch (Exception ex)
             {
@@ -50,6 +51,19 @@ namespace Project.Controllers
             {
                 MessageBox.Show($"Error getting all suppliers: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return new List<Supplier>();
+            }
+        }
+
+        public void DeleteSupplier(ObjectId supplierId)
+        {
+            try
+            {
+                var filter = Builders<Supplier>.Filter.Eq(s => s._id, supplierId);
+                _supplierCollection.DeleteOne(filter);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error deleting supolier: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
