@@ -35,8 +35,57 @@ namespace Project.Controllers
                 return new List<Product>();
             }
         }
-
         public void AddProductToOrder(Order order, Product product, int quantity)
+        {
+            try
+            {
+                if (order == null)
+                {
+                    MessageBox.Show("Order cannot be null.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (product == null)
+                {
+                    MessageBox.Show("Product cannot be null.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Check if the product is already in the order
+                Product existingProduct = order.OrderedProducts?.Find(p => p._id == product._id);
+
+                if (existingProduct != null)
+                {
+                    // If the product is already in the order, update the quantity
+                    existingProduct.Quantity += quantity;
+                }
+                else
+                {
+                    // If the product is not in the order, add a new Product
+                    Product newProduct = new Product
+                    {
+                        _id = product._id,
+                        Name = product.Name,
+                        Price = product.Price,
+                        Quantity = quantity,
+                        Description = product.Description,
+                        Category = product.Category,
+                    };
+
+                    // Make sure OrderedProducts is initialized before adding
+                    order.OrderedProducts ??= new List<Product>();
+                    order.OrderedProducts.Add(newProduct);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle the exception by showing an error message
+                MessageBox.Show($"Error adding product to order: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        /*
+         public void AddProductToOrder(Order order, Product product, int quantity)
         {
             try
             {
@@ -48,7 +97,7 @@ namespace Project.Controllers
                 }
                 else
                 {
-                  /*  Product newProduct = new Product
+                    Product newProduct = new Product
                     {
                         _id = product._id,
                         Name = product.Name,
@@ -57,7 +106,7 @@ namespace Project.Controllers
                         Description = product.Description,
                         Quantity = quantity
                     };
-                  */
+                  
 
                     order.OrderedProducts.Add(product);
                 }
@@ -66,8 +115,8 @@ namespace Project.Controllers
             {
                 MessageBox.Show($"Error adding product to order: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
+        } 
+        */
         public void PlaceOrder(Order order)
         {
             try
