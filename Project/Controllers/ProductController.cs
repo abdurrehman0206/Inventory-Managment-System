@@ -18,7 +18,44 @@ namespace Project.Controllers
             var database = client.GetDatabase(databaseName);
             _productCollection = database.GetCollection<Product>(collectionName);
         }
+        public int GetTotalItemsInInventory()
+        {
+            try
+            {
+                return _productCollection.AsQueryable().Sum(item => item.Quantity);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error getting total items in inventory: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return 0;
+            }
+        }
 
+        public double GetTotalPriceOfItemsInInventory()
+        {
+            try
+            {
+                return _productCollection.AsQueryable().Sum(item => item.Quantity * item.Price);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error getting total price of items in inventory: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return 0;
+            }
+        }
+
+        public double GetAveragePriceOfItemsInInventory()
+        {
+            try
+            {
+                return _productCollection.AsQueryable().Average(item => item.Price);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error getting average price of items in inventory: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return 0;
+            }
+        }
         public void AddProduct(Product product)
         {
             try

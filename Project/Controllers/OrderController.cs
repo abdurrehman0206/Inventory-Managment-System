@@ -22,7 +22,44 @@ namespace Project.Controllers
             _orderCollection = database.GetCollection<Order>(orderCollectionName);
             _productCollection = database.GetCollection<Product>(productCollectionName);
         }
+        public int GetTotalOrdersPlaced()
+        {
+            try
+            {
+                return _orderCollection.AsQueryable().Count();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error getting total orders placed: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return 0;
+            }
+        }
 
+        public double GetTotalOrdersPlacedPrice()
+        {
+            try
+            {
+                return _orderCollection.AsQueryable().Sum(order => order.TotalAmount);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error getting total orders placed price: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return 0;
+            }
+        }
+
+        public int GetTotalSales()
+        {
+            try
+            {
+                return _orderCollection.AsQueryable().Count(order => order.IsShipped);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error getting total sales: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return 0;
+            }
+        }
         public List<Product> GetAvailableProducts()
         {
             try
