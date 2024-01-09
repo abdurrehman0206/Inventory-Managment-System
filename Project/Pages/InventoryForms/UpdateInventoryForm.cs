@@ -12,19 +12,7 @@ namespace Project.Pages.InventoryForms
             InitializeComponent();
             _productController = new ProductController();
         }
-        private void dgvProduct_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = dgvProduct.Rows[e.RowIndex];
-                txtItemId.Text = row.Cells["_id"].Value.ToString();
-                txtItemName.Text = row.Cells["Name"].Value.ToString();
-                txtItemPrice.Text = row.Cells["Price"].Value.ToString();
-                txtItemQuan.Text = row.Cells["Quantity"].Value.ToString();
-                txtItemCat.Text = row.Cells["Category"].Value.ToString();
-                rtbItemDesc.Text = row.Cells["Description"].Value.ToString();
-            }
-        }
+      
         private void btnUpdateItem_Click(object sender, EventArgs e)
         {
             try
@@ -48,6 +36,21 @@ namespace Project.Pages.InventoryForms
                 MessageBox.Show($"Error updating product: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void dgvProduct_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvProduct.Rows[e.RowIndex];
+                txtItemId.Text = row.Cells["_id"].Value.ToString();
+                txtItemName.Text = row.Cells["Name"].Value.ToString();
+                txtItemPrice.Text = row.Cells["Price"].Value.ToString();
+                txtItemQuan.Text = row.Cells["Quantity"].Value.ToString();
+                txtItemCat.Text = row.Cells["Category"].Value.ToString();
+                rtbItemDesc.Text = row.Cells["Description"].Value.ToString();
+            }
+        }
         private void ClearTextFields()
         {
             txtItemId.Text = string.Empty;
@@ -62,7 +65,7 @@ namespace Project.Pages.InventoryForms
             try
             {
                 dgvProduct.DataSource = _productController.GetAllProducts();
-                dgvProduct.Columns[0].HeaderText="ProductID";
+                dgvProduct.Columns[0].HeaderText = "ProductID";
             }
             catch (Exception ex)
             {
@@ -127,12 +130,12 @@ namespace Project.Pages.InventoryForms
         }
         private void rtbItemDesc_MouseClick(object sender, MouseEventArgs e)
         {
-            rtbItemDesc.BorderStyle = BorderStyle.FixedSingle;
+            pnlDesc.BorderStyle = BorderStyle.FixedSingle;
         }
 
         private void rtbItemDesc_Leave(object sender, EventArgs e)
         {
-            rtbItemDesc.BorderStyle = BorderStyle.None;
+            pnlDesc.BorderStyle = BorderStyle.None;
         }
 
      

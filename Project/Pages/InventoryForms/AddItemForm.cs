@@ -66,13 +66,13 @@ namespace Project.Pages.InventoryForms
         //itemDescription Events
         private void rtbItemDesc_MouseClick(object sender, MouseEventArgs e)
         {
-            rtbItemDesc.BorderStyle = BorderStyle.FixedSingle;
+            pnlDesc.BorderStyle = BorderStyle.FixedSingle;
 
         }
 
         private void rtbItemDesc_Leave(object sender, EventArgs e)
         {
-            rtbItemDesc.BorderStyle = BorderStyle.None;
+            pnlDesc.BorderStyle = BorderStyle.None;
         }
         // addButton events
         private void btnAddItem_Click(object sender, EventArgs e)
@@ -95,6 +95,15 @@ namespace Project.Pages.InventoryForms
             ProductController productController = new ProductController();
             productController.AddProduct(newProduct);
             MessageBox.Show("Product added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ClearTextFields();
+        }
+        private void ClearTextFields()
+        {
+            txtItemName.Text = string.Empty;
+            txtItemPrice.Text = string.Empty;
+            txtItemQuan.Text = string.Empty;
+            txtItemCat.Text = string.Empty;
+            rtbItemDesc.Text = string.Empty;
         }
     }
 }

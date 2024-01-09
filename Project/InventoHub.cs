@@ -49,7 +49,6 @@ namespace Project
             childPage.TopLevel = false;
             childPage.FormBorderStyle = FormBorderStyle.None;
             childPage.Dock = DockStyle.Fill;
-            childPage.BackColor = Color.GhostWhite;
             childPage.BackColor = Color.Lavender;
             pnlChildPage.Controls.Add(childPage);
             pnlChildPage.Tag = childPage;

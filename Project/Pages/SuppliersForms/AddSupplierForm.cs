@@ -109,8 +109,21 @@ namespace Project.Pages.SuppliersForms
             SupplierController supController = new SupplierController();
             supController.AddSupplier(newSup);
             MessageBox.Show("Supplier added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        ClearTextFields();
+        
         }
 
-       
+
+        //Clear textFields 
+
+        private void ClearTextFields()
+        {
+            txtName.Text = string.Empty;
+            txtNum.Text = string.Empty;
+            txtEmail.Text = string.Empty;
+            txtAddress.Text = string.Empty;
+            
+        }
+
     }
 }
