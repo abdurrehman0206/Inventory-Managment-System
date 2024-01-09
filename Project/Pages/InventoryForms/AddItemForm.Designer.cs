@@ -44,10 +44,12 @@
             btnAddItem = new Button();
             lblItemDesc = new Label();
             rtbItemDesc = new RichTextBox();
+            pnlDesc = new Panel();
             itemNamePanel.SuspendLayout();
             pnlItemCategory.SuspendLayout();
             itemPricePanel.SuspendLayout();
             pnlItemQuantity.SuspendLayout();
+            pnlDesc.SuspendLayout();
             SuspendLayout();
             // 
             // lblAddItem
@@ -248,13 +250,21 @@
             rtbItemDesc.Anchor = AnchorStyles.None;
             rtbItemDesc.BackColor = Color.FromArgb(225, 217, 242);
             rtbItemDesc.BorderStyle = BorderStyle.None;
-            rtbItemDesc.Location = new Point(66, 446);
+            rtbItemDesc.Location = new Point(0, 0);
             rtbItemDesc.Name = "rtbItemDesc";
             rtbItemDesc.Size = new Size(666, 158);
             rtbItemDesc.TabIndex = 15;
             rtbItemDesc.Text = "";
             rtbItemDesc.MouseClick += rtbItemDesc_MouseClick;
             rtbItemDesc.Leave += rtbItemDesc_Leave;
+            // 
+            // pnlDesc
+            // 
+            pnlDesc.Controls.Add(rtbItemDesc);
+            pnlDesc.Location = new Point(66, 446);
+            pnlDesc.Name = "pnlDesc";
+            pnlDesc.Size = new Size(666, 158);
+            pnlDesc.TabIndex = 16;
             // 
             // AddItemForm
             // 
@@ -263,7 +273,7 @@
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.Lavender;
             ClientSize = new Size(800, 800);
-            Controls.Add(rtbItemDesc);
+            Controls.Add(pnlDesc);
             Controls.Add(lblItemDesc);
             Controls.Add(btnAddItem);
             Controls.Add(pnlItemQuantity);
@@ -286,6 +296,7 @@
             itemPricePanel.PerformLayout();
             pnlItemQuantity.ResumeLayout(false);
             pnlItemQuantity.PerformLayout();
+            pnlDesc.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -308,5 +319,6 @@
         private Button btnAddItem;
         private Label lblItemDesc;
         private RichTextBox rtbItemDesc;
+        private Panel pnlDesc;
     }
 }

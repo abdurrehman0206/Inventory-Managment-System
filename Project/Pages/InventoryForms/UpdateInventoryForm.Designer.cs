@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             lblUpdateItem = new Label();
-            panel1 = new Panel();
+            pnlItemId = new Panel();
             txtItemId = new TextBox();
             rtbItemDesc = new RichTextBox();
             lblItemDesc = new Label();
@@ -51,12 +51,14 @@
             lblItemName = new Label();
             lblItemId = new Label();
             dgvProduct = new DataGridView();
-            panel1.SuspendLayout();
+            pnlDesc = new Panel();
+            pnlItemId.SuspendLayout();
             pnlItemQuantity.SuspendLayout();
             itemPricePanel.SuspendLayout();
             pnlItemCategory.SuspendLayout();
             itemNamePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvProduct).BeginInit();
+            pnlDesc.SuspendLayout();
             SuspendLayout();
             // 
             // lblUpdateItem
@@ -72,15 +74,15 @@
             lblUpdateItem.Text = "Update Item";
             lblUpdateItem.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // panel1
+            // pnlItemId
             // 
-            panel1.Anchor = AnchorStyles.None;
-            panel1.BackColor = Color.FromArgb(225, 217, 242);
-            panel1.Controls.Add(txtItemId);
-            panel1.Location = new Point(561, 87);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(227, 40);
-            panel1.TabIndex = 41;
+            pnlItemId.Anchor = AnchorStyles.None;
+            pnlItemId.BackColor = Color.FromArgb(225, 217, 242);
+            pnlItemId.Controls.Add(txtItemId);
+            pnlItemId.Location = new Point(561, 87);
+            pnlItemId.Name = "pnlItemId";
+            pnlItemId.Size = new Size(227, 40);
+            pnlItemId.TabIndex = 41;
             // 
             // txtItemId
             // 
@@ -99,7 +101,7 @@
             rtbItemDesc.Anchor = AnchorStyles.None;
             rtbItemDesc.BackColor = Color.FromArgb(225, 217, 242);
             rtbItemDesc.BorderStyle = BorderStyle.None;
-            rtbItemDesc.Location = new Point(561, 481);
+            rtbItemDesc.Location = new Point(0, 0);
             rtbItemDesc.Name = "rtbItemDesc";
             rtbItemDesc.Size = new Size(227, 184);
             rtbItemDesc.TabIndex = 40;
@@ -320,36 +322,36 @@
             dgvProduct.BorderStyle = BorderStyle.None;
             dgvProduct.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             dgvProduct.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(135, 104, 202);
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.Padding = new Padding(5);
-            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(135, 104, 202);
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgvProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = Color.FromArgb(135, 104, 202);
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle4.Padding = new Padding(5);
+            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(135, 104, 202);
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dgvProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dgvProduct.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = SystemColors.Window;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgvProduct.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = SystemColors.Window;
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
+            dgvProduct.DefaultCellStyle = dataGridViewCellStyle5;
             dgvProduct.EnableHeadersVisualStyles = false;
             dgvProduct.GridColor = Color.FromArgb(225, 217, 242);
             dgvProduct.Location = new Point(0, 50);
             dgvProduct.Margin = new Padding(0);
             dgvProduct.Name = "dgvProduct";
             dgvProduct.RowHeadersVisible = false;
-            dataGridViewCellStyle3.BackColor = Color.Lavender;
-            dataGridViewCellStyle3.ForeColor = Color.Black;
-            dataGridViewCellStyle3.Padding = new Padding(5);
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(225, 217, 242);
-            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
-            dgvProduct.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.BackColor = Color.Lavender;
+            dataGridViewCellStyle6.ForeColor = Color.Black;
+            dataGridViewCellStyle6.Padding = new Padding(5);
+            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(225, 217, 242);
+            dataGridViewCellStyle6.SelectionForeColor = Color.Black;
+            dgvProduct.RowsDefaultCellStyle = dataGridViewCellStyle6;
             dgvProduct.RowTemplate.DefaultCellStyle.Padding = new Padding(5);
             dgvProduct.RowTemplate.Height = 30;
             dgvProduct.RowTemplate.ReadOnly = true;
@@ -357,6 +359,15 @@
             dgvProduct.ShowEditingIcon = false;
             dgvProduct.Size = new Size(547, 750);
             dgvProduct.TabIndex = 43;
+            dgvProduct.CellClick += dgvProduct_CellClick_1;
+            // 
+            // pnlDesc
+            // 
+            pnlDesc.Controls.Add(rtbItemDesc);
+            pnlDesc.Location = new Point(561, 481);
+            pnlDesc.Name = "pnlDesc";
+            pnlDesc.Size = new Size(227, 184);
+            pnlDesc.TabIndex = 44;
             // 
             // UpdateInventoryForm
             // 
@@ -365,12 +376,12 @@
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.Lavender;
             ClientSize = new Size(800, 800);
+            Controls.Add(pnlDesc);
             Controls.Add(dgvProduct);
             Controls.Add(btnUpdateItem);
             Controls.Add(lblItemId);
-            Controls.Add(rtbItemDesc);
             Controls.Add(lblItemDesc);
-            Controls.Add(panel1);
+            Controls.Add(pnlItemId);
             Controls.Add(pnlItemQuantity);
             Controls.Add(itemNamePanel);
             Controls.Add(lblItemQuan);
@@ -383,8 +394,8 @@
             Name = "UpdateInventoryForm";
             Text = "UpdateInventory";
             Load += UpdateInventoryForm_Load;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            pnlItemId.ResumeLayout(false);
+            pnlItemId.PerformLayout();
             pnlItemQuantity.ResumeLayout(false);
             pnlItemQuantity.PerformLayout();
             itemPricePanel.ResumeLayout(false);
@@ -394,6 +405,7 @@
             itemNamePanel.ResumeLayout(false);
             itemNamePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvProduct).EndInit();
+            pnlDesc.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -401,7 +413,7 @@
         #endregion
 
         private Label lblUpdateItem;
-        private Panel panel1;
+        private Panel pnlItemId;
         private TextBox txtItemId;
         private RichTextBox rtbItemDesc;
         private Label lblItemDesc;
@@ -420,5 +432,6 @@
         private Label lblItemName;
         private Label lblItemId;
         private DataGridView dgvProduct;
+        private Panel pnlDesc;
     }
 }

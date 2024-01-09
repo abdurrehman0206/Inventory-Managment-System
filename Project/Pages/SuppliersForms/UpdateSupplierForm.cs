@@ -107,6 +107,7 @@ namespace Project.Pages.SuppliersForms
             pnlNum.BorderStyle = BorderStyle.None;
         }
 
+
         private void txtEmail_MouseClick(object sender, MouseEventArgs e)
         {
             pnlEmail.BorderStyle = BorderStyle.FixedSingle;
@@ -152,6 +153,9 @@ namespace Project.Pages.SuppliersForms
             pnlAddress.BorderStyle = BorderStyle.None;
         }
 
-     
+        private void txtNum_TextChanged(object sender, EventArgs e)
+        {
+            txtNum.Text = new string(txtNum.Text.Where(char.IsDigit).ToArray());
+        }
     }
 }

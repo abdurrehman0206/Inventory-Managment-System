@@ -281,7 +281,7 @@
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
             dataGridViewCellStyle1.Padding = new Padding(5);
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(135, 104, 202);
             dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgvOrderDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
@@ -309,6 +309,7 @@
             dgvOrderDetails.RowTemplate.DefaultCellStyle.Padding = new Padding(5);
             dgvOrderDetails.RowTemplate.Height = 30;
             dgvOrderDetails.RowTemplate.ReadOnly = true;
+            dgvOrderDetails.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvOrderDetails.ShowEditingIcon = false;
             dgvOrderDetails.Size = new Size(693, 236);
             dgvOrderDetails.TabIndex = 17;

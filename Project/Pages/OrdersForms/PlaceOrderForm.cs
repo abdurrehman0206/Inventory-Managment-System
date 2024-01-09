@@ -13,7 +13,6 @@ namespace Project.Pages.OrdersForms
             InitializeComponent();
             _orderController = new OrderController();
             _availableProducts = _orderController.GetAvailableProducts();
-
             cmbProducts.DataSource = _availableProducts;
             cmbProducts.DisplayMember = "Name";
             cmbProducts.ValueMember = "_id";
@@ -173,8 +172,18 @@ namespace Project.Pages.OrdersForms
             {
                 dgvOrderDetails.Rows.Add(selectedProduct._id, selectedProduct.Name, selectedProduct.Description, quantity, selectedProduct.Category, selectedProduct.Price);
             }
+            
             cmbProducts.SelectedIndex = -1;
             txtQuantity.Clear();
+            double totalAmount = 0.0;
+            foreach(DataGridViewRow row in dgvOrderDetails.Rows)
+            {
+                if (row.Cells["_id"].Value != null)
+                {
+                    totalAmount += (double)row.Cells["Price"].Value * (int)row.Cells["Quantity"].Value;
+                    lblAmount.Text = "Total Amount : $ " + totalAmount.ToString();
+                }
+            }
         }
 
        

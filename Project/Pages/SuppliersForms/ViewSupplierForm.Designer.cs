@@ -66,7 +66,7 @@
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
             dataGridViewCellStyle1.Padding = new Padding(5);
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(135, 104, 202);
             dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgvSupplier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
@@ -95,6 +95,7 @@
             dgvSupplier.RowTemplate.DefaultCellStyle.Padding = new Padding(5);
             dgvSupplier.RowTemplate.Height = 30;
             dgvSupplier.RowTemplate.ReadOnly = true;
+            dgvSupplier.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvSupplier.ShowEditingIcon = false;
             dgvSupplier.Size = new Size(800, 750);
             dgvSupplier.TabIndex = 13;
