@@ -15,7 +15,18 @@ namespace Project.Controllers
             var database = client.GetDatabase(databaseName);
             _supplierCollection = database.GetCollection<Supplier>(collectionName);
         }
-
+        public int GetTotalSuppliers()
+        {
+            try
+            {
+                return _supplierCollection.AsQueryable().Count();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error getting total suppliers: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return 0;
+            }
+        }
         public void AddSupplier(Supplier supplier)
         {
             try
@@ -73,7 +84,7 @@ namespace Project.Controllers
                 var filter = Builders<Supplier>.Filter.Eq(s => s._id, supplierId);
                 var update = Builders<Supplier>.Update
                     .Set(s => s.Name, updatedSupplier.Name)
-                    .Set(s=>s.Address, updatedSupplier.Address)
+                    .Set(s => s.Address, updatedSupplier.Address)
                     .Set(s => s.ContactNumber, updatedSupplier.ContactNumber)
                     .Set(s => s.Email, updatedSupplier.Email);
                 _supplierCollection.UpdateOne(filter, update);
