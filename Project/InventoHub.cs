@@ -17,6 +17,7 @@ namespace Project
             InitHideMenus();
             activePage = null;
             activeButton = null;
+            OpenPage(new DashboardForm());
 
         }
         private void MenuListGen()

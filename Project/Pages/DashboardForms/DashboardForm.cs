@@ -1,5 +1,4 @@
 ﻿
-
 using Project.Controllers;
 
 namespace Project
@@ -28,12 +27,12 @@ namespace Project
                 int totalSales = _orderController.GetTotalSales();
                 int totalSuppliers = _supplierController.GetTotalSuppliers();
 
-                lblTotalItems.Text = $"Total Items in Inventory: {totalItemsInInventory}";
-                lblTotalPrice.Text = $"Total Price of Items in Inventory: {totalPriceOfItemsInInventory:C}";
-                lblTotalOrders.Text = $"Total Orders Placed: {totalOrdersPlaced}";
-                lblTotalOrdersPrice.Text = $"Total Orders Placed Price: {totalOrdersPlacedPrice:C}";
-                lblTotalSales.Text = $"Total Sales: {totalSales}";
-                lblTotalSuppliers.Text = $"Total Suppliers: {totalSuppliers}";
+                lblTotalItems.Text = $"{totalItemsInInventory}";
+                lblTotalPrice.Text = $"${totalPriceOfItemsInInventory}";
+                lblTotalOrders.Text = $"{totalOrdersPlaced}";
+                lblTotalOrdersPrice.Text = $"${totalOrdersPlacedPrice}";
+                lblTotalSales.Text = $"{totalSales}";
+                lblTotalSuppliers.Text = $"{totalSuppliers}";
             }
             catch (Exception ex)
             {
